@@ -29,6 +29,6 @@ h3{
     font-size: 20px; 
 }
 
-p{
+p, ul, ol{
     color: #505050; 
 }
