@@ -6,7 +6,6 @@ body{
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    text-align: justify;
     font-size: 16px; 
     line-height: 200%;
 
@@ -31,5 +30,6 @@ h3{
 
 p, ul, ol{
     color: #505050; 
+    text-align: justify;
     hyphens: auto;
 }
