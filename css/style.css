@@ -31,4 +31,5 @@ h3{
 
 p, ul, ol{
     color: #505050; 
+    hyphens: auto;
 }
