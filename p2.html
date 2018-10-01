@@ -5,16 +5,29 @@
         <title>P2 Project Design</title>
         <link rel="stylesheet" type="text/css" href = "css/style.css">
     </head>
+
+
     <body>
 
         <header>
-
-            <h1>Document Details</h1>
-            <a href="http://org.ntnu.no/lyche/P1/P1_requirements_19.html">P1 project requirements</a>
-            <p id="authors">Merete Lunde Bertheau, Helle Børset Eidissen, Iben Andrea Bøyum Huus, Helene Lavre and Johanna Norum.</p>
-
-            <p id= "date">9. October 2018</p>
+                <div class = "navigationbar">
+                        <a href="#home"></h2>Document Details</a>
+                        <a href="#adm"></h2>Administrative details</a>
+                        <a href="#purpose">Purpose, goals and audience</a>
+                        <a href="#nav">Navigation Structure</a>
+                        <a href="#layout">Layout and appearance</a>
+                        <a href="#content">Content</a>
+                        <a href="#minreq">Minimum requirement</a>
+                        <a href="#plan">Plan</a>
+                </div>    
         </header>
+        <section class = "content">
+                <div class= "topnavpush"  id = "home"></div>
+                <h1>Document Details</h1>
+                <a href="http://org.ntnu.no/lyche/P1/P1_requirements_19.html">P1 project requirements</a>
+                <p id="authors">Merete Lunde Bertheau, Helle Børset Eidissen, Iben Andrea Bøyum Huus, Helene Lavre and Johanna Norum.</p>
+                <p id= "date">9. October 2018</p>
+       
 
             <h2>Content</h2>
             <ol>
@@ -27,7 +40,8 @@
                 <li><a href="#plan">Plan</a></li>
             </ol>
 
-            <h2 id="adm">Administrative details</h2>
+            <div class= "topnavpush" id="adm"></div>
+            <h2>Administrative details</h2>
             <p>
                 This webpage is made for the resturant Lyche.
             </p>
@@ -38,7 +52,8 @@
                 The contact persons for this project is Merete Lunde Bertheau, the PR an Profile responsible for the restaurant together with Alexander Wang.
             </p>
 
-            <h2 id="purpose">Purpose, goals and audience</h2>
+            <div class= "topnavpush" id="purpose"></div>
+            <h2>Purpose, goals and audience</h2>
             <p>
                 The purpose with this website is to raise awerness to all students and people in Trondheim about the resturant Lyche you can find at Studentersamfundet. 
                 Our goal is to make it easy for everyone wisiting the site to see what Lyche has to offer; history of the restaurant, easy to get access to information about the menu the restaurant has to offer, possibilities for reservations and information about the staff. 
@@ -49,15 +64,15 @@
 
                 </p>
             
-
-            <h2 id="nav">Navigation Structure</h2>
+                <div class= "topnavpush" id="nav"></div>
+            <h2>Navigation Structure</h2>
 
             <p>The navigation structure of the website is shown in the figure belowe.</p>
             <img src="img/navstruc.png" alt="The structure">
             
         
-
-            <h2 id="layout">Page layout and Appearance</h2>
+            <div class= "topnavpush" id="layout"></div>
+            <h2>Page layout and Appearance</h2>
 
                 <p>
                     The design will to an extent be in synch with the design and style <a href="https://www.samfundet.no/"> samfundet.no</a> has. But in addition we want to promote the vibe Lyche offers. The specific styling for the site applyed will be:
@@ -97,11 +112,12 @@
                     </ul>
                 </p>
 
-
-            <h2 id="content">Content</h2>
+                <div class= "topnavpush" id="content"></div>
+            <h2>Content</h2>
             <h3>index.html</h3>
-            <p>
-                The first page that will appear when user visit webpage.
+            <p>The first page that will appear when user visit webpage.</p>
+            <img src="img/Header_lyche.png" alt="The header image. Picture of a salad w lyche logo">
+            <img src="img/Header_w_menu.png" alt="Header image of a salad, with a menu on the side">
                 <ul>
                     <li>Header: a header line that will appear when you scroll the page</li>
                         <ul>
@@ -139,19 +155,22 @@
                         <li>Checks the date and time and shows if the resturant is open or not.</li>
                     </ul>
                 </ul>
-            </p>
+            <p>At the very bootom of the page there will also be a footer with some contact info.</p>
+            <img src="img/about_w_footer.png" alt="Picture of how the footer will look">
 
             <h3>menu.html</h3>
             <p>pdf/img/list with full menu</p>
+            <img src="img/menu.png" alt="Lyches menu">
 
             <h3>contact.html</h3>
-            <p>Contact information</p>
-            <p>Opening hours</p>
-            <p>Social media</p>
+            <p> Page containing contact information, opening hours and social media</p>
+            <img src="img/contact.png" alt="The contact information for lyche">
+
                 
             <h3>reservations.html</h3>
-            <p>
-                    Will contain a picture of the restaurant and a form til fill for reservations, this form will contain 
+            <p>Will contain a picture of the restaurant and a form til fill for reservations. </p>
+            <img src="img/reservation.png" alt="Reservation form">
+                 <p>This form will contain:</p>
                     <ul>
                         <li>Name of person that makes reservation (påkrevd)</li>
                         <li>Number of people. This number cannot exceed 20. (påkrevd)</li>
@@ -163,11 +182,12 @@
                         <li>E-post til reservatør </li>
                         <li>Information about how to cancel reservation</li>
                     </ul>    
-            </p>
+            
 
             <h3>about.html</h3>
             <p> Will contain a pictures of someone working in lyche (img), text about lyche and how it is today, text about lyches history.</p>
-            
+            <img src="img/about.png" alt="Picture of how about.html will look">
+
             <h3>styling.css</h3>
                 <p>Styling sheet implemented on the entire website</p>
 
@@ -178,8 +198,9 @@
                 <li>reservation.js</li>
                 <li>readMore.js</li>
             </ul>
-
-            <h2 id="minreq">Minimum requirement</h2>
+            
+            <div class= "topnavpush" id="minreq"></div>
+            <h2>Minimum requirement</h2>
             <p>
                     Some applications we want to include with JavaScript
                     <ul>
@@ -190,10 +211,12 @@
                     </ul>       
             </p>
 
-            <h2 id="plan">Plan</h2>
+            <div class= "topnavpush" id="plan"></div>
+            <h2>Plan</h2>
             <p>
                     We will be commited to the following <i>Organization Scheme</i> to see which files needs to be created, and the <i>Work Division and Deadlines</i> to keep track of different tasks needed to be done and to when.
             </p>
+
             <h3 id="Organizational Scheme">Organizational Scheme</h3>
             <p>The following files will be stored at <a href="http://org.ntnu.no/lyche/P1/P1_requirements_19.html">github</a> where we will keep updating the project as we go. 
                 <ul>
@@ -216,6 +239,7 @@
                 </ul>
             </p>
             
+
             <h3 id= "Work Division and Deadlines"> Work Division and Deadlines</h3>
             <table>
                     <tr>
@@ -294,7 +318,7 @@
             
 
 
-
+                </section>
     </body>
 
 
