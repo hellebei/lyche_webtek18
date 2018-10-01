@@ -58,17 +58,19 @@
                 The purpose with this website is to raise awerness to all students and people in Trondheim about the resturant Lyche you can find at Studentersamfundet. 
                 Our goal is to make it easy for everyone wisiting the site to see what Lyche has to offer; history of the restaurant, easy to get access to information about the menu the restaurant has to offer, possibilities for reservations and information about the staff. 
                 </p>
-                <p>
-                    The websites main audience will be people who are curies of either the history, concept or menu of Lyche restaurant. 
-                    Lyche has something for everyone; vegetarian, international, hangover-cure burger and a drink or local brewed beer if you are thirsty. All of these are possible visitors of the website. The restaurant is student driven and the food is affordable, even on a small budget. Hence the websites target group are student.
-
-                </p>
+            <p>
+                The websites main audience will be people who are curies of either the history, concept or menu of Lyche restaurant. 
+                Lyche has something for everyone; vegetarian, international, hangover-cure burger and a drink or local brewed beer if you are thirsty. All of these are possible visitors of the website. The restaurant is student driven and the food is affordable, even on a small budget. Hence the websites target group are student.
+            </p>
             
                 <div class= "topnavpush" id="nav"></div>
             <h2>Navigation Structure</h2>
 
-            <p>The navigation structure of the website is shown in the figure belowe.</p>
-            <img src="img/navstruc.png" alt="The structure">
+            <p>The navigation structure of the website is shown in the figure below. The idea is</p>
+           <!--  <object data="pdf/navigation structure.pdf" type="application/pdf" width="100%" height="100%">
+            <p><b>Fallback content</b>: Your browser does not support PDFs.:<a href="pdf/navigation structure.pdf">Download PDF here</a></p>
+            </object> -->
+            <img src="img/navigation structure.png" alt="The structure">
             
         
             <div class= "topnavpush" id="layout"></div>
@@ -80,7 +82,7 @@
                         <li>Font type: Futura, size:
                             <ul> 
                             <li>Main title: 36px</li>
-                            <li>Navigation bar:  </li>
+                            <li>Navigation bar: 50px</li>
                             <li>Body: 20 px </li>
                             <li>Links: 20px</li> 
                         </ul>
@@ -88,14 +90,14 @@
                             <ul>
                                 <li>Text: black</li>
                                 <li>Background: off-white(#ebe9e6), no background image</li>
-                                <li>Links: bold, same color as logo?</li>
-                                <li>Border of the tabs and footer: black with white text</li>
+                                <li>Links: bold, grey-brown</li>
                             </ul>
-                            <li>Body width: </li>
-                            <li>Links: </li>
-                            <li>Navbar position and appearance</li>
-                            <li>Banner: </li>
-                            <li>Icon will be the same as samfundet.no</li>
+                            <li>Body width: 100%</li>
+                            <li>Links: The appearance of the link will not be changed when visited. When hover over the link ...</li>
+                            <li>Banner: Will be included at the top of the site when scorlling at all time.</li>
+                            <li>Navbar position and appearance: will included in the banner. When the mouse hovers over the navbar/burgermenue both the padding and text color will be marked (lighter?).</li>
+                            
+                            <li>Favicon will be the same as samfundet.no</li>
                             <li>Footer will be the same as <a href="https://www.samfundet.no/"> samfundet.no</a> and will appear in the bottom of the page when scrolling down.</li>
                                 <img src="img/footersamf.png" alt="The footer found at samfundet.no">
                                 <ul>
@@ -103,11 +105,12 @@
                                     <ul>
                                         <li>Facebook</li>
                                         <li>Instagram</li>
-                                        <li>Snapchat</li>
+                                        <li>Spotify</li>
+                                        <li>Twitter</li>
                                     </ul>
                                 </ul>
                                 </li>
-                                <li>Logo will be found in the banner, always visible when scrolling the page.</li>
+                                <li>Logo will be seen in the banner, always visible when scrolling the page. When you press the logo you will be navigated to the index.html</li>
                         </li>
                     </ul>
                 </p>
@@ -122,25 +125,23 @@
                     <li>Header: a header line that will appear when you scroll the page</li>
                         <ul>
                             <li>Lyche logo (img)</li>
-                            <li>Menu-botton (img)</li>
                             <li>en|no choice</li>
-                            <li>Button direction to samfundet.no</li>
+                            <li>Icon direction to samfundet.no</li>
                         </ul>
                     
-                    <li>Homepage img with lyche name on. This will appear at first when getting onto the page, and then the header-bar won’t show. This will fill entire screen. </li>
+                    <li>Homepage img with lyche name on. This will appear at first when getting onto the page, the header-bar won’t show. This will fill entire screen. </li>
                     <li>Menu part</li>
                     <ul>
                         <li>Short summary about the menu</li>
                         <li>A picture of a course</li>
                         <li>Each of these two will fill half the screen width</li>
                     </ul>
-                    <li>About part
+                    <li>About part</li>
                         <ul>
                             <li>A picture of someone working in lyche (img)</li>
                             <li>A short summary about lyche</li>
                             <li>Each of these two will fill half the screen width, picture and text swop sides from the one above</li>
                         </ul>
-                    </li>
                     <li>Resevation part</li>
                     <ul>
                         <li>A picture of the returant</li>
@@ -172,11 +173,11 @@
             <img src="img/reservation.png" alt="Reservation form">
                  <p>This form will contain:</p>
                     <ul>
-                        <li>Name of person that makes reservation (påkrevd)</li>
-                        <li>Number of people. This number cannot exceed 20. (påkrevd)</li>
+                        <li>Name of person that makes reservation (*)</li>
+                        <li>Number of people. This number cannot exceed 20. (*)</li>
                         <li>Dato og klokkeslett: </li>
                         <ul>
-                            <li>Velger dato fra kalender-meny</li>
+                            <li>Choose date from calender-menu</li>
                             <li>Skrive inn klokkeslett? Velge fra en meny? Må være mellom klokken 16 og klokken 21.30.</li>
                         </ul>
                         <li>E-post til reservatør </li>
@@ -191,6 +192,7 @@
             <h3>styling.css</h3>
                 <p>Styling sheet implemented on the entire website</p>
 
+<<<<<<< HEAD
             <h3>Javascript</h3>
             <ul>
                 <li>lang.js</li>
@@ -201,13 +203,49 @@
             
             <div class= "topnavpush" id="minreq"></div>
             <h2>Minimum requirement</h2>
+=======
+
+            <h2 id="minreq">Minimum requirement</h2>
+>>>>>>> a9fdc8b4e0b955aa3d2d2a88912ceaf6670f099d
             <p>
-                    Some applications we want to include with JavaScript
+                    Some applications we want to include with JavaScript:
                     <ul>
+
+                        <li>lang.js
+                            <ul>
+                            <li>Entire page change to norwegian/english when NO|EN buttons are clicked.</li>
+                        </ul></li>
+                        <li>reservation.js
+                            <ul>
+                            <li>If compulsory fields in reservation fields are not filled, or there are invalid input, 
+                                the form will not be sent and there will appear red text above the wrongly filled fields that tells
+                                the person making the reservation that they need to fill it in/that the input is invalid.</li>
+                        </ul></li>
+                        <li>slideshow.js
+                            <ul>
+                            <li>Each time someone visits the webpage, a new photo will appare in the header.
+                                Every 30th second, a new image will appare.</li>
+                        </ul></li>
+                        <li>
+                            isOpen.js
+                            <ul>
+                            <li>Under information > opening hours, a JavaScript will be implemented. It will display
+                                "opening soon", if there is less than an hour until opening time, "open now" if the 
+                                restaurant is open, and "closing soon" if there is less then an hour until it close.
+                            </li></ul>
+                        </li>
+                        <li>header.js
+                            <ul><li>
+                                When visiting the website, the user will first be shown a full window-sized picture (slideshow)
+                                with Lyches logo, and a burger menu in the top-left corner will show. When scrolling down, a header
+                                displaying a smaall logo, no|en, link to samfundet.no and the burger menu will appare.
+                            </li>
+                            </ul>
+                        </li>
                         <li>Entire page change to norwegian/english when NO|EN buttons are clicked.</li>
                         <li>If compulsory fields in reservation fields are not filled, or there are invalid input, the form will not be sent and there will appear red text above the wrongly filled fields that tells the person making the reservation that they need to fill it in/that the input is invalid. </li>
                         <li>Random appearing of images</li>
-                        <li>Gradual appearing of things???</li>
+                        <li>Gradual appearing of things????</li>
                     </ul>       
             </p>
 
@@ -231,6 +269,9 @@
                             <li>lang.js</li>
                             <li>slideshow.js</li>
                             <li>reservation.js</li>
+                            <li>isOpen</li>
+                            <li>header.js</li>
+
                     </ul>
                     <li>img/</li>
                     <ul>
@@ -250,70 +291,80 @@
                     </tr>
                     <tr>
                       <td>index.html</td>
-                      <td>The first page that will appear when user visit webpage</td> 
-                      <td>navn</td>
-                      <td>1/10</td>
+                      <td>The first page that will appear when user visit the webpage</td> 
+                      <td>Helle og Helene</td>
+                      <td>18/10-2018</td>
                     </tr>
                     <tr>
                       <td>menu.html</td>
                       <td>pdf/img/list with full menu</td> 
-                      <td>name</td>
-                      <td>1/10</td>
+                      <td>Merete</td>
+                      <td>18/10-2018</td>
                     </tr>
                     <tr>
                         <td>reservations.html</td>
                         <td>A form to fill in for reservations containing name, date and time and also information about how to cancel the reservation </td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>Andrea</td>
+                        <td>18/10-2018</td>
+                    </tr>
+                    <tr>
                         <td>about.html</td>
                         <td>Pictures, the restaurants history, how it is to work at samfundet</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>Merete</td>
+                        <td>18/10-2018</td>
+                    </tr>
+                    <tr>
                         <td>contact.html</td>
                         <td>Contact information, opening hours, social media</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>Johanna</td>
+                        <td>18/10-2018</td>
+                    </tr>
+                    <tr>
                         <td>lang.js</td>
                         <td>A button to change language from norwegian</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>Helle</td>
+                        <td>1/11-2018</td>
+                    </tr>
+                    <tr>
                         <td>slideshow.js</td>
                         <td>Random pictures appear each time the webpage is opened. In header?</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>Merete</td>
+                        <td>1/11-2018</td>
+                    </tr>
+                    <tr>
                         <td>reservation.js</td>
-                        <td>A form to fill out for reservation. Responds with “thanks for your reservation” when the form is correctly filled out</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
-                        <td>responsiveReservation.js</td>
-                        <td>If the form is given an unvalid input, it will respond with “unvalid input”</td> 
-                        <td>name</td>
-                        <td>1/10</td>
-                      </tr>
-                      <tr>
+                        <td>A form to fill out for reservation. Responds with “thanks for your reservation” when the form is correctly filled out.
+                            If the form is given an unvalid input, it will respond with “unvalid input”
+                        </td> 
+                        <td>Andrea</td>
+                        <td>1/11-2018</td>
+                    </tr>
+                    <tr>
+                        <td>isOpen.js</td>
+                        <td>Displays whether the resturant is open or not, possibly how long it is until opening hours again. </td> 
+                        <td>Johanna</td>
+                        <td>1/11-2018</td>
+                    </tr>
+                    <tr>
+                        <td>header.js</td>
+                        <td>A header with the "burger" menu, logo og language switch will appare when 
+                             the user is scrolling
+                         </td> 
+                        <td>Helene</td>
+                        <td>1/11-2018</td>
+                    </tr>
+                    <tr>
                           <td>style.css</td>
                           <td>overall stylesheet</td> 
                           <td>All</td>
-                          <td>1/10</td>
-                        </tr>
-                        <tr>
-                            <td>Final controlls</td>
-                            <td>Checking all the files for errors (html, javascript and CSS)</td> 
-                            <td>All</td>
-                            <td>1/10</td>
-                        </tr>
+                          <td>1/11-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Final controlls</td>
+                        <td>Checking all the files for errors (html, javascript and CSS)</td> 
+                        <td>All</td>
+                        <td>8/11-2018</td>
+                    </tr>
                   </table>
             
 
