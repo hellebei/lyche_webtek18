@@ -61,6 +61,17 @@ td {
     font-size: 10pt;
 }
 
+th, td{
+    width: 20%;
+}
+
+th.wide{
+    width: 40%
+}
+td.wide{
+    width: 40%
+}
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
