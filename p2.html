@@ -66,10 +66,12 @@
                 <div class= "topnavpush" id="nav"></div>
             <h2>Navigation Structure</h2>
 
-            <p>The navigation structure of the website is shown in the figure below. The idea is</p>
-           <!--  <object data="pdf/navigation structure.pdf" type="application/pdf" width="100%" height="100%">
-            <p><b>Fallback content</b>: Your browser does not support PDFs.:<a href="pdf/navigation structure.pdf">Download PDF here</a></p>
-            </object> -->
+            <p>The navigation structure of the website is shown in the figure below. The user will be able to access all the pages from the homepage, 
+                and the other way around; on every page you have the burger menu in the upper left-hand corner where you can navigate to the other pages. 
+                By clicking the Lyche logo you will also be redirected to the home page. 
+                By using the burger menu we present the user with an easy understandable conceptual model of the web page with the home page as a natural starting and unifying point. 
+                We also have the Samfundet logo in the upper right corner that will open a new table with Samfundet's homepage, and the other associated social media buttons in the footer. 
+                </p>
             <img src="img/navigation structure.png" alt="The structure">
             
         
@@ -93,12 +95,11 @@
                                 <li>Links: bold, grey-brown</li>
                             </ul>
                             <li>Body width: 100%</li>
-                            <li>Links: The appearance of the link will not be changed when visited. When hover over the link ...</li>
-                            <li>Banner: Will be included at the top of the site when scorlling at all time.</li>
-                            <li>Navbar position and appearance: will included in the banner. When the mouse hovers over the navbar/burgermenue both the padding and text color will be marked (lighter?).</li>
+                            <li>Links: The appearance of the link will not be changed when they have been visited. When hovering over the link the color of the link will change.</li>
+                            <li>Navigation bar position and appearance: Will not be displayed when you have the picture on top of index.html in view, but at all other times. When the mouse hovers over the navigation bar and burger menu both the padding and text color will change.</li>
                             
                             <li>Favicon will be the same as samfundet.no</li>
-                            <li>Footer will be the same as <a href="https://www.samfundet.no/"> samfundet.no</a> and will appear in the bottom of the page when scrolling down.</li>
+                            <li>Footer will be the same as samfundet.no and will appear in the bottom of the page when scrolling down.</li>
                                 <img src="img/footersamf.png" alt="The footer found at samfundet.no">
                                 <ul>
                                     <li>Social icons bar in the footer</li>
@@ -110,8 +111,9 @@
                                     </ul>
                                 </ul>
                                 </li>
-                                <li>Logo will be seen in the banner, always visible when scrolling the page. When you press the logo you will be navigated to the index.html</li>
-                        </li>
+                                <li>Lyches logo will be seen in the navigation bar, always visible when scrolling down the page. When you press the logo you will be navigated to the index.html</li>
+                                <li>Samfundets logo will also always show in the right of the navigation bar, linking you to samfundet.no. This will open in a new page.</li>
+                            </li>
                     </ul>
                 </p>
 
@@ -122,14 +124,15 @@
             <img src="img/Header_lyche.png" alt="The header image. Picture of a salad w lyche logo">
             <img src="img/Header_w_menu.png" alt="Header image of a salad, with a menu on the side">
                 <ul>
-                    <li>Header: a header line that will appear when you scroll the page</li>
+                    <li>Navigation bar: a header line that will appear when you scroll the page</li>
                         <ul>
+                            <li>Burger menu</li>
                             <li>Lyche logo (img)</li>
-                            <li>en|no choice</li>
-                            <li>Icon direction to samfundet.no</li>
+                            <li>NO|EN choice</li>
+                            <li>Samfundets logo directing you to samfundet.no</li>
                         </ul>
                     
-                    <li>Homepage img with lyche name on. This will appear at first when getting onto the page, the header-bar won’t show. This will fill entire screen. </li>
+                    <li>Homepage-image with lyche name on. This will appear at first when getting onto the page, the navigation bar won’t show. This will fill entire screen. </li>
                     <li>Menu part</li>
                     <ul>
                         <li>Short summary about the menu</li>
@@ -138,9 +141,9 @@
                     </ul>
                     <li>About part</li>
                         <ul>
-                            <li>A picture of someone working in lyche (img)</li>
-                            <li>A short summary about lyche</li>
-                            <li>Each of these two will fill half the screen width, picture and text swop sides from the one above</li>
+                            <li>A picture of someone working in lyche.</li>
+                            <li>A short summary about lyche.</li>
+                            <li>Each of these two will fill half the screen width, picture and text swop sides from the one above.</li>
                         </ul>
                     <li>Resevation part</li>
                     <ul>
@@ -160,11 +163,11 @@
             <img src="img/about_w_footer.png" alt="Picture of how the footer will look">
 
             <h3>menu.html</h3>
-            <p>pdf/img/list with full menu</p>
+            <p>pdf/img/list with full menu.</p>
             <img src="img/menu.png" alt="Lyches menu">
 
             <h3>contact.html</h3>
-            <p> Page containing contact information, opening hours and social media</p>
+            <p> Page containing contact information, opening hours and social media.</p>
             <img src="img/contact.png" alt="The contact information for lyche">
 
                 
@@ -173,32 +176,35 @@
             <img src="img/reservation.png" alt="Reservation form">
                  <p>This form will contain:</p>
                     <ul>
-                        <li>Name of person that makes reservation (*)</li>
+                        <li>Name of person that makes reservation (*).</li>
                         <li>Number of people. This number cannot exceed 20. (*)</li>
-                        <li>Dato og klokkeslett: </li>
+                        <li>Date and time: </li>
                         <ul>
-                            <li>Choose date from calender-menu</li>
-                            <li>Skrive inn klokkeslett? Velge fra en meny? Må være mellom klokken 16 og klokken 21.30.</li>
+                            <li>Choose date from calender-menu.</li>
+                            <li>Choose from drop down menu. Each half hour from 16:00 to 21:30.</li>
                         </ul>
-                        <li>E-post til reservatør </li>
-                        <li>Information about how to cancel reservation</li>
+                        <li>E-post to person in charge of bookings. </li>
+                        <li>Information about how to cancel reservation.</li>
                     </ul>    
             
 
             <h3>about.html</h3>
-            <p> Will contain a pictures of someone working in lyche (img), text about lyche and how it is today, text about lyches history.</p>
+            <p> Will contain a pictures of someone working in lyche, text about lyche and how it is today, text about lyches history.</p>
             <img src="img/about.png" alt="Picture of how about.html will look">
 
             <h3>styling.css</h3>
                 <p>Styling sheet implemented on the entire website</p>
+                <p>This will contain the css for all of our pages, but individual styling for each page will be labeled by adding comments to the css.</p>
 
 
             <h3>Javascript</h3>
+            <p>You can read more about these in the <a href = "#minreq">Minimum requirement section</a>.</p>
             <ul>
                 <li>lang.js</li>
-                <li>slideshow.js</li>
                 <li>reservation.js</li>
-                <li>readMore.js</li>
+                <li>slideshow.js</li>
+                <li>isOpen.js</li>
+                <li>navbar.js</li>
             </ul>
             
             <div class= "topnavpush" id="minreq"></div>
@@ -231,18 +237,14 @@
                                 restaurant is open, and "closing soon" if there is less then an hour until it close.
                             </li></ul>
                         </li>
-                        <li>header.js
+                        <li>navbar.js
                             <ul><li>
                                 When visiting the website, the user will first be shown a full window-sized picture (slideshow)
-                                with Lyches logo, and a burger menu in the top-left corner will show. When scrolling down, a header
+                                with Lyches logo, and a burger menu in the top-left corner will show. When scrolling down, a navbar
                                 displaying a smaall logo, no|en, link to samfundet.no and the burger menu will appare.
                             </li>
                             </ul>
                         </li>
-                        <li>Entire page change to norwegian/english when NO|EN buttons are clicked.</li>
-                        <li>If compulsory fields in reservation fields are not filled, or there are invalid input, the form will not be sent and there will appear red text above the wrongly filled fields that tells the person making the reservation that they need to fill it in/that the input is invalid. </li>
-                        <li>Random appearing of images</li>
-                        <li>Gradual appearing of things????</li>
                     </ul>       
             </p>
 
@@ -264,15 +266,15 @@
                     <li>Scripts</li>
                     <ul>
                             <li>lang.js</li>
-                            <li>slideshow.js</li>
                             <li>reservation.js</li>
-                            <li>isOpen</li>
-                            <li>header.js</li>
+                            <li>slideshow.js</li>
+                            <li>isOpen.js</li>
+                            <li>navbar.js</li>
 
                     </ul>
-                    <li>img/</li>
+                    <li>Images</li>
                     <ul>
-                        <li></li>
+                        <li>There will be at least one imamge per page, which pictures will be used is not yet decided. </li>
                     </ul>
                 </ul>
             </p>
