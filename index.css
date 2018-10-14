@@ -1,45 +1,69 @@
 /* Split the screen in half */
+html{
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  background-color: #ebe9e6;
+
+}
+
+body{ 
+  font-size: 16px; 
+  line-height: 200%;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ebe9e6;
+
+}
+
+section{
+  width: 100%;
+}
 .split {
-    height: 100%;
+    display: block;
+    padding-top: 5%; 
+    height: 100vw;
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index: 1;
     top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    
   }
   
   /* Control the left side */
   .indextext {
+    display: inline-block;
     position: relative;
-    width: 50%;
+    width: 30%;
+    padding-right: 10%; 
+    padding-left: 10%; 
     left: 0;
-    background-color: #ebe9e6;
+
   }
   
   /* Control the right side */
   .indeximg {
-    position: relative;
-    width: 50%;
+    display: inline-block;
     right: 0;
+    width: 50%;
+    position: absolute;
+
   }
 
-  
   .en{
     display: none;
   }
   
-  /* If you want the content centered horizontally and vertically */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
   
   /* Style the image inside the centered container, if needed */
-  .centered img {
-    width: 150px;
-    border-radius: 50%;
+  img{
+    position: relative;
+    width: 100%; 
+  }
+
+  #navBar{
+    background-color: black;
+    width: 100%;
+    position:  fixed; 
+    height: 5%; 
+    z-index: 10;
+
   }
