@@ -1,8 +1,8 @@
 /* Split the screen in half */
 .split {
     height: 100%;
-    width: 50%;
-    position: fixed;
+    width: 100%;
+    position: absolute;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
@@ -10,15 +10,23 @@
   }
   
   /* Control the left side */
-  .left {
+  .indextext {
+    position: relative;
+    width: 50%;
     left: 0;
     background-color: #ebe9e6;
   }
   
   /* Control the right side */
-  .right {
+  .indeximg {
+    position: relative;
+    width: 50%;
     right: 0;
-    background-color: ;
+  }
+
+  
+  .en{
+    display: none;
   }
   
   /* If you want the content centered horizontally and vertically */
