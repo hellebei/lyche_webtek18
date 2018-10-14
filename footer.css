@@ -1,6 +1,25 @@
-body {
-    font-family: Futura;
+html{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
+
+/* Må sette denne inn i alle filene som skal ha footer. 
+<div id = "sticky-footer-wrapper">
+
+<div id="sticky-footer-wrapper-footer"></div>
+</div>
+*/
+#sticky-footer-wrapper {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -280px;
+}
+
+#sticky-footer-wrapper #sticky-footer-wrapper-footer {
+    height: 280px;
+}
+
 #footer {
     background-color: #111;
     color: #555;
