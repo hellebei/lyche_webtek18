@@ -1,4 +1,4 @@
-/* Split the screen in half */
+
 html{
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   background-color: #ebe9e6;
@@ -23,7 +23,6 @@ header{
   width: 100%; 
   
 }
-
 
 .header-container{
   width: 100%; 
@@ -52,49 +51,64 @@ header{
 #lyche-header-logo{
   z-index: 1;
   opacity: 1;
-  position: fixed;
+  position: relative;
   display: block;
   width: 50%; 
   padding: 15% 25% 15% 25%;
 }
 
-section #lyche-header-logo{
-  display: hidden; 
-}
-
+/* Split the screen in half */
 .split {
     display: block;
-    height: 100vh;
+    max-height: 100vh !important;
+    min-height: 100vh !important;
     width: 100%;
     position: relative;
     z-index: 10;
     top: 0;
-    
   }
-  
-  /* Control the left side */
-  .indextext {
-    position: relative;
-    display: inline-block;
-    width: 30%;
-    padding-right: 10%; 
-    padding-left: 10%; 
-    left: 0;
 
+ .left{
+  display: inline-block;
+  left: 0;
+  width: 50%; 
+  text-align: center; 
+
+ }
+  .left .indextext{
+    position: relative;
+    width: 60%;
+    padding-right: 20%; 
+    padding-left: 20%; 
+  }
+
+  .left img{
+    position: relative;
+    width: 100%; 
+    max-height: 100vh !important;
+    min-height: 100vh !important;
   }
   
   /* Control the right side */
-  .indeximg {
+  .right {
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 50%
-    
+    width: 50%;
+    text-align: center; 
   }
 
-  .indeximg img{
+  .right .indextext{
+    position: relative;
+    width: 60%;
+    padding-right: 20%; 
+    padding-left: 20%; 
+  }
+  .right img{
     position: relative;
     width: 100%; 
+    max-height: 100vh !important;
+    min-height: 100vh !important;
   }
 
   .en{
@@ -102,9 +116,8 @@ section #lyche-header-logo{
   }
 
  
-  
   /* Style the image inside the centered container, if needed */
-
+/*
   .navbar-push{
     height: 10px; 
   }
@@ -129,4 +142,77 @@ section #lyche-header-logo{
   #session-status{
     position: absolute;
     float: right;
+  }*/
+
+  /*Under: code for the navbar*/
+  
+  .navmain{
+    position: fixed;
+    width: 100%; 
+    top:0; 
+    float: left;
+    margin-left: 20px; 
+    margin-top: 20px; 
   }
+
+  .hamburgermenu{
+    display: block;
+    float: left;
+    cursor: pointer;
+    color: #ebe9e6;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 8px;
+    background-color: #ebe9e6;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#hamburgercontent{
+    text-transform: uppercase;
+    padding-top: 85px;
+    width: 30%;
+    height: 100vh;
+    padding-right: 20px;
+    text-align: left !important;
+    background-color: #ebe9e6;
+}
+
+ .navmain #lyche-logo{
+    position: absolute;
+    display: block;
+    float: center; 
+    height: 60px; 
+    z-index: 67;
+}
+
+.hidden {
+    display: none;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+/*End code for navbar*/

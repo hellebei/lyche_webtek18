@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
     <title>Index</title>
 </head>
 <body>
+
+        <nav class = "navmain">
+                <div id="hamburgermenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                </div>
+                
+                <div id="hamburgercontent" class="hidden">
+                    <ul>
+                        <li><a href="#" class="item_menu">hjem</a></li>
+                        <li><a href="#" class="item_menu">meny</a></li>
+                        <li><a href="#" class="item_menu">om</a></li>
+                        <li><a href="#" class="item_menu">kontakt</a></li>
+                        <li><a href="#" class="item_menu">reservasjon</a></li>
+                        <li><a href="#" class="item_menu">info</a></li>
+                    </ul>
+                </div>
+            </nav>
+
     <header>
         <div class = "header-container">
             <div class="layer"></div>
@@ -36,7 +54,7 @@
     <section class = "no">
         <div class = "navbar-push"></div>
         <div class = "split">
-            <div class = "indextext" id = "index-generelt">
+            <div class = "left indextext" id = "index-generelt">
                 <h2>Lyche kjøkken og bar</h2>
                      <p>
                         Bar, kjøkken, vin, mat, behagelig atmosfære, spennende, unikt. På Lyche vil alle kunne finne sin favorittplass uansett om man er mange eller få,
@@ -49,35 +67,35 @@
                         Ellers er det ikke noen aldersgrense i restauranten.
                     </p>
             </div>
-            <div class = "indeximg" id = "img-generelt">
+            <div class = "right indeximg" id = "img-generelt">
                 <img src="img/index/samfundet_utvendig_medsort.png" alt="Studentersamfundet ">
             </div>
         </div>
 
         <div class = "split">
-            <div class = "indextext" id = "index-meny">
+            <div class = "right indextext" id = "index-meny">
                 <h2>Meny</h2>
                     <p>
                         Gode norske råvarer for en bedre middag.
                     </p>
             </div>
-            <div class = "indeximg" id = "img-meny">
+            <div class = "left indeximg" id = "img-meny">
                <img src="img/index/pai.png" alt="Pai">
             </div>
         </div>
 
         <div class = "split">
-            <div class = "indextext" id = "index-om">
+            <div class = "left indextext" id = "index-om">
                 <h2>Om</h2>
                     <p>Noe tekst om lyche</p>
             </div>
-            <div class = "indeximg" id = "img-om">
+            <div class = "right indeximg" id = "img-om">
                     <img src="img/index/lyche.png" alt="ansatt på lyche">
             </div>
         </div>
 
         <div class = "split">
-            <div class = "indextext" id = "index-reservasjon"> 
+            <div class = "right indextext" id = "index-reservasjon"> 
                  <h2>Reservasjon</h2>
                     <p>
                         På Lyche er du velkommen til å reservere bord! Vi har en maksbegrensning på 16 personer; ved flere anbefales det å leie et lokale.
@@ -90,17 +108,17 @@
 
                     <p> For spørsmål eller andre henvendelser, send en mail til <a href="mailto:lyche@samfundet.no">lyche@samfundet.no</a>.</p>
             </div>
-            <div class = "indeximg" id = "img-reservasjon">
+            <div class = "left indeximg" id = "img-reservasjon">
                     <img src="img/index/røbetburger.png" alt="rødbeteburger">
             </div>
         </div>
 
 
         <div class = "split">
-            <div class = "indextext" id = "kontakt">
+            <div class = "left indextext" id = "kontakt">
                 <h2>Kontakt og informasjon</h2>
             </div>
-            <div class = "indeximg" id = "img-kontakt">
+            <div class = "right indeximg" id = "img-kontakt">
                 <img src="img/index/souschef.png" alt="Kokk på lyche">
             </div>
         </div>
@@ -181,7 +199,7 @@
         </div>
 
     </section>
-    
-<script src="footer.js"></script>
+
+    <script type="text/javascript" src="navbar.js"></script>
 </body>
 </html>
