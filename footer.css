@@ -1,6 +1,9 @@
 html{
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
+body {
+    margin: 0;
+}
 
 /* Må sette denne inn i alle filene som skal ha footer. 
 <div id = "sticky-footer-wrapper">
@@ -8,16 +11,15 @@ html{
 <div id="sticky-footer-wrapper-footer"></div>
 </div>
 */
+
 #sticky-footer-wrapper {
     clear: both;
-    min-height: 100%;
     height: auto !important;
-    height: 100%;
-    margin-bottom: -280px;
+    margin-bottom: 0;
 }
 
 #sticky-footer-wrapper #sticky-footer-wrapper-footer {
-    height: 280px;
+    width: 100%;
 }
 
 #footer {
@@ -25,12 +27,8 @@ html{
     color: #555;
     font-weight: 300;
     font-size: 20px;
-}
-
-#footer{
     clear: both;
-    position: relative;
-    height: 280px;
+    width: 100%;
 }
 
 #footer #footer-wrapper {
@@ -59,15 +57,9 @@ html{
     vertical-align: middle;
 }
 
-
-
 #footer #footer-wrapper ul {
     list-style-type: none;
     padding-left: 0;
-}
-
-ul {
-    list-style-type: none;
 }
 
 #footer #footer-wrapper #contact {
@@ -102,4 +94,6 @@ a {
     font-size: 15px;
     margin-top: 1rem;
 }
-
+ul{
+    list-style-type: none;
+}
