@@ -14,12 +14,16 @@ body{
   background-color: #ebe9e6;
 }
 
-
+section{
+  background-color: #ebe9e6;
+  z-index: 10;
+}
 
 header{
   width: 100%; 
   
 }
+
 
 .header-container{
   width: 100%; 
@@ -28,7 +32,7 @@ header{
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  background-image: url("img/andesalat.png");
+  background-image: url("../img/index/andesalat.png");
   background-size: cover;
   background-position: center center bottom;
   background-repeat: no-repeat;
@@ -54,10 +58,13 @@ header{
   padding: 15% 25% 15% 25%;
 }
 
+section #lyche-header-logo{
+  display: hidden; 
+}
 
 .split {
     display: block;
-    height: 100vw;
+    height: 100vh;
     width: 100%;
     position: relative;
     z-index: 10;
@@ -81,7 +88,7 @@ header{
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 50%;
+    width: 50%
     
   }
 
@@ -99,6 +106,7 @@ header{
   /* Style the image inside the centered container, if needed */
 
   .navbar-push{
+    height: 10px; 
   }
 
   #navBar{
