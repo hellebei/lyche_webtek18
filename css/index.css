@@ -57,6 +57,21 @@ header{
   padding: 15% 25% 15% 25%;
 }
 
+.downbtn{
+  position: fixed;
+  z-index: 40; 
+  display: block; 
+  top: 700px; 
+  right: 45%; 
+  left: 45%;
+  width: 10%; 
+  height: 40px;
+  opacity: 0.7;
+  font-size: 14px; 
+  font-family: inherit; 
+}
+
+
 /* Split the screen in half */
 .split {
     display: block;
@@ -64,7 +79,7 @@ header{
     min-height: 100vh !important;
     width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: 0;
     top: 0;
   }
 
@@ -181,6 +196,9 @@ header{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+
+
 ul{
     list-style-type: none;
     display: inline-block;
