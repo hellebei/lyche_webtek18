@@ -1,4 +1,8 @@
 
+function includeHTML(htmlname){
+    //her skal vi ydeligvis kunne bruke en greie fra w3schools
+}
+
 function myFunction(x) {
     x.classList.toggle("change");
 }
