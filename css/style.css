@@ -38,7 +38,7 @@ p, ul, ol{
 
 table {
     border-collapse: collapse;
-    margin: 0px auto; 
+    margin: 0 auto; 
 }
 
 
@@ -59,6 +59,17 @@ th {
 td {
     height: 30px;
     font-size: 10pt;
+}
+
+th, td{
+    width: 20%;
+}
+
+th.wide{
+    width: 40%
+}
+td.wide{
+    width: 40%
 }
 
 tr:nth-child(even) {
