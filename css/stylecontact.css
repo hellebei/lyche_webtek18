@@ -1,0 +1,52 @@
+html{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    background-color: #f2efef;
+}
+
+#pic { 
+    position: fixed;
+    width: 40%;
+    height: 101%;
+    margin: 0;
+    padding:0; 
+    left: -1%;
+    top: -1%;
+    /*hvorfor går ikke bildet helt ut?? hm må ha -1% er dette en varig løsning?
+    og hvordan får jeg til at høyden holder seg til 100% av skjermen? må skaleres riktig*/
+
+}
+
+.contact {
+    position: relative;
+    color: white;
+    left: 10%;
+    /*få litt lenger ned?*/
+
+
+}
+
+body p, h2 { 
+    /*position: absolute;*/
+    margin-left: 50%;
+    margin-right: 25%;
+    width: 50%;
+    font-size: 16px; 
+    line-height: 15%;
+    font-style: normal;
+    font-weight: 400;
+    }
+
+    h2 {
+        font-weight: 600;
+        padding-top: 2%;
+    }
+
+    .break {
+        padding-top: 1%;
+    }
+
+    #kart {
+        margin-left: 50%;
+        width: 30%
+
+    }
