@@ -1,0 +1,99 @@
+html{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+/* Må sette denne inn i alle filene som skal ha footer. 
+<div id = "sticky-footer-wrapper">
+
+<div id="sticky-footer-wrapper-footer"></div>
+</div>
+*/
+
+#sticky-footer-wrapper {
+    clear: both;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+#sticky-footer-wrapper #sticky-footer-wrapper-footer {
+    width: 100%;
+}
+
+#footer {
+    background-color: #111;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    clear: both;
+    width: 100%;
+}
+
+#footer #footer-wrapper {
+    padding-top: 35px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer #footer-wrapper #contact-editors {
+    text-align: center;
+}
+
+#footer #footer-wrapper #social {
+    text-align: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+}
+
+#footer #footer-wrapper img {
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+#footer #footer-wrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#footer #footer-wrapper #contact {
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+}
+
+#footer #footer-wrapper #contact:last-child {
+    margin-right: 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #777;
+}
+a {
+    text-decoration: none;
+    color: #A03033;
+}
+
+#footer #footer-wrapper::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#footer #cookies {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+ul{
+    list-style-type: none;
+}
