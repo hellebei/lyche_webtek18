@@ -1,44 +1,86 @@
 html{
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     background-color: #f2efef;
+    
 }
 
-#pic { 
+body{
+    padding: 0 0 0 0; 
+    height: 100%;
+    width: 100%; 
+}
+
+section{
+    width: 100%;
+    padding: 0 ;
+    display: inline-block; 
+    margin: 0; 
+    max-width: none;
+    height: 100vh;
+}
+
+
+.samfpiccontainer { 
     position: fixed;
+    display: block;
     width: 40%;
-    height: 101%;
-    margin: 0;
-    padding:0; 
-    left: -1%;
-    top: -1%;
+    height: 100vh;
+
     /*hvorfor går ikke bildet helt ut?? hm må ha -1% er dette en varig løsning?
     og hvordan får jeg til at høyden holder seg til 100% av skjermen? må skaleres riktig*/
-
 }
 
-.contact {
-    position: relative;
+.samfpic{
+    height: 100%;
+    width: 100%; 
+}
+
+.contacttitle {
+    position: fixed;
     color: white;
     left: 10%;
     /*få litt lenger ned?*/
 
 
 }
-
+/*
 body p, h2 { 
-    /*position: absolute;*/
     margin-left: 50%;
     margin-right: 25%;
     width: 50%;
-    font-size: 16px; 
+    font-size: 16px; -- denne er i body
     line-height: 15%;
-    font-style: normal;
-    font-weight: 400;
+    font-style: normal; -- denne er i body
+    font-weight: 400; -- denne er i body
+    }
+    */
+
+    .split{
+        display: inline-block;
+        max-height: 100vh !important;
+        min-height: 100vh !important;
+        width: 100%;
+        z-index: 0;
+        top: 0;
     }
 
-    h2 {
-        font-weight: 600;
-        padding-top: 2%;
+    .split .picturepush{
+        display: inline-block;
+        left: 0;
+        width: 50%; 
+    }
+
+    .split .wrapcontact{
+        position: absolute;
+        right: 0; 
+        display: inline-block;
+        width: 50%; 
+        margin: 0 0 50% 0; 
+        line-height: 75%; 
+    }
+
+    .wrapcontact h2{
+        padding-top: 2%; 
     }
 
     .break {
@@ -46,7 +88,12 @@ body p, h2 {
     }
 
     #kart {
-        margin-left: 50%;
-        width: 30%
+        position: relative;
+        width: 50%
 
     }
+
+
+.en{
+    display: none; 
+}
