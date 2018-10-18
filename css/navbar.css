@@ -62,3 +62,11 @@ a:link{
 a:hover{
     color: white;
 }
+
+#samflogo{
+    position: fixed;
+    display: block;
+    float: center;
+    width: 18px;
+    z-index: 67;
+}
