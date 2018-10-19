@@ -40,20 +40,7 @@ section{
     color: white;
     left: 10%;
     /*få litt lenger ned?*/
-
-
 }
-/*
-body p, h2 { 
-    margin-left: 50%;
-    margin-right: 25%;
-    width: 50%;
-    font-size: 16px; -- denne er i body
-    line-height: 15%;
-    font-style: normal; -- denne er i body
-    font-weight: 400; -- denne er i body
-    }
-    */
 
     .split{
         display: inline-block;
