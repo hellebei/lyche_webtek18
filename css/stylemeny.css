@@ -1,0 +1,60 @@
+
+
+body {
+    background-color: lightgrey;
+    font-family: futura, "Lato", sans-serif;
+    font-weight: 200; 
+    
+}
+
+header {
+	position: fixed;
+	text-transform: uppercase;
+	color: white;
+	margin-left: 6%;
+	margin-top: 60px;
+}
+
+section {
+	margin-top: 5px;
+	margin-left: 320px;
+	margin-right: 60px;
+	column-count: 2; 
+    column-gap: 50px;
+    text-align: justify; 
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+h4 {
+	line-height: 8px;
+}
+
+p {
+	font-family: "futura-pt", "Lato", sans-serif;
+	font-size: 20px;
+	text-align: justify; 
+	font-weight: 300; 
+}
+
+.NO {
+	display: 
+}
+
+.EN {
+	display: none;
+
+}
+
+#salad {
+	position: fixed;
+	height: 870px;
+	width: 280px;
+	margin-left: -8px;
+	margin-top: -30px;
+
+}
