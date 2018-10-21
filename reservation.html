@@ -5,14 +5,14 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href = "form.css">
+        <link rel="stylesheet" type="text/css" href = "css/index.css">
         <title>reservation</title>
         
     </head>
     <body>
-        <section class = "no">
-            <div class = "split">
-                <h1>RESERVER BORD HER</h1>
+        <section class = "tableres no">
+            <div class = "split-res">
+                <h1>RESERVER BORD</h1>
 
                 <!--<form name= "form" id="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
                 <form method="post" action="/action_page.php" onsubmit="return validateForm()">
@@ -79,17 +79,17 @@
                     <input type="submit" value="SEND INN">
                 </form>
 
-                <div class = "img" id = "img-reservation_no">
-                        <img src="img/pai.png" alt="pai">
+                <div class = "img-res" id = "img-reservation_no">
+                        <img src="img/pai_liten.png" alt="pai">
                 </div>
 
             </div> 
         </section>
 
-        <section class= "en">
-            <div class="split">
+        <section class= "tebleres en">
+            <div class="split-res">
 
-                <h1>TABLE RESERVATION</h1>
+                <h1>MAKE RESERVATION</h1>
 
                 <form name= "form" id="form" action="validation.php" method="post" onsubmit="myFunction()">
 
@@ -156,7 +156,7 @@
                         <input type="submit" value="SUBMIT">
                 </form>
 
-                <div class = "img" id = "img-reservation_en">
+                <div class = "img-res" id = "img-reservation_en">
                         <img src="img/pai_liten.png" alt="pai">
                 </div> 
 
@@ -164,7 +164,7 @@
 
         </section>
 
-        <script src="form.js"></script>
+        <script src="js/form.js"></script>
             
     </body>
 
