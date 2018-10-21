@@ -5,14 +5,14 @@ body {
 }
 
 
-header {
+.headerabout {
 	position: fixed;
 	text-transform: uppercase;
 	margin-left: 6%;
 	margin-top: 60px;
 }
 
-section {
+.about {
 	position: absolute;
 	margin-left: 11%;
 	margin-right: 65%;
@@ -20,7 +20,7 @@ section {
     margin-top: 150px;
 }
 
-#souschef {
+#souschef_about {
 	position: fixed;
 	height: 105%;
 	width: 50%;
@@ -28,11 +28,9 @@ section {
 	margin-top: -10px;
 }
 
-.NO {
-	display: 
-}
 
-.EN {
+
+.en {
 	display: none;
 }
 

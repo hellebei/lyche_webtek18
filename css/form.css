@@ -17,7 +17,8 @@ html{
   section{
     width: 100%;
   }
-  .split {
+
+  .split-res {
       display: block;
       height: 100%;
       width: 100%;
@@ -51,7 +52,7 @@ html{
         margin-top: 10px;
     }
 
-    h1 {
+    .tableres h1 {
         right: 25%;
     }
 
@@ -74,7 +75,7 @@ html{
 
     
     /* Control the right side */
-    .img {
+    .img-res {
     display: block;
     right: 0;
     width: 35%;
@@ -86,16 +87,16 @@ html{
     padding-bottom: 0;
   
     }
-  
-    .no{
-      display: none;
-    }
-    
+ 
     
     /* Style the image inside the centered container, if needed */
-    img{
+    .img-res img{
       position: relative;
       width: 100%; 
     }
 
+    .en{
+        display: none;
+      }
+      
         

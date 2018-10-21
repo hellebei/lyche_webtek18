@@ -1,10 +1,22 @@
 
+html{
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	background-color: #ebe9e6;
+  
+  }
 
-body {
-    background-color: lightgrey;
-    font-family: futura, "Lato", sans-serif;
-    font-weight: 200; 
-    
+body{ 
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;  
+	font-size: 16px; 
+	line-height: 200%;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #ebe9e6;
+  }
+
+.menu{
+	font-weight: 200; 
 }
 
 header {
@@ -15,37 +27,35 @@ header {
 	margin-top: 60px;
 }
 
-section {
+
+.menu{
 	margin-top: 5px;
 	margin-left: 320px;
 	margin-right: 60px;
 	column-count: 2; 
     column-gap: 50px;
-    text-align: justify; 
+	text-align: justify; 
+	background-color: #ebe9e6;
+	line-height: 150%;
 }
 
-h2{
+.menu h2{
 	text-transform: uppercase;
 	font-size: 20px;
 	line-height: 20px;
 }
 
-h4 {
+.menu h4 {
 	line-height: 8px;
 }
 
-p {
-	font-family: "futura-pt", "Lato", sans-serif;
+.menu p {
 	font-size: 20px;
 	text-align: justify; 
 	font-weight: 300; 
 }
 
-.NO {
-	display: 
-}
-
-.EN {
+.en {
 	display: none;
 
 }
