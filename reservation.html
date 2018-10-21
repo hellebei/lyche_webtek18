@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href = "css/index.css">
+        <title>reservation</title>
+        
+    </head>
+    <body>
+        <section class = "tableres no">
+            <div class = "split-res">
+                <h1>RESERVER BORD</h1>
+
+                <!--<form name= "form" id="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
+                <form method="post" action="/action_page.php" onsubmit="return validateForm()">
+                    <label for="navn">Name:<span style="color:red">*</span></label>
+                        <input type="text" name="name" id="navn" value="name" placeholder="navn.." required />
+                        <br>
+
+                    <label for="mail">e-mail: <span style="color:red">*</span></label>
+                        <input type="text" name="email" id="mail" value="navn@eksempel.com" placeholder="navn@eksempel.com" required />
+                        <br>
+
+                    <label for="personer">Antall personer:<span style="color:red">*</span></label>
+                        <select name="persons" id="personer">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                        <br>
+
+                    <label for="dato">Dato <span style="color:red">*</span></label>
+                        <input type="date" id="dato" name="date" required>
+                        <br>
+
+                    <label for="tid">Tidspunkt: <span style="color:red">*</span></label>
+                        <select name="times" id="tid">
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                        </select>
+                        <br>
+
+                    <label for="inf">Melding: <span style="color:red">*</span></label>
+                        <br>
+                        <textarea id ="inf" name= "message" rows="10" cols="30" placeholder="Melding.."></textarea>
+                        <br>
+
+                    <input type="submit" value="SEND INN">
+                </form>
+
+                <div class = "img-res" id = "img-reservation_no">
+                        <img src="img/pai_liten.png" alt="pai">
+                </div>
+
+            </div> 
+        </section>
+
+        <section class= "tebleres en">
+            <div class="split-res">
+
+                <h1>MAKE RESERVATION</h1>
+
+                <form name= "form" id="form" action="validation.php" method="post" onsubmit="myFunction()">
+
+                    <label for="name">Name: <span style="color:red">*</span></label>
+                        <input type="text" name="name" id="name" value="Kate" placeholder="name.." required />
+                        <br>
+
+                    <label for="email">e-mail:<span style="color:red">*</span></label>
+                        <input type="text" name="email" id="email" value="name@example.com" placeholder="name@example.com" required />
+                        <br>
+
+                    <label for="persons">Number of people:<span style="color:red">*</span></label>
+                        <select name="persons" id="persons">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                        </select>
+                        <br>
+
+                    <label for="date">Date</label>
+                        <br>
+                        <input type="date" name="date" id="date" required>
+                        <br>
+
+                    <label for="times">Time: <span style="color:red">*</span></label>
+                        <select name="times" id="times">
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                            <br>
+
+                        <label for="info">Extra information:</label>
+                            <br>
+                            <textarea id= "info" name= "message" rows="10" cols="30" placeholder="Message.."></textarea>
+                            <br>
+
+                        <input type="submit" value="SUBMIT">
+                </form>
+
+                <div class = "img-res" id = "img-reservation_en">
+                        <img src="img/pai_liten.png" alt="pai">
+                </div> 
+
+            </div>
+
+        </section>
+
+        <script src="js/form.js"></script>
+            
+    </body>
+
+</html>
