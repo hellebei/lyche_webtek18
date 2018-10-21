@@ -14,18 +14,11 @@ html{
   
   }
   
-<<<<<<< HEAD:form.css
-    section{
-        width: 100%;
-     }
-    .split {
-=======
   section{
     width: 100%;
   }
 
   .split-res {
->>>>>>> 36389d42bd6ebc7a911730b38f88c8051f65f893:css/form.css
       display: block;
       height: 100%;
       width: 100%;
@@ -99,29 +92,8 @@ html{
         width: 100%; 
     }    
 
-
     /* Control the right side */
-<<<<<<< HEAD:form.css
-    .img {
-        display: block;
-        right: 0;
-        width: 35%;
-        position: absolute;
-        height: 100%;
-        z-index: 0;
-        top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
 
-    }
-
-    .no{
-        display: none;
-    }
-
-
-            
-=======
     .img-res {
     display: block;
     right: 0;
@@ -147,4 +119,3 @@ html{
       }
       
         
->>>>>>> 36389d42bd6ebc7a911730b38f88c8051f65f893:css/form.css
