@@ -1,0 +1,39 @@
+
+body {
+    background-color: lightgrey;
+    font-family: futura, verdana;  
+}
+
+
+header {
+	position: fixed;
+	text-transform: uppercase;
+	margin-left: 6%;
+	margin-top: 60px;
+}
+
+section {
+	position: absolute;
+	margin-left: 11%;
+	margin-right: 65%;
+    text-align: justify; 
+    margin-top: 150px;
+}
+
+#souschef {
+	position: fixed;
+	height: 105%;
+	width: 50%;
+	margin-left: 50%;
+	margin-top: -10px;
+}
+
+.NO {
+	display: 
+}
+
+.EN {
+	display: none;
+}
+
+
