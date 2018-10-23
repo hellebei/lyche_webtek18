@@ -1,4 +1,5 @@
-var myPos = 0;
+var scrollPos = 0;
+var dir = "none";
 
 function scrollWinDown(){
     window.scrollBy({
@@ -26,16 +27,25 @@ function scrollToPos(x){
 }
 
 
+
 // adding scroll event
 window.addEventListener('scroll', function(){
-  // detects new state and compares it with the new one
-    if ((document.body.getBoundingClientRect()).top < scrollPos){
-        myPos = scrollPos + window.innerHeight
-        scrollToPos(myPos)}
-    if ((document.body.getBoundingClientRect()).top > scrollPos){
-        myPos = scrollPos - window.innerHeight
-        scrollToPos(myPos)
-	// saves the new position for iteration.
-    //(document.body.getBoundingClientRect()).top;
+// detects new state and compares it with the new one
+if ((document.body.getBoundingClientRect()).top > scrollPos){
+        dir = 'UP';}
+    else if((document.body.getBoundingClientRect()).top < scrollPos) {
+        dir = 'DOWN';}
+    
+if (dir === "UP"){
+        console.log("IN UP")
+        scrollWinUp(); 
+        dir = "none"
     }
-})
+else if(dir === "DOWN"){
+        console.log("IN DOWN")
+        scrollWinDown(); 
+        dir = "none"
+    }
+    // saves the new position for iteration.
+    scrollPos = (document.body.getBoundingClientRect()).top;
+});
