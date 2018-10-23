@@ -2,15 +2,22 @@ body{
     background-color: black;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
+
+#headerline{
+    width: 100%; 
+}
+
 #hamburgermenu{
     color: #ebe9e6;
-    position: absolute;
+    position: relative;
+    display: inline-block;
     left: 0;
     z-index: 1;
+    width: 33%; 
 }
-div{
-    display: block;
-}
+
+
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -35,6 +42,17 @@ ul{
     display: inline-block;
 }
 
+#samf-logo-div{
+    position: relative; 
+    align-content: center; 
+    width: 33%;
+    display: inline-block;
+    z-index: 67;
+}
+#samflogo{
+    width: 18px;
+}
+
 #hamburgercontent{
     text-transform: uppercase;
     padding-top: 85px;
@@ -45,14 +63,16 @@ ul{
     background-color: #ebe9e6;
 }
 
-#lyche-logo{
-    display: block;
-    width: 100px;
+#lyche-logo-div{
+    position: relative; 
+    align-content: center; 
+    width: 33%;
+    display: inline-block;
     z-index: 67;
-    position: absolute;
-    left: calc(50% - 50px);
+}
 
-
+#lyche-logo{
+    width: 100px;
 }
 
 .hidden {
@@ -66,14 +86,5 @@ a:hover{
     color: white;
 }
 
-#samflogo{
-    position: absolute;
-    right: 9px;
-    display: block;
-    width: 18px;
-    z-index: 67;
-}
 
-.navmain{
-    position: relative;
-}
+
