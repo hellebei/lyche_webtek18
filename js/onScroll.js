@@ -8,7 +8,9 @@ function scrollWinDown(){
         behavior: 'smooth'
     }
         )
-    scrollPos = document.body.getBoundingClientRect().top - window.innerHeight;
+    setTimeout(function(){console.log("Timeout")}, 4000)
+    scrollPos = document.body.getBoundingClientRect().top;
+    
 }
 
 function scrollWinUp(){
@@ -18,8 +20,9 @@ function scrollWinUp(){
         behavior: 'smooth'
     }
         )
+    setTimeout(function(){console.log("Timeout")}, 4000)
+    scrollPos = document.body.getBoundingClientRect().top;
     
-    scrollPos = document.body.getBoundingClientRect().top + window.innerHeight;
 }
 
 function scrollToPos(x){
@@ -51,5 +54,6 @@ else if(dir === "DOWN"){
         scrollWinDown(); 
         dir = "none"
     }
+    setTimeout(function(){console.log("Timeout")}, 4000)
     // saves the new position for iteration.
 });
