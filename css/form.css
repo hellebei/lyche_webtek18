@@ -33,12 +33,9 @@ html{
       z-index: 1;
       background-color: #ebe9e6;
       height: 100%;
-      ;
-
-  
     }
 
-    input[type=text], select, textarea {
+    input[type=text], select, textarea, input[type="date"] {
         width: 100%;
         box-sizing: border-box;
         margin-top: 10px;
@@ -48,6 +45,7 @@ html{
         border-width: 0 0 1px 0;
         background-color: inherit;
     }
+
     label{
         margin-top: 10px;
     }
@@ -56,6 +54,26 @@ html{
         right: 25%;
     }
 
+    [type="date"] {
+        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+    [type="date"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    input[type="date"] {
+        padding: 3px 5px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #dacd5c;
+    }
+
+    
     input[type=submit] {
         background-color: rgb(177, 164, 47);
         color: white;
@@ -64,17 +82,18 @@ html{
         border-radius: 4px;
         cursor: pointer;
     }
-   
-    input[type=submit]:hover {
-        background-color: #dacd5c;
-    }
 
-    input:focus{
+    input:focus, textarea:focus, select:focus {
         outline: none;
     }
 
-    
+    img{
+        position: relative;
+        width: 100%; 
+    }    
+
     /* Control the right side */
+
     .img-res {
     display: block;
     right: 0;

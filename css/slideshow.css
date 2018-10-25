@@ -21,8 +21,26 @@ header {
   display: none;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
 /* Next & previous buttons */
-.prev, .next {
+/*.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -34,18 +52,18 @@ header {
   font-size: 18px;
   transition: 2s ease;
   border-radius: 0 3px 3px 0;
-}
+}*/
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+}*/
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through 
 .prev:hover, .next:hover {
   background-color: black;
-}
+}*/
 
 
 /* Caption text */
@@ -68,7 +86,7 @@ header {
   top: 0;
 }*/
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators 
 .dot {
   cursor: pointer;
   position: relative;
@@ -83,22 +101,5 @@ header {
 
 .active, .dot:hover {
   background-color: #717171;
-}
+}*/
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.0s;
-  animation-name: fade;
-  animation-duration: 1.0s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .9} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .9} 
-  to {opacity: 1}
-}
