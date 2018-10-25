@@ -8,6 +8,7 @@ function scrollWinDown(){
         behavior: 'smooth'
     }
         )
+    scrollPos = document.body.getBoundingClientRect().top - window.innerHeight;
 }
 
 function scrollWinUp(){
@@ -17,6 +18,8 @@ function scrollWinUp(){
         behavior: 'smooth'
     }
         )
+    
+    scrollPos = document.body.getBoundingClientRect().top + window.innerHeight;
 }
 
 function scrollToPos(x){
@@ -31,6 +34,8 @@ function scrollToPos(x){
 // adding scroll event
 window.addEventListener('scroll', function(){
 // detects new state and compares it with the new one
+console.log((document.body.getBoundingClientRect()).top)
+console.log(scrollPos)
 if ((document.body.getBoundingClientRect()).top > scrollPos){
         dir = 'UP';}
     else if((document.body.getBoundingClientRect()).top < scrollPos) {
@@ -47,5 +52,4 @@ else if(dir === "DOWN"){
         dir = "none"
     }
     // saves the new position for iteration.
-    scrollPos = (document.body.getBoundingClientRect()).top;
 });
