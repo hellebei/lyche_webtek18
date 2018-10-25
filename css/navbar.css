@@ -3,14 +3,24 @@ body{
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
+#importNav{
+    width: 100%; 
+}
+
+#navbar_imported{
+    position: fixed;
+    width: 100%; 
+    height: 10vh; 
+}
+
 #headerline{
     width: 100%; 
 }
 
 #hamburgermenu{
     color: #ebe9e6;
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    display: block;
     left: 0;
     z-index: 1;
     width: 33%; 
@@ -43,11 +53,12 @@ ul{
 }
 
 #samf-logo-div{
-    position: relative; 
+    position: absolute; 
     align-content: center; 
     width: 33%;
-    display: inline-block;
+    display: block;
     z-index: 67;
+    right: 0; 
 }
 #samflogo{
     width: 18px;
@@ -64,11 +75,12 @@ ul{
 }
 
 #lyche-logo-div{
-    position: relative; 
+    position: absolute; 
     align-content: center; 
     width: 33%;
-    display: inline-block;
+    display: block;
     z-index: 67;
+    left: 33%; 
 }
 
 #lyche-logo{

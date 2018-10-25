@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <!--link rel="stylesheet" href="css/navbar.css"-->
     <!--link rel="stylesheet" href="css/footer.css"-->
     <title>Index</title>
 </head>
@@ -14,10 +14,9 @@
         <div class = "header-container">
             <div class="layer"></div>
             <img  id="lyche-header-logo" src="img/index/Lyche_logo_header.png" alt="Lyches logo">
-            <button class = "downbtn" onclick="scrollWinDown()">SEE MORE</button>
+            <button class = "downbtn" onclick="changeLang()">To english</button>
         </div>
     </header>
-
 
     <nav class = "navmain1">
         <div id="hamburgermenu1">
@@ -52,8 +51,8 @@
 -->
 
     
-    <div id="navbar"></div>
-    <section class = "no">
+    <div id="navbar_imported"></div>
+    <section id = "no">
         <div class = "split">
             <div class = "left indextext" id = "index-generelt">
                 <div class="textwrap">
@@ -162,7 +161,7 @@
 
     </section>
     
-    <section class = "en">
+    <section id = "en">
 
         <div class = "split">
             <div class = "indextext" id = "index-general"> 
@@ -250,6 +249,8 @@
     <div id ="footer"> </div>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+
     
 </body>
 </html>

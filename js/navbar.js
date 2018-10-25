@@ -1,7 +1,7 @@
 
 window.addEventListener('load', function(){
     function load_home() { 
-      document.getElementById("navbar").innerHTML='<object type="text/html" data="navbar.html" ></object>';
+      document.getElementById("navbar_imported").innerHTML='<object id = "importNav" type="text/html" data="navbar.html" ></object>';
     }
     load_home();
   
