@@ -2,12 +2,15 @@ body{
     background-color: black;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
-.hamburgermenu{
-    display: inline-block;
-    cursor: pointer;
+#hamburgermenu{
     color: #ebe9e6;
+    position: absolute;
+    left: 0;
+    z-index: 1;
 }
-
+div{
+    display: block;
+}
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -43,14 +46,14 @@ ul{
 }
 
 #lyche-logo{
-    position: fixed;
     display: block;
-    float: center;
-    width: 18px;
+    width: 100px;
     z-index: 67;
+    position: absolute;
+    left: calc(50% - 50px);
+
+
 }
-
-
 
 .hidden {
     display: none;
@@ -64,9 +67,13 @@ a:hover{
 }
 
 #samflogo{
-    position: fixed;
+    position: absolute;
+    right: 9px;
     display: block;
-    float: center;
     width: 18px;
     z-index: 67;
+}
+
+.navmain{
+    position: relative;
 }
