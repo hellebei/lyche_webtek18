@@ -352,6 +352,12 @@ a:hover{
   background-color: black;
 }
 
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 /*End code for navbar*/
 
 
