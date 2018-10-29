@@ -46,7 +46,7 @@ for (let i = 0; i < 3; i++){
 }
 
 const hamburgercontent = document.createElement("div");
-const
+const 
 
 
 <div id="hamburgercontent" class="hidden">
