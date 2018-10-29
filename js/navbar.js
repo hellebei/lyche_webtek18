@@ -38,7 +38,7 @@ for (let i = 0; i < 3; i++){
 const hamburgercontent = document.createElement("div");
 const 
 
-
+/*
 <div id="hamburgercontent" class="hidden">
     <ul>
         <li><a href="#" class="item_menu">hjem</a></li>
@@ -47,4 +47,4 @@ const
         <li><a href="#" class="item_menu">kontakt</a></li>
         <li><a href="#" class="item_menu">reservasjon</a></li>
         <li><a href="#" class="item_menu">info</a></li>
-    </ul>
+    </ul>*/
