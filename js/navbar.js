@@ -12,22 +12,42 @@ menu.addEventListener('click', function() {
     toggleHide(menuContent)
     myFunction(menu)
 })
-/*
-let navmain = document.getElementsByClassName("navmain1");
-*/
+
+
+
+
+
 document.getElementById("navbar").innerHTML = 
 `
     
-<nav class="navmain">
-<div id="hamburgermenu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-</div>
+<nav class="navmain" id="fixed-nav">
 
 <a href="#"><img id = "lyche-logo" src="img/logo.png" alt="Logo for Lyche"></a>
 
+<div id="session-status">
+    <a class = "changelangNO" href="/no">NO</a>
+    <a class = "line" href=""> | </a>
+    <a class="changelangEN" href="/en">EN</a>
+</div>
+
 <a href="https://www.samfundet.no/"> <img id="samflogo"src="img/samf_logo.png" alt="Logo samf"> </a>
+
+</div>
+</nav>
+`
+
+const injectedNavbar = document.getElementById("fixed-nav");
+console.log(injectedNavbar);
+const hamburgermenu = document.createElement("div");
+for (let i = 0; i < 3; i++){
+    const bar = document.createElement("div");
+    let classname = "bar"+ (i+1);
+    bar.setAttribute("class", classname);   
+}
+
+const hamburgercontent = document.createElement("div");
+const
+
 
 <div id="hamburgercontent" class="hidden">
     <ul>
@@ -38,7 +58,3 @@ document.getElementById("navbar").innerHTML =
         <li><a href="#" class="item_menu">reservasjon</a></li>
         <li><a href="#" class="item_menu">info</a></li>
     </ul>
-</div>
-</nav>
-
-`
