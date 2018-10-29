@@ -208,16 +208,17 @@ h2{
     width: 100%; 
     top:0; 
     float: left;
-    margin-left: 20px; 
-    margin-top: 20px; 
     z-index: 17;
   }
 
-  .hamburgermenu{
+  #hamburgermenu1{
     display: block;
     float: left;
+    margin-left: 2%;
+    margin-top: 2%;
     cursor: pointer;
     color: #ebe9e6;
+    z-index: 17;
 }
 
 .bar1, .bar2, .bar3 {
@@ -231,6 +232,8 @@ h2{
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: black;
+    z-index: 20;
 }
 
 .change .bar2 {opacity: 0;}
@@ -238,30 +241,35 @@ h2{
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: black;
+    z-index: 20;
 }
+
 
 ul{
     list-style-type: none;
     display: inline-block;
 }
 
-.hamburgercontent{
+#hamburgercontent1{
     text-transform: uppercase;
-    padding-top: 85px;
-    width: 30%;
+    padding-top: 2%;
+    width: 15%;
     height: 100vh;
-    padding-right: 20px;
+    padding-right: 8%;
     text-align: left !important;
     background-color: #ebe9e6;
+    z-index: 17;
+    opacity: 0.8;
 }
-
+/*
  .navmain1 #lyche-logo{
     position: absolute;
     display: block;
     float: center; 
     height: 60px; 
     z-index: 67;
-}
+}*/
 
 .hidden {
     display: none;
@@ -278,7 +286,7 @@ li a:visited{
 }
 
 li a:hover{
-    color: lightgray;
+    color: rgb(218, 216, 216);
 }
 
 
@@ -298,8 +306,6 @@ li a:hover{
   position: absolute;
   display: block;
   left: 0;
-
-  z-index: 1;
   width: 33%; 
 }
 
