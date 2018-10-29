@@ -262,15 +262,15 @@ ul{
     z-index: 17;
     opacity: 0.8;
 }
-/*
- .navmain1 #lyche-logo{
+
+ .navmain #lyche-logo{
     position: absolute;
     display: block;
     float: center; 
     height: 60px; 
     z-index: 67;
-}*/
-
+ }
+ 
 .hidden {
     display: none;
 }
