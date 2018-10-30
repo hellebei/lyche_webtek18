@@ -22,7 +22,6 @@ menu.addEventListener('click', function() {
     myFunction(menu)
 })*/
 
-document.getElementById("navbar").innerHTML = 
 `
 <nav class="navmain" id="fixed-nav">
 
@@ -69,3 +68,4 @@ for (let i=0; i < names.length; i++){
 
 hamburgercontent.appendChild(ulContent);
 ulContent.style.listStyleType = "none";
+injectedNavbar.appendChild(hamburgermenu)
