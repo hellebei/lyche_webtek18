@@ -1,6 +1,24 @@
 * {box-sizing:border-box}
 
 /* Slideshow container */
+
+.slideshow-container *{box-sizing:border-box}
+
+.slideshow-container {
+  z-index: 4;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Hide the images by default */
+.mySlides {
+  margin: 0 0 0 0; 
+  display: none;
+}
+
+/* KAN VI FJERNE DENNE SIDEN DEN IKKE STÅR I INDEX??
 .slideshow-container {
   display: inline-block;
   width: 100%;
@@ -10,18 +28,55 @@
   margin-right: -12px;
   margin-top: -12px;
   
-}
+} */
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
+/*
 header {
   display: none;
-}
+}*/
 
 /* Fading animation */
+
+.fade {
+  -webkit-animation: fade 5s linear forwards;
+  -moz-animation: fade 5s linear forwards;
+  animation: fade 5s linear forwards;
+}
+
+.fade img{
+  width: 100%; 
+}
+
+@-moz-keyframes fade {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+
+@-webkit-keyframes fade {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes fade {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/*mediaqueries 
+image fit
+
+.image {display:none;}
+
+@media screen and (max-width: 940px){ 
+  div video {display: none;}
+  .image {display: block; width:100%;}
+} */
+
+/*  FJERNE ALT DETTE SIDEN DET IKKE STÅR I INDEX???
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2.0s;
@@ -102,4 +157,5 @@ header {
 .active, .dot:hover {
   background-color: #717171;
 }*/
+
 
