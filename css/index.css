@@ -204,7 +204,7 @@ h2{
   /*Under: code for navbar*/
   
   .navmain1{
-    position: fixed;
+    position: absolute;
     width: 100%; 
     top:0; 
     float: left;
@@ -230,6 +230,7 @@ h2{
 }
 
 .change .bar1 {
+    position: absolute;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
     background-color: black;
@@ -239,6 +240,7 @@ h2{
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
+    position: absolute;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: black;
