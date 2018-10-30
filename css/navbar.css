@@ -1,70 +1,62 @@
-body{
+/* navbar */
+.navmain{
+    position: relative;
     background-color: black;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-}
+    height: 50px;
+  }
 
-#importNav{
-    width: 100%; 
-}
-
-#navbar_imported{
+/* div id = navbar, in all html files */
+#navbar{
+    z-index: 1000;
+    width: 100vw;
     position: fixed;
-    width: 100%; 
-    height: 10vh; 
-}
-
-#headerline{
-    width: 100%; 
-}
-
-#hamburgermenu{
+    top: 0;
+  }
+  
+  .div{
+    display: block;
+  }
+  
+  #hamburgermenu, #hamburgermenu1{
     color: #ebe9e6;
     position: absolute;
     display: block;
     left: 0;
-    z-index: 1;
     width: 33%; 
-}
-
-
-
-.bar1, .bar2, .bar3 {
+    margin-left: 6px;
+  }
+  
+  /*The bars, color and width*/
+  .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #ebe9e6;
     margin: 6px 0;
     transition: 0.4s;
-}
-
-.change .bar1 {
+  }
+  
+  /*changing bars*/
+  .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-}
-ul{
+  }
+  
+  /* hamburgercontent */
+  ul{
     list-style-type: none;
     display: inline-block;
-}
+  }
 
-#samf-logo-div{
-    position: absolute; 
-    align-content: center; 
-    width: 33%;
-    display: block;
-    z-index: 67;
-    right: 0; 
-}
-#samflogo{
-    width: 18px;
-}
+  /*text in hamburgercontent*/
 
-#hamburgercontent{
+  #hamburgercontent{
     text-transform: uppercase;
     padding-top: 85px;
     width: 30%;
@@ -72,31 +64,48 @@ ul{
     padding-right: 20px;
     text-align: left !important;
     background-color: #ebe9e6;
-}
-
-#lyche-logo-div{
-    position: absolute; 
-    align-content: center; 
-    width: 33%;
+  }
+  
+  /* lyche-logo - picture */
+  #lychelogo{
     display: block;
-    z-index: 67;
-    left: 33%; 
-}
-
-#lyche-logo{
     width: 100px;
-}
+    z-index: 67;
+    position: absolute;
+    left: calc(50% - 50px);
+  }
 
-.hidden {
-    display: none;
-}
-a:link{
+  /* link to samfundet.no */
+  #samflogo{
+    position: absolute;
+    right: 9px;
+    top: calc(50% - 9px);
+    display: block;
+    width: 18px;
+    z-index: 67;
+  }
+  
+  /* no | en session position*/
+  #session-status {
+    position: absolute;
+    float: right;
+    top: calc(50% - 16px);
+    right: 35px;
+  }
+  
+  /* links in session*/
+  a:link {
     text-decoration: none;
-    color: black;
-}
-a:hover{
     color: white;
-}
-
-
-
+  }
+  
+  a:hover{
+    font-weight: bolder;
+  }
+  
+  /* class for hidden */
+  .hidden {
+    display: none;
+  }
+  
+  

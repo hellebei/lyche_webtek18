@@ -1,9 +1,9 @@
 document.getElementById("footer").innerHTML = `
 
-<div id = "sticky-footer-wrapper">
-    <div id="sticky-footer-wrapper-footer"></div>
-        <footer id = "footer">
-            <div id = "footer-wrapper">
+<div id="sticky-footer">
+    <div id="sticky-footer-wrapper"></div>
+        <footer id="footer">
+            <div id="footer-wrapper">
                 <div id = "contact-editors">
                     <ul>
                         <li>
@@ -43,7 +43,6 @@ document.getElementById("footer").innerHTML = `
         </div>
     </footer>
 </div>
-
 
 `
 
