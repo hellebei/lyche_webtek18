@@ -35,7 +35,7 @@ html{
       height: 100%;
     }
 
-    input[type=text], select, textarea, input[type="date"] {
+    input[type=text], select, textarea, input[type=date] {
         width: 100%;
         box-sizing: border-box;
         margin-top: 10px;
@@ -54,18 +54,18 @@ html{
         right: 25%;
     }
 
-    [type="date"] {
-        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    [type=date] {
+        background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
     }
 
-    [type="date"]::-webkit-calendar-picker-indicator {
+    [type=date]::-webkit-calendar-picker-indicator {
         opacity: 0;
     }
-    [type="date"]::-webkit-inner-spin-button {
+    [type=date]::-webkit-inner-spin-button {
         display: none;
     }
 
-    input[type="date"] {
+    input[type=date] {
         padding: 3px 5px;
     }
 
