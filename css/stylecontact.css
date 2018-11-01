@@ -77,11 +77,11 @@ section{
 
     #kart {
         position: relative;
-        width: 50%
+        width: 20%;
 
     }
 
 
-.en{
-    display: none; 
-}
+    #en {
+        display: none; 
+    }
