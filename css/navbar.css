@@ -95,15 +95,30 @@
     right: 35px;
   }
   
-  /* links in session*/
-  a:link {
-    text-decoration: none;
-    color: white;
+/* links in session*/
+  a:link{
+    text-decoration: none; 
+    color: white; 
   }
-  
+
   a:hover{
-    font-weight: bolder;
+    font-weight: bolder; 
   }
+
+  
+li a:link{
+    color: black;
+    font-weight: bold;
+}
+
+li a:visited{
+  color: #000000;
+  font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+}
+
+li a:hover{
+    color:white;
+}
   
   /* class for hidden */
   .hidden {

@@ -1,0 +1,52 @@
+/*Kode for contact*/
+.samfpiccontainer { 
+    position: fixed;
+    display: block;
+    width: 40%;
+    height: 100vh;
+  
+    /*hvorfor går ikke bildet helt ut?? hm må ha -1% er dette en varig løsning?
+    og hvordan får jeg til at høyden holder seg til 100% av skjermen? må skaleres riktig*/
+  }
+  
+  .samfpic{
+    height: 100%;
+    width: 100%; 
+  }
+  
+  .contacttitle {
+    position: fixed;
+    color: white;
+    left: 10%;
+    /*få litt lenger ned?*/
+  }
+  .split .picturepush{
+    display: inline-block;
+    left: 0;
+    width: 50%; 
+  }
+  
+  .split .wrapcontact{
+    position: absolute;
+    right: 0; 
+    display: inline-block;
+    width: 50%; 
+    margin: 0 0 50% 0; 
+    line-height: 60%; 
+  }
+  
+  .wrapcontact h2{
+    padding-top: 2%; 
+  }
+  
+  .break {
+    padding-top: 1%;
+  }
+  
+  #kart {
+    position: relative;
+    width: 50%
+  
+  }
+  
+  /*End code for contact */
