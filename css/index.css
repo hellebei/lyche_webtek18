@@ -438,7 +438,7 @@ li a:hover{
 /*Code for form*/
 .split-res {
   display: block;
-  height: 100%;
+  height: 350px
   width: 100%;
 }
 
@@ -446,28 +446,56 @@ li a:hover{
 form {
   display: inline-block;
   position: absolute;
-  width: 40%;
-  padding-left: 20%; 
+  width: 50%;
+  padding: 2% 5% 0 5%; 
   z-index: 1;
   background-color: #ebe9e6;
   height: 100%;
-  ;
-
 
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    resize: vertical;
-    border: 1px solid black;
-    border-width: 0 0 1px 0;
-    background-color: inherit;
+.information{
+  width:50%;
+  z-index: 1;
+  font-size:small;
+  margin-left: 5%;
+  padding: 2px 2px 2px 2px;
+  /*border: 1px solid black;*/
 }
+
+input[type=text], select, textarea, input[type=date] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  resize: vertical;
+  border: 1px solid black;
+  border-width: 0 0 1px 0;
+  background-color: inherit;
+}
+
 label{
     margin-top: 10px;
+}
+
+.br {
+  margin: 0;
+}
+
+[type=date] {
+  background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type=date] {
+  padding: 3px 5px;
 }
 
 .tableres h1 {
@@ -482,24 +510,25 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 input[type=submit]:hover {
     background-color: #dacd5c;
 }
 
-input:focus{
-    outline: none;
+input:focus, textarea:focus, select:focus {
+  outline: none;
 }
 
 
 /* Control the right side */
 .img-res {
 display: block;
+width:35%;
+height: auto;
 right: 0;
-width: 35%;
-position: absolute;
-height: 100%;
+position: fixed;
 z-index: 0;
 top: 0;
 margin-bottom: 0;
@@ -507,11 +536,18 @@ padding-bottom: 0;
 
 }
 
+/*object-fit:cover*/
+
 
 /* Style the image inside the centered container, if needed */
 .img-res img{
-  position: relative;
-  width: 100%; 
+  position: relative; 
+  width: 100%;
+}
+
+.confirmation {
+  position: absolute;
+  margin: 10% 10% 10% 10%;
 }
 
 /*Slideshow*/
