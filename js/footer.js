@@ -17,7 +17,7 @@ document.getElementById("footer").innerHTML = `
                         <img alt="Like us on Facebook" src="img/face.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://instagram.com/samfundet">Instagram
-                        <img alt="See our images on Instagram" src="img/insta.png"> </a> </li>
+                        <img alt="See our images on Instagram" src="img/instabilde.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://open.spotify.com/user/samfundet">Spotify
                         <img alt="Check out our Spotify playlists" src="img/spotify.png"> </a> </li>
