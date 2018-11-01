@@ -410,8 +410,13 @@ li a:hover{
 /*Code for form*/
 .split-res {
   display: block;
+<<<<<<< HEAD
   height: 350px
   
+=======
+  height: 350px;
+  width: 100%;
+>>>>>>> 69c1665ef4481522c091049ed30d11bf606d3e9f
 }
 
 /* Control the left side */
