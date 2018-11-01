@@ -7,13 +7,13 @@ function toggleHide(element){
     element.classList.toggle("hidden");
 }
 
-const menu1 = document.getElementById("hamburgermenu1");
-const menuContent1= document.getElementById("hamburgercontent1");
+const menuIndex = document.getElementById("hamburgermenuIndex");
+const menuContentIndex= document.getElementById("hamburgercontentIndex");
 
 menu1.addEventListener("click", function() {
-    console.log("click menu1");
-    toggleHide(menuContent1);
-    changemenu(menu1);
+    console.log("click menuIndex");
+    toggleHide(menuContentIndex);
+    changemenu(menuIndex);
 })
 
 document.addEventListener("scroll", function(){
