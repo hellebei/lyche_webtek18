@@ -33,7 +33,7 @@
 .downbtn{
   position: fixed;
   z-index: 40; 
-  display: block; 
+  display: none; 
   top: 85%; 
   right: 45%; 
   left: 45%;
