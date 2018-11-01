@@ -7,55 +7,27 @@ function toggleHide(element){
     element.classList.toggle("hidden");
 }
 
-const menuIndex = document.getElementById("hamburgermenuIndex");
-const menuContentIndex= document.getElementById("hamburgercontentIndex");
+const menuindex = document.querySelector(".menuindex");
 
-menu1.addEventListener("click", function() {
-    console.log("click menuIndex");
-    toggleHide(menuContentIndex);
-    changemenu(menuIndex);
-})
-
-document.addEventListener("scroll", function(){
-    console.log("in scroll eventlistenr")
-    //const content = document.getElementById("hamburgercontent1");
-    if (menuContent1.getAttribute("class")!="hidden"){
-        console.log("in scroll if")
-        toggleHide(menuContent1)
-        changemenu(menu1)
-    }
-})
-
-const navmain1 = document.querySelector("#navmain1");
-
-if(navmain1 !=  null) {
-    const menu1 = document.getElementById("hamburgermenu1");
-    const menuContent1= document.getElementById("hamburgercontent1");
-    menu1.addEventListener('click', function() {
+if(menuindex !=  null) {
+    const hamburgermenuIndex = document.getElementById("hamburgermenuIndex");
+    const hamburgercontentIndex= document.getElementById("hamburgercontentIndex");
+    hamburgermenuIndex.addEventListener('click', function() {
         console.log("click");
-        toggleHide(menuContent1)
-        myFunction(menu1)
+        toggleHide(hamburgercontentIndex)
+        changemenu(hamburgermenuIndex)
     })
-    /*
-    menuContent1.addEventListener("scroll", function(){
-        console.log("in scroll eventlistener");
-        if (content.getAttribute("class")!="hidden"){
-            console.log("in scroll if")
-            toggleHide(menuContent)
-            myFunction(menu)
-        }
-    })*/
     
-   /* 
+   
    document.addEventListener('scroll', function (){
         console.log("in scroll eventlistener");
-        const content = document.getElementById("hamburgercontent1");
+        const content = document.getElementById("hamburgercontentIndex");
         if (content.getAttribute("class")!="hidden"){
             console.log("in scroll if")
-            toggleHide(menuContent)
-            myFunction(menu)
+            toggleHide(hamburgercontentIndex)
+            changemenu(hamburgermenuIndex)
         }
-    })*/
+    })
 }
 
 // make the navbar sticky in index
