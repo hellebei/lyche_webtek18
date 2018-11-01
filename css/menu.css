@@ -1,13 +1,11 @@
 /*Code for meny*/
 
 .menuheader {
-	font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
-  position: fixed;
+	position: fixed;
+	font-size: 30px; 
 	text-transform: uppercase;
 	color: white;
-	margin-left: 6%;
-	margin-top: 5%;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .menu{
@@ -22,6 +20,7 @@
 	line-height: 170%;
 
 }
+
 
 .menu h2{
   font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
