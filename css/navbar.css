@@ -95,10 +95,10 @@
     right: 35px;
   }
   
-/* links in session*/
-  a:link{
-    text-decoration: none; 
-    color: white; 
+  /* links in session */
+  a:link {
+    text-decoration: none;
+    color: white;
   }
 
   a:hover{
