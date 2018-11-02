@@ -4,6 +4,7 @@
 
 .slideshow-container *{box-sizing:border-box}
 
+/*Container for the picture slideshow in header*/
 .slideshow-container {
   z-index: 4;
   display: inline-block;
@@ -12,13 +13,13 @@
   position: absolute;
 }
 
+/*positioning and display of slides*/
 .mySlides {
   margin: 0 0 0 0; 
   display: none;
 }
 
 /* Fading animation */
-
 .fade {
   -webkit-animation: fade 5s linear forwards;
   -moz-animation: fade 5s linear forwards;
@@ -47,6 +48,7 @@
   50% { opacity: 1; }
   100% { opacity: 0.9; }
 }
+/*End fade animation*/
 
 /*mediaqueries 
 image fit

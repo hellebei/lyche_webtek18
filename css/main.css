@@ -1,7 +1,11 @@
+/*Main stylesheet for all htmls on the website*/
+
+/*Sets font*/
 html{
     font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
   }
   
+  /*making body fill entire screen and setting font properties and bacgroundcolor*/
   body{ 
     margin: 0 0 0 0;
     padding: 0 0 0 0;  
@@ -12,36 +16,39 @@ html{
     background-color: #ebe9e6;
   }
 
+  /*Making header fill width of page*/
   header{
     width: 100%; 
   }
   
+  /*Setting color on background for all sections*/
   section{
     background-color: #ebe9e6;
   }
 
+  /*Default h2-styling for all pages*/
   h2{
     font-weight: 600; 
     padding-top: 2%; 
   }
   
-  header{
-    width: 100%; 
-  }
-
+/*Default list-styling for all pages*/
   ul{
     list-style-type: none;
     display: inline-block;
 }
 
+/*Pushing page content down to under navigationbar*/
   #navbarpush{
     height: 50px;
   }
 
+  /*displaying norwegian text*/
   #no{
     display: inherit; 
   }
 
+  /*hiding english text*/
   #en{
     display: none;
   }
