@@ -24,7 +24,6 @@
 
 .header-logo-container{
   position: absolute;
-
 }
 
 /*The logo picture over the slideshow*/
@@ -113,10 +112,6 @@
     cursor: pointer;
     color: #ebe9e6;
     z-index: 17;
-}
-
-#navbarappear{
-  height: 50px;
 }
 
 /*Styling each bar in hamburgermenu*/
