@@ -20,7 +20,7 @@ navbar.innerHTML =
             <li><a href="contact.html" class="item_menu">kontakt</a></li></ul>
     </div>
 
-    <a href="#"><img id="lychelogo" src="img/logo.png" alt="Logo for Lyche"></a>
+    <a href="index.html"><img id="lychelogo" src="img/logo.png" alt="Logo for Lyche"></a>
 
     <div id="session-status">
         <a class="changelangNO" href="javascript:changeLangtoNo();"">NO</a>
@@ -41,13 +41,22 @@ function toggleHide(element){
     element.classList.toggle("hidden");
 }
 
-let menu = document.getElementById("hamburgermenu");
-let menuContent= document.getElementById("hamburgercontent");
+const menu = document.getElementById("hamburgermenu");
+const menuContent= document.getElementById("hamburgercontent");
 
 menu.addEventListener('click', function() {
     console.log("click");
     toggleHide(menuContent);
     changemenu(menu);
+})
+
+document.addEventListener('scroll', function (){
+    console.log("in scroll eventlistener");
+    if (menuContent.getAttribute("class")!="hidden"){
+        console.log("in scroll if");
+        toggleHide(menuContent);
+        changemenu(menu);
+    }
 })
 
 
