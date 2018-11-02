@@ -1,31 +1,27 @@
 
 
-/*Code for form*/
-.split-res {
-    display: block;
-    height: 350px
-  }
-  
-  /* Control the left side */
+  /* Control the form */
   form {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
+    /*display: inline-block;*/
+    width: 40%;
     padding: 2% 5% 0 5%; 
     z-index: 1;
     background-color: #ebe9e6;
     height: 100%;
-  
-  }
-  
-  .information{
-    width:50%;
-    z-index: 1;
-    font-size:small;
     margin-left: 5%;
-    padding: 2px 2px 2px 2px;
+  
   }
   
+
+  .tableres h1 {
+    right: 25%;
+    margin-left: 10%; 
+}
+
+  label{
+    margin-top: 3%;
+}
+
   input[type=text], select, textarea, input[type=date] {
     width: 100%;
     box-sizing: border-box;
@@ -36,72 +32,80 @@
     border-width: 0 0 1px 0;
     background-color: inherit;
   }
-  
-  label{
-      margin-top: 10px;
-  }
-  
-  .br {
-    margin: 0;
-  }
-  
-  [type=date] {
-    background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-  }
-  
-  [type=date]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
-  
-  [type=date]::-webkit-inner-spin-button {
-    display: none;
-  }
-  
+
   input[type=date] {
     padding: 3px 5px;
   }
-  
-  .tableres h1 {
-      right: 25%;
-      margin-left: 5%; 
-  }
-  
+
   input[type=submit] {
-      background-color: rgb(177, 164, 47);
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      margin-bottom: 10px;
+    background-color: #f1b82f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20%;
+  }
+
+  /*styling input[date]. Makes datepicker-icon appear and spin-button disappear.
+  This will not work in safari, IE */
+
+  [type=date] {
+    background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  100% 50% no-repeat ;
+  }
+
+  [type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  [type=date]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+
+  /*styles the div class information which contains reservation information*/
+  .information{
+    width:40%;
+    z-index: 1;
+    font-size:small;
+    margin-left: 10%;
+    padding: 2px 2px 2px 2px;
+  }
+
+  /*this div-class styles the breaks between inputs.*/
+  .br {
+    margin: 0;
+    display: block;
   }
   
+  /*the submit button is lighter when hovered*/
   input[type=submit]:hover {
-      background-color: #dacd5c;
+      background-color: #e2bc62;
   }
+
+  /*pointer when hovered over input fields*/
+  input[type=text]:hover,select:hover,input[type=date]:hover,textarea:hover {
+    cursor: pointer;
+}
   
+
+  /*makes sure the input fields are not outlined when selected*/
   input:focus, textarea:focus, select:focus {
     outline: none;
   }
   
   
-  /* Control the right side */
+  /* Control the img on the right side */
   .img-res {
-  display: block;
-  width:35%;
-  height: auto;
-  right: 0;
-  position: fixed;
-  z-index: 0;
-  top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+    width:35%;
+    height: auto;
+    right: 0;
+    position: fixed;
+    top: 0; 
   
   }
   
-  /*object-fit:cover*/
-  
-  
+
   /* Style the image inside the centered container, if needed */
   .img-res img{
     position: relative; 
@@ -109,7 +113,6 @@
   }
 
 /*code confirmation.html*/
-  
   .confirmation {
     margin: 10% 10% 10% 10%;
     min-height: 100vh;
