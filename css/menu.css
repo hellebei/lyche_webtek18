@@ -1,16 +1,17 @@
 
 /*This is just for the title on the page*/
 /*Maybe change classname? Bit misleading with header*/
-.menuheader {
+.menutitle {
 	position: fixed;
 	font-size: 30px; 
 	text-transform: uppercase;
 	color: white;
 	font-weight: bold;
+	margin: 2% 0 0 5%; 
 }
 
 /*Content of menu*/
-.menu{
+.menuwrap{
 	margin-top: 1%;
 	margin-left: 22%;
   margin-right: 5%;
