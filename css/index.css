@@ -22,14 +22,19 @@
   z-index: 7;
 }
 
+.header-logo-container{
+  position: absolute;
+
+}
+
 /*The logo picture over the slideshow*/
 #lyche-header-logo{
   z-index: 20;
   opacity: 0.9;
   position: relative;
   display: block;
-  width: 50%; 
-  padding: 15% 25% 15% 25%;
+  width: 100%; 
+  padding: 10% 20% 20% 20%;  
 }
 
 /*button to scroll one page down at a time*/
