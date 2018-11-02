@@ -28,6 +28,7 @@
     color: #ebe9e6;
     padding-top: 0.3%;
     padding-bottom: 0.7%;
+    z-index: 17;
   }
   
   /*The bars, color and width*/
@@ -43,7 +44,8 @@
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: black;
+    background-color: #000000;
+    z-index: 10;
   }
   
   .change .bar2 {opacity: 0;}
@@ -51,7 +53,8 @@
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: black;
+    background-color: #000000;
+    z-index: 10;
   }
   
   /* hamburgercontent , menu*/
@@ -63,12 +66,25 @@
   /*text in hamburgercontent*/
   #hamburgercontent{
     text-transform: uppercase;
+    padding-top: 10%;
+    width: 15%;
+    height: 100vh;
+    padding-right: 8%;
+    text-align: left !important;
+    background-color: #ebe9e6;
+    font-size: 20px; 
+    font-weight: 1000; 
+    line-height: 300%; 
+    z-index: 17;
+    opacity: 1;
+    /*
     padding-top: 85px;
     width: 30%;
     height: 100vh;
     padding-right: 20px;
     text-align: left !important;
     background-color: #ebe9e6;
+    */
   }
   
   /* lyche-logo - picture */
