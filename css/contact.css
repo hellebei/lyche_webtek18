@@ -1,6 +1,7 @@
 /*Kode for contact*/
-.samfpiccontainer { 
-    position: fixed; 
+
+.samfpiccontainer img{ 
+    position: fixed;
     display: block;
     width: 40%;
     height: 100vh;
@@ -10,7 +11,7 @@
   .samfpic{
     height: 100%;
     width: 100%; 
-  }
+  }*/
   
   /*The title on the contact page*/
   .contacttitle {
