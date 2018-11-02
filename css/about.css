@@ -1,9 +1,12 @@
+/*Styling for tittelen på about.html*/
 .headerabout {
 	margin-left: 6%;
 	margin-top: 60px;
 }
 
-.about {
+/*Kode for sections (no/en)*/
+.about-textwrap {
+	position: absolute;
 	margin-left: 10%;
 	margin-right: 60%;
     text-align: justify; 
@@ -11,6 +14,7 @@
     line-height: 170%; 
 }
 
+/*Bilde style*/
 #souschef_about {
 	position: fixed;
 	height: 105%;
