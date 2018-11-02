@@ -24,7 +24,6 @@
     font-size:small;
     margin-left: 5%;
     padding: 2px 2px 2px 2px;
-    /*border: 1px solid black;*/
   }
   
   input[type=text], select, textarea, input[type=date] {
@@ -108,8 +107,10 @@
     position: relative; 
     width: 100%;
   }
+
+/*code confirmation.html*/
   
   .confirmation {
-    position: absolute;
     margin: 10% 10% 10% 10%;
+    min-height: 100vh;
   }
