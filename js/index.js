@@ -30,7 +30,7 @@ if(menuindex !=  null) {
     })
 }
 
-const navbarappear = document.querySelector("#navbarappear");
+const layer = document.querySelector(".layer");
 const nav = document.querySelector("#navbar");
 nav.style.display = "none";
 
@@ -38,13 +38,13 @@ nav.style.display = "none";
 document.addEventListener("scroll", stick);
 
 function stick(){
-    const distance = navbarappear.offsetHeight - nav.offsetHeight;
+    let distance = layer.offsetHeight - nav.offsetHeight;
     console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
         console.log("fest deg")
         nav.style.position = "fixed";
         nav.style.display = "block";
-    } else {
+    }else {
         nav.style.display = "none";
     }
 }
