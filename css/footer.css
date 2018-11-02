@@ -1,4 +1,5 @@
-#sticky-footer {
+  #sticky-footer {
+    position: relative;
     clear: both;
     height: auto !important;
     margin-bottom: 0;

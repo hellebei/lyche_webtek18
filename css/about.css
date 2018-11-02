@@ -1,12 +1,9 @@
 .headerabout {
-	position: fixed;
-	text-transform: uppercase;
 	margin-left: 6%;
 	margin-top: 60px;
 }
 
 .about {
-	position: absolute;
 	margin-left: 10%;
 	margin-right: 60%;
     text-align: justify; 
