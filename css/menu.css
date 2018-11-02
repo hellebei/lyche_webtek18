@@ -1,31 +1,33 @@
 
 /*This is just for the title on the page*/
 /*Maybe change classname? Bit misleading with header*/
-.menuheader {
+
+.menutitle {
+
 	position: fixed;
-	font-size: 30px; 
-	text-transform: uppercase;
 	color: white;
 	font-weight: bold;
+	margin: 2% 0 0 5%; 
+
 }
 
 /*Content of menu*/
-.menu{
+.menuwrap{
 	margin-top: 1%;
-	margin-left: 22%;
-  margin-right: 5%;
-  margin-bottom: 2%; 
+	margin-left: 24%;
+  	margin-right: 7%;
+  	margin-bottom: 2%; 
 	column-count: 2; 
-  column-gap: 4%;
+  	column-gap: 8%;
 	text-align: justify; 
 	background-color: #ebe9e6;
-	line-height: 170%;
+	line-height: 150%;
 
 }
 
 /*Special for h2 in menu*/
 .menu h2{
-  font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+  	font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 20px;
 	line-height: 20px;
@@ -35,7 +37,7 @@
 /*Denne burde endres til h3*/
 .menu h4 {
   /*margin:7pt;*/
-  padding:2pt;
+  	padding:2pt;
 	line-height: 8px;
   
 }
@@ -43,8 +45,8 @@
 /*Special for paragraphs in menu*/
 .menu p {
 	margin:0;
-  padding:0;
-  font-size: 20px;
+  	padding:0;
+  	font-size: 20px;
 	text-align: justify; 
 	/*font-weight: 300; */
 }
@@ -56,5 +58,29 @@
 	width: 280px;
 	margin-left: -8px;
 	margin-top: -30px;
+}
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+ @media screen and (max-width: 940px){ 
+   div video {display: none;}
+   .image {display: block; width:100%;}
+ } 
+
+ /* If the screen size is 600px wide or less, hide salad image */
+@media only screen and (max-width: 600px) {
+  #salad {
+    display: none;
+  }
 }

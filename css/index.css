@@ -1,35 +1,34 @@
-/*A cointainer for the headerimage */
-.header-container{
+
+header{
+  position: relative;
   width: 100%; 
-  height: 100vh;
-  display: block;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center center bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: auto;
 }
 
-/*adding a shade over the headerimg*/
+/*adding a shade over the slideshow*/
 .layer{
   background-color: #000000;
   opacity: 0.6;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 99%;
   z-index: 7;
+}
+
+.header-logo-container{
+  position: absolute;
+  width: 100%; 
+  height: auto; 
 }
 
 /*The logo picture over the slideshow*/
 #lyche-header-logo{
   z-index: 20;
   opacity: 0.9;
-  position: relative;
-  display: block;
-  width: 50%; 
-  padding: 15% 25% 15% 25%;
+  display: inline;
+  max-width: 50%;
+  margin: 15% 25% 10.3% 25%;
+  position: relative;  
 }
 
 /*button to scroll one page down at a time*/
@@ -100,6 +99,7 @@
 
   /*Styling of the bars in hamburgermenu*/
   #hamburgermenuIndex{
+    position: absolute;
     display: block;
     float: left;
     margin-left: 2%;
@@ -122,8 +122,8 @@
 .change .bar1index {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: black;
-    z-index: 20;
+    background-color: #000000;
+    z-index: 10;
 }
 
 /*making bar 2 dissapear in gange*/
@@ -133,8 +133,8 @@
 .change .bar3index {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: black;
-    z-index: 20;
+    background-color: #000000;
+    z-index: 10;
 }
 
 /*Styling content of menu when it is opened*/
@@ -173,5 +173,6 @@ li a:hover{
     color:white;
 }
 /*End styling of links*/
+
 
 

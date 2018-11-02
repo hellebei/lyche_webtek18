@@ -38,14 +38,15 @@ nav.style.display = "none";
 document.addEventListener("scroll", stick);
 
 function stick(){
-    const distance = layer.offsetHeight - nav.offsetHeight;
+    let distance = layer.offsetHeight - nav.offsetHeight;
     console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
         console.log("fest deg")
         nav.style.position = "fixed";
         nav.style.display = "block";
-    } else {
+    }else {
         nav.style.display = "none";
     }
 }
+
 
