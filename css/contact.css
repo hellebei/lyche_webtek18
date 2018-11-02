@@ -1,18 +1,16 @@
 /*Kode for contact*/
-.samfpiccontainer { 
+.samfpiccontainer img{ 
     position: fixed;
     display: block;
     width: 40%;
     height: 100vh;
-  
-    /*hvorfor går ikke bildet helt ut?? hm må ha -1% er dette en varig løsning?
-    og hvordan får jeg til at høyden holder seg til 100% av skjermen? må skaleres riktig*/
   }
   
+  /* trenger jeg denne? 
   .samfpic{
     height: 100%;
     width: 100%; 
-  }
+  }*/
   
   .contacttitle {
     position: fixed;
