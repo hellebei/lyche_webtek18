@@ -2,7 +2,7 @@
 
 /*Sets font*/
 html{
-    font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+    font-family: futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
   }
   
   /*making body fill entire screen and setting font properties and bacgroundcolor*/
@@ -18,7 +18,11 @@ html{
 
   /*Making header fill width of page*/
   header{
+    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
     width: 100%; 
+    font-weight: bold;
   }
   
   /*Setting color on background for all sections*/
