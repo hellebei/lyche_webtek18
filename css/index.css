@@ -105,6 +105,7 @@
 
   /*Styling of the bars in hamburgermenu*/
   #hamburgermenuIndex{
+    position: absolute;
     display: block;
     float: left;
     margin-left: 2%;
@@ -112,6 +113,10 @@
     cursor: pointer;
     color: #ebe9e6;
     z-index: 17;
+}
+
+#navbarappear{
+  height: 50px;
 }
 
 /*Styling each bar in hamburgermenu*/
@@ -127,8 +132,8 @@
 .change .bar1index {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: black;
-    z-index: 20;
+    background-color: #000000;
+    z-index: 10;
 }
 
 /*making bar 2 dissapear in gange*/
@@ -138,8 +143,8 @@
 .change .bar3index {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: black;
-    z-index: 20;
+    background-color: #000000;
+    z-index: 10;
 }
 
 /*Styling content of menu when it is opened*/
@@ -178,5 +183,6 @@ li a:hover{
     color:white;
 }
 /*End styling of links*/
+
 
 

@@ -30,7 +30,7 @@ if(menuindex !=  null) {
     })
 }
 
-const layer = document.querySelector(".layer");
+const navbarappear = document.querySelector("#navbarappear");
 const nav = document.querySelector("#navbar");
 nav.style.display = "none";
 
@@ -38,7 +38,7 @@ nav.style.display = "none";
 document.addEventListener("scroll", stick);
 
 function stick(){
-    const distance = layer.offsetHeight - nav.offsetHeight;
+    const distance = navbarappear.offsetHeight - nav.offsetHeight;
     console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
         console.log("fest deg")
@@ -48,4 +48,5 @@ function stick(){
         nav.style.display = "none";
     }
 }
+
 

@@ -19,12 +19,15 @@
   
   /*The hamburger menu*/
   #hamburgermenu{
-    color: #ebe9e6;
     position: absolute;
     display: block;
-    left: 0;
-    width: 33%; 
-    margin-left: 6px;
+    float: left;
+    left: 2%;
+    width: 33%;
+    cursor: pointer;
+    color: #ebe9e6;
+    padding-top: 0.3%;
+    padding-bottom: 0.7%;
   }
   
   /*The bars, color and width*/
@@ -71,16 +74,18 @@
   /* lyche-logo - picture */
   #lychelogo{
     display: block;
-    width: 100px;
+    width: auto;
+    height: 80%;
     z-index: 67;
     position: absolute;
     left: calc(50% - 50px);
+    margin-top: 0.5%;
   }
 
   /* picture link to samfundet.no */
   #samflogo{
     position: absolute;
-    right: 9px;
+    right: 15px;
     top: calc(50% - 9px);
     display: block;
     width: 18px;
@@ -92,7 +97,7 @@
     position: absolute;
     float: right;
     top: calc(50% - 16px);
-    right: 35px;
+    right: 50px;
   }
   
   /* links in session */
