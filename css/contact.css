@@ -1,31 +1,32 @@
 /*Kode for contact*/
 .samfpiccontainer { 
-    position: fixed;
+    position: fixed; 
     display: block;
     width: 40%;
     height: 100vh;
-  
-    /*hvorfor går ikke bildet helt ut?? hm må ha -1% er dette en varig løsning?
-    og hvordan får jeg til at høyden holder seg til 100% av skjermen? må skaleres riktig*/
   }
   
+  /*Picture on the page - 100% of the container above */
   .samfpic{
     height: 100%;
     width: 100%; 
   }
   
+  /*The title on the contact page*/
   .contacttitle {
     position: fixed;
     color: white;
     left: 10%;
-    /*få litt lenger ned?*/
   }
+
+  /*Container that pushes elements to right position*/
   .split .picturepush{
     display: inline-block;
     left: 0;
     width: 50%; 
   }
   
+  /*Textwrap*/
   .split .wrapcontact{
     position: absolute;
     right: 0; 
@@ -35,18 +36,20 @@
     line-height: 60%; 
   }
   
+  /*Styling for the middle titles*/
   .wrapcontact h2{
     padding-top: 2%; 
   }
   
+  /*Adding some space before text*/
   .break {
     padding-top: 1%;
   }
   
+  /*Positioning and sizing of the map on the page*/
   #kart {
     position: relative;
     width: 50%
   
   }
   
-  /*End code for contact */

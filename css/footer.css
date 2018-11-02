@@ -1,13 +1,19 @@
+/*This footer is mostly the same as is used by samfundet.no, and much of the css comes from there*/
+
+
+/*To make footer stick*/
 #sticky-footer {
-    clear: both;
+    clear: both; /*Pusher to right position*/
     height: auto !important;
-    margin-bottom: 0;
+    margin-bottom: 0; /*To make footer lie at bottom of page*/
   }
   
+  /*Setting width of footer*/
   #sticky-footer #sticky-footer-wrapper {
     width: 100%;
   }
   
+  /*Styling the content of the footer*/
   #footer {
     background-color: #111;
     color: #555;
@@ -17,6 +23,7 @@
     width: 100%;
   }
   
+  /*Sizing of the footer*/
   #footer #footer-wrapper {
     padding-top: 35px;
     max-width: 1200px;
@@ -24,10 +31,12 @@
     margin-right: auto;
   }
   
+  /*Centering text in contact-editors -- top text*/
   #footer #footer-wrapper #contact-editors {
     text-align: center;
   }
   
+  /*Styiling for positioning and width of social media list*/
   #footer #footer-wrapper #social {
     text-align: right;
     float: left;
@@ -36,6 +45,7 @@
     width: 40.29137%;
   }
   
+  /*Styling for the images in footer*/
   #footer #footer-wrapper img {
     margin-left: 3px;
     width: 24px;
@@ -43,11 +53,13 @@
     vertical-align: middle;
   }
   
+  /*Styling for elements in the list*/
   #footer #footer-wrapper ul {
     list-style-type: none;
     padding-left: 0;
   }
   
+  /*Styling for the contactinformation*/
   #footer #footer-wrapper #contact {
     text-align: left;
     float: left;
@@ -55,32 +67,33 @@
     margin-right: 2.35765%;
     width: 57.35098%;
   }
-  
+
+  /*Setting contactinfo to the right of social media icons*/
   #footer #footer-wrapper #contact:last-child {
     margin-right: 0;
   }
   
+  /*Styling of links in footer*/
   #footer a {
     text-decoration: none;
     color: #777;
   }
-  a {
-    text-decoration: none;
-    color: #A03033;
-  }
   
+  /*Making sure that footer sticks to bottom*/
   #footer #footer-wrapper::after {
     clear: both;
     content: "";
     display: block;
   }
-  
+
+  /*Styling for the cookie text*/
   #footer #cookies {
     text-align: center;
     font-size: 15px;
     margin-top: 1rem;
   }
   
+  /*Styling none type style in all ul elements */
   ul{
     list-style-type: none;
   }

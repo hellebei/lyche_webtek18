@@ -1,3 +1,4 @@
+/*Styling for tittelen på about.html*/
 .headerabout {
 	position: fixed;
 	text-transform: uppercase;
@@ -5,7 +6,8 @@
 	margin-top: 60px;
 }
 
-.about {
+/*Kode for sections (no/en)*/
+.about-textwrap {
 	position: absolute;
 	margin-left: 10%;
 	margin-right: 60%;
@@ -14,6 +16,7 @@
     line-height: 170%; 
 }
 
+/*Bilde style*/
 #souschef_about {
 	position: fixed;
 	height: 105%;

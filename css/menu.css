@@ -1,5 +1,6 @@
-/*Code for meny*/
 
+/*This is just for the title on the page*/
+/*Maybe change classname? Bit misleading with header*/
 .menuheader {
 	position: fixed;
 	font-size: 30px; 
@@ -8,6 +9,7 @@
 	font-weight: bold;
 }
 
+/*Content of menu*/
 .menu{
 	margin-top: 1%;
 	margin-left: 22%;
@@ -21,7 +23,7 @@
 
 }
 
-
+/*Special for h2 in menu*/
 .menu h2{
   font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
 	text-transform: uppercase;
@@ -29,6 +31,8 @@
 	line-height: 20px;
 }
 
+/*Undertitles*/
+/*Denne burde endres til h3*/
 .menu h4 {
   /*margin:7pt;*/
   padding:2pt;
@@ -36,6 +40,7 @@
   
 }
 
+/*Special for paragraphs in menu*/
 .menu p {
 	margin:0;
   padding:0;
@@ -44,6 +49,7 @@
 	/*font-weight: 300; */
 }
 
+/*Properties of the image*/
 #salad {
 	position: fixed;
 	height: 870px;

@@ -1,4 +1,6 @@
-/* Split the screen in half */
+/* Splitting the screen in half */
+
+/*Defining main split style*/
 .split {
     display: block;
     max-height: 100vh !important;
@@ -9,6 +11,7 @@
     top: 0;
   }
 
+  /*Left content in splitside*/
  .left{
   display: inline-block;
   left: 0;
@@ -16,6 +19,8 @@
   text-align: center; 
 
  }
+
+ /*text on the left*/
   .left .indextext{
     position: relative;
     width: 60%;
@@ -23,6 +28,7 @@
     padding-left: 20%; 
   }
 
+  /*img on the left*/
   .left img{
     position: relative;
     width: 100%; 
@@ -30,6 +36,7 @@
     min-height: 100vh !important;
   }
 
+  /*wrapping the text to get desired positioning*/
   .textwrap{
     position: relative;
     margin: 20% 20% 10% 20%; 
@@ -44,12 +51,14 @@
     text-align: center; 
   }
 
+  /*Text on the right side*/
   .right .indextext{
     position: relative;
     width: 60%;
     padding-right: 20%; 
     padding-left: 20%; 
   }
+  /*Img on the right side*/
   .right img{
     position: relative;
     width: 100%; 
