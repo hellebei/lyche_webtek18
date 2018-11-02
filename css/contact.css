@@ -1,4 +1,5 @@
 /*Kode for contact*/
+
 .samfpiccontainer img{ 
     position: fixed;
     display: block;
@@ -6,24 +7,27 @@
     height: 100vh;
   }
   
-  /* trenger jeg denne? 
+  /*Picture on the page - 100% of the container above */
   .samfpic{
     height: 100%;
     width: 100%; 
   }*/
   
+  /*The title on the contact page*/
   .contacttitle {
     position: fixed;
     color: white;
     left: 10%;
-    /*få litt lenger ned?*/
   }
+
+  /*Container that pushes elements to right position*/
   .split .picturepush{
     display: inline-block;
     left: 0;
     width: 50%; 
   }
   
+  /*Textwrap*/
   .split .wrapcontact{
     position: absolute;
     right: 0; 
@@ -33,18 +37,20 @@
     line-height: 60%; 
   }
   
+  /*Styling for the middle titles*/
   .wrapcontact h2{
     padding-top: 2%; 
   }
   
+  /*Adding some space before text*/
   .break {
     padding-top: 1%;
   }
   
+  /*Positioning and sizing of the map on the page*/
   #kart {
     position: relative;
     width: 50%
   
   }
   
-  /*End code for contact */

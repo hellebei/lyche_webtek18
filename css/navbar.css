@@ -17,6 +17,7 @@
     display: block;
   }
   
+  /*The hamburger menu*/
   #hamburgermenu{
     color: #ebe9e6;
     position: absolute;
@@ -50,14 +51,13 @@
     background-color: black;
   }
   
-  /* hamburgercontent */
+  /* hamburgercontent , menu*/
   ul{
     list-style-type: none;
     display: inline-block;
   }
 
   /*text in hamburgercontent*/
-
   #hamburgercontent{
     text-transform: uppercase;
     padding-top: 85px;
@@ -77,7 +77,7 @@
     left: calc(50% - 50px);
   }
 
-  /* link to samfundet.no */
+  /* picture link to samfundet.no */
   #samflogo{
     position: absolute;
     right: 9px;
@@ -95,10 +95,10 @@
     right: 35px;
   }
   
-/* links in session*/
-  a:link{
-    text-decoration: none; 
-    color: white; 
+  /* links in session */
+  a:link {
+    text-decoration: none;
+    color: white;
   }
 
   a:hover{
@@ -120,7 +120,7 @@ li a:hover{
     color:white;
 }
   
-  /* class for hidden */
+  /* class for hidden content */
   .hidden {
     display: none;
   }

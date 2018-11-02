@@ -7,16 +7,16 @@ document.getElementById("footer").innerHTML = `
                 <div id = "contact-editors">
                     <ul>
                         <li>
-                            Lurer du på noe? <a href="https://www.samfundet.no/kontakt"> kontakt oss</a>
+                            Lurer du på noe? <a href="contact.html"> kontakt oss</a>
                         </li>
                     </ul>
                 </div>
             <div id = "social">
                 <ul>
-                    <li><a target="_blank" href="https://facebook.com/samfundet">Facebook
+                    <li><a target="_blank" href="https://www.facebook.com/samfundet.lyche/">Facebook
                         <img alt="Like us on Facebook" src="img/face.png"> </a> </li>
 
-                    <li> <a target="_blank" href="https://instagram.com/samfundet">Instagram
+                    <li> <a target="_blank" href="https://www.instagram.com/lychekjokkenogbar/">Instagram
                         <img alt="See our images on Instagram" src="img/instabilde.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://open.spotify.com/user/samfundet">Spotify

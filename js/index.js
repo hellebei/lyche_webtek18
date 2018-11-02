@@ -12,7 +12,7 @@ const menuindex = document.querySelector(".menuindex");
 if(menuindex !=  null) {
     const hamburgermenuIndex = document.getElementById("hamburgermenuIndex");
     const hamburgercontentIndex= document.getElementById("hamburgercontentIndex");
-    hamburgermenuIndex.addEventListener('click', function() {
+    hamburgermenuIndex.addEventListener("click", function() {
         console.log("click");
         toggleHide(hamburgercontentIndex)
         changemenu(hamburgermenuIndex)
@@ -30,19 +30,20 @@ if(menuindex !=  null) {
     })
 }
 
+const layer = document.querySelector(".layer");
+const nav = document.querySelector("#navbar");
+nav.style.display = "none";
+
 // make the navbar sticky in index
 document.addEventListener("scroll", stick);
 
 function stick(){
-    const layer = document.querySelector(".layer");
-    const nav = document.querySelector("#navbar");
     const distance = layer.offsetHeight - nav.offsetHeight;
-   /*console.log(distance+ " ' " + window.scrollY)*/
+    console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
         console.log("fest deg")
         nav.style.position = "fixed";
         nav.style.display = "block";
-
     } else {
         nav.style.display = "none";
     }
