@@ -1,0 +1,48 @@
+html{
+    font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+  }
+  
+  body{ 
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;  
+    font-size: 16px; 
+    line-height: 200%;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #ebe9e6;
+  }
+
+  header{
+    width: 100%; 
+  }
+  
+  section{
+    background-color: #ebe9e6;
+  }
+
+  h2{
+    font-weight: 600; 
+    padding-top: 2%; 
+  }
+  
+  header{
+    width: 100%; 
+  }
+
+  ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+  #navbarpush{
+    height: 50px;
+  }
+
+  #no{
+    display: inherit; 
+  }
+
+  #en{
+    display: none;
+  }
+

@@ -23,9 +23,9 @@ navbar.innerHTML =
     <a href="#"><img id="lychelogo" src="img/logo.png" alt="Logo for Lyche"></a>
 
     <div id="session-status">
-        <a class="changelangNO" href="/no">NO</a>
-        <a class="line" href="none"> | </a>
-        <a class="changelangEN" href="/en">EN</a>
+        <a class="changelangNO" href="javascript:changeLangtoNo();"">NO</a>
+        <a class="line" href="javascript:;"> | </a>
+        <a class="changelangEN" href="javascript:changeLangtoEn();">EN</a>
     </div>
 
     <a href="https://www.samfundet.no/"> <img id="samflogo"src="img/samf_logo.png" alt="Logo samf"> </a>

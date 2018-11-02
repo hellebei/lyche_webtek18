@@ -1,23 +1,14 @@
-
-body {
-    background-color: lightgrey;
-    font-family: futura, verdana;  
-}
-
-
 .headerabout {
-	position: fixed;
-	text-transform: uppercase;
 	margin-left: 6%;
 	margin-top: 60px;
 }
 
 .about {
-	position: absolute;
-	margin-left: 11%;
-	margin-right: 65%;
+	margin-left: 10%;
+	margin-right: 60%;
     text-align: justify; 
     margin-top: 150px;
+    line-height: 170%; 
 }
 
 #souschef_about {
@@ -27,11 +18,4 @@ body {
 	margin-left: 50%;
 	margin-top: -10px;
 }
-
-
-
-.en {
-	display: none;
-}
-
 

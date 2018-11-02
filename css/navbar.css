@@ -17,7 +17,7 @@
     display: block;
   }
   
-  #hamburgermenu, #hamburgermenu1{
+  #hamburgermenu{
     color: #ebe9e6;
     position: absolute;
     display: block;
@@ -39,6 +39,7 @@
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: black;
   }
   
   .change .bar2 {opacity: 0;}
@@ -46,6 +47,7 @@
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: black;
   }
   
   /* hamburgercontent */
@@ -93,15 +95,30 @@
     right: 35px;
   }
   
-  /* links in session*/
-  a:link {
-    text-decoration: none;
-    color: white;
+/* links in session*/
+  a:link{
+    text-decoration: none; 
+    color: white; 
   }
-  
+
   a:hover{
-    font-weight: bolder;
+    font-weight: bolder; 
   }
+
+  
+li a:link{
+    color: black;
+    font-weight: bold;
+}
+
+li a:visited{
+  color: #000000;
+  font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+}
+
+li a:hover{
+    color:white;
+}
   
   /* class for hidden */
   .hidden {
