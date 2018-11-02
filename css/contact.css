@@ -11,13 +11,19 @@
   .samfpic{
     height: 100%;
     width: 100%; 
-  }*/
+  }
   
   /*The title on the contact page*/
   .contacttitle {
-    position: fixed;
+    position: absolute;
     color: white;
-    left: 10%;
+    margin: 2% 0 0 0; 
+    left: 5%;
+    z-index: 10;
+  }
+
+  h1{
+  font-size: 30px; 
   }
 
   /*Textwrap*/
