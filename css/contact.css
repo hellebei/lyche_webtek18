@@ -19,21 +19,14 @@
     left: 10%;
   }
 
-  /*Container that pushes elements to right position*/
-  .split .picturepush{
-    display: inline-block;
-    left: 0;
-    width: 50%; 
-  }
-  
   /*Textwrap*/
-  .split .wrapcontact{
-    position: absolute;
+  .wrapcontact{
+    position: relative;
     right: 0; 
-    display: inline-block;
     width: 50%; 
-    margin: 0 0 50% 0; 
+    margin: 0 50%;
     line-height: 60%; 
+    padding-bottom: 10%;
   }
   
   /*Styling for the middle titles*/
@@ -42,7 +35,7 @@
   }
   
   /*Adding some space before text*/
-  .break {
+  .br {
     padding-top: 1%;
   }
   
