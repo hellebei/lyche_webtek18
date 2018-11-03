@@ -2,24 +2,27 @@
 .headerabout {
 	margin-left: 6%;
 	margin-top: 60px;
+	width: 20%;
 }
 
 /*Kode for sections (no/en)*/
 .about-textwrap {
-	position: absolute;
 	margin-left: 10%;
 	margin-right: 60%;
     text-align: justify; 
-    margin-top: 150px;
-    line-height: 170%; 
+	margin-top: 2%;
+	margin-bottom: 10%;
+	line-height: 170%; 
+	
 }
 
 /*Bilde style*/
 #souschef_about {
 	position: fixed;
-	height: 105%;
-	width: 50%;
-	margin-left: 50%;
-	margin-top: -10px;
+	height: 100%;
+	width: 40%;
+	right: 0;
+	/*margin-left: 50%;*/
+	
 }
 
