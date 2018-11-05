@@ -67,7 +67,8 @@
   #hamburgercontent{
     text-transform: uppercase;
     padding-top: 10%;
-    width: 15%;
+    width: 25%;
+    min-width: 200px;
     height: 100vh;
     padding-right: 8%;
     text-align: left !important;
@@ -77,14 +78,6 @@
     line-height: 300%; 
     z-index: 17;
     opacity: 1;
-    /*
-    padding-top: 85px;
-    width: 30%;
-    height: 100vh;
-    padding-right: 20px;
-    text-align: left !important;
-    background-color: #ebe9e6;
-    */
   }
   
   /* lyche-logo - picture */
@@ -95,7 +88,7 @@
     z-index: 67;
     position: absolute;
     left: calc(50% - 50px);
-    margin-top: 0.5%;
+    top: 10%; 
   }
 
   /* picture link to samfundet.no */

@@ -141,7 +141,8 @@ header{
 #hamburgercontentIndex{
     text-transform: uppercase;
     padding-top: 10%;
-    width: 15%;
+    width: 25%;
+    min-width: 200px;
     height: 100vh;
     padding-right: 8%;
     text-align: left !important;
@@ -150,8 +151,9 @@ header{
     font-weight: 1000; 
     line-height: 300%; 
     z-index: 17;
-    opacity: 0.8;
+    opacity: 1;
 }
+
 
  /*Hiding hidden content*/
 .hidden {
