@@ -1,22 +1,24 @@
-let currentLang = ""
+const setLang = (lang) => {
+    sessionStorage.setItem('lang', lang)
+}
 
+const getLang = () => {
+    return sessionStorage.getItem('lang')
+}
 
-if(currentLang = "en"){
+const lang = getLang()
+if (lang === "en"){
     changeLangtoEn()
 }
-if(currentLang = "no"){
-    changeLangtoNo()
-}
-
 
 function changeLangtoEn(){
     document.getElementById("no").style.display = "none"
     document.getElementById("en").style.display = "inherit"
-    currentLang = "en"
+    setLang("en")
 }
 
 function changeLangtoNo(){
     document.getElementById("en").style.display = "none"
     document.getElementById("no").style.display = "inherit"
-    currentLang = "no"
+    setLang("no")
 }
