@@ -7,7 +7,7 @@
 
 /* div id = navbar, in all html files */
 #navbar{
-    z-index: 1000;
+    z-index: 80;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@
     display: block;
     width: auto;
     height: 80%;
-    z-index: 67;
+    z-index: 30;
     position: absolute;
     left: calc(50% - 50px);
     top: 10%; 
