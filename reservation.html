@@ -20,8 +20,10 @@
         <div id="navbar"></div>
 
         <section class = "tableres" id = "no">
-            <div class = "split-res">
-                <header><h1>RESERVER BORD</h1></header>
+
+            <header><h1>RESERVER BORD</h1></header>
+
+            <div class="text_body">
 
                 <div class="information">
 
@@ -31,7 +33,7 @@
                 
                 </div>
 
-                <form id="form1" name ="form1" method="post" onsubmit="confirm_order_no()">
+                <form id="form1" class="forms" name ="form1" method="post" onsubmit="confirm_order_no()">
 
                     <div class="br">
                         <label for="navn">Name: <span style="color:red">*</span></label>
@@ -101,18 +103,19 @@
 
                 </form>
 
-                <div class = "img-res" id = "img-reservation_no">
-                        <img src="img/mussels_croped.png" alt="pai">
-                </div>
+            </div>
 
-            </div> 
+            <div class = "img-res" id = "img-reservation_no">
+                    <img src="img/mussels_croped.png" alt="pai">
+            </div>
 
         </section>
 
         <section class= "tableres" id = "en">
-            <div class="split-res">
 
-                <header><h1>MAKE RESERVATION</h1></header>
+            <header><h1>MAKE RESERVATION</h1></header>
+
+            <div class="text_body">
 
                 <div class="information">
 
@@ -184,20 +187,20 @@
                             </select>
                         </div>
 
-                        <div class="br">
-                            <label for="info">Extra information:</label>
-                            <br>
-                            <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
-                        </div>
+                    <div class="br">
+                        <label for="info">Extra information:</label>
+                        <br>
+                        <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
+                    </div>
 
-                        <input type="submit" value="SUBMIT">
+                    <input type="submit" value="SUBMIT">
                 </form>
 
-                <div class = "img-res" id = "img-reservation_en">
-                        <img src="img/mussels_croped.png" alt="pai">
-                </div> 
-
             </div>
+
+            <div class = "img-res" id = "img-reservation_en">
+                    <img src="img/mussels_croped.png" alt="pai">
+            </div> 
 
         </section>
 

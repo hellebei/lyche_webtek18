@@ -1,5 +1,9 @@
 /*Main stylesheet for all htmls on the website*/
 
+* {
+  box-sizing: border-box;
+}
+
 /*Sets font*/
 html{
     font-family: futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
