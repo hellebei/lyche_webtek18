@@ -1,23 +1,24 @@
 /*Kode for contact*/
+section{
+  min-height: 100vh; 
+}
 
-.samfpiccontainer img{ 
+.samfpiccontainer { 
     position: fixed;
     display: block;
     width: 40%;
     height: auto;
-    background-size: 100vh;
+    overflow: hidden;
   }
   
   /*Picture on the page - 100% of the container above */
-  .samfpic{
-    height: auto;
+  .samfpiccontainer img{
+    height: 100vh;
     width: 100%;
     /*transform: scaleX(1);
     transform-box: */
+    object-fit: cover; 
   }
-
-  /* Responsive picture*/ 
-  /*@media screen and min-width*/
   
   /*The title on the contact page*/
   .contacttitle {
@@ -59,4 +60,39 @@
     width: 50%
   
   }
+
+  @media only screen and (max-width: 770px){
+    .samfpiccontainer{ 
+      height: 20vh;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+  } 
+
+  @media only screen and (max-width: 770px){
+    .samfpiccontainer img {
+      height: 30vh;
+      width: 100%;
+      object-fit: cover;
+    }}
+
+    @media only screen and (max-width: 770px){
+    .contacttitle {
+    position: relative; 
+    color: black; 
+    margin: 2% 0 0 10%;
+    left: 5%;
+    z-index: 10;
+    }}
+
+    @media only screen and (max-width: 770px){
+    .wrapcontact {
+      position: relative;
+      line-height: 60%;
+      padding: 2% 0 10% 10%;
+  }
+  }
+
+  
   

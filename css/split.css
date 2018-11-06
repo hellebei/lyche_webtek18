@@ -3,7 +3,8 @@
 /*Defining main split style*/
 .split {
     display: block;
-    height: 100vh !important;
+  /*height: 100vh !important;*/
+    height: 100vh; 
     width: 100%;
     position: relative;
     z-index: 0;
@@ -31,14 +32,14 @@
   .left img{
     position: relative;
     width: 100%; 
-    height: 100vh !important;
+    height: 100vh;
     object-fit: cover;
   }
 
   /*wrapping the text to get desired positioning*/
   .textwrap{
     position: relative;
-    margin: 20% 20% 10% 20%; 
+    margin: 20% 15% 10% 15%; 
   }
   
   /* Control the right side */
@@ -61,7 +62,7 @@
   .right img{
     position: relative;
     width: 100%; 
-    height: 100vh !important;
+    height: 100vh;
     object-fit: cover;
   }
 
@@ -109,4 +110,15 @@
         margin: 20% 20% 10% 20%; 
       }
 
+}
+
+@media only screen and (max-height: 570px) {
+  .indextext p{
+    font-size: 3vh; 
+    line-height: 170%; 
+  }
+
+  .textwrap{
+    position: relative;
+  }
 }
