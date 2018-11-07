@@ -9,7 +9,7 @@
   z-index: 4;
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: absolute;
 }
 
@@ -22,20 +22,12 @@
 /* Fading animation */
 .fade {
   -webkit-animation: fade 5s linear forwards;
-  -moz-animation: fade 5s linear forwards;
   animation: fade 5s linear forwards;
 }
 
 .fade img{
   width: 100%; 
 }
-
-@-moz-keyframes fade {
-  0% { opacity: 0.9; }
-  50% { opacity: 1; }
-  100% { opacity: 0.9; }
-}
-
 
 @-webkit-keyframes fade {
   0% { opacity: 0.9; }
