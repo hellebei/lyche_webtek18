@@ -13,11 +13,11 @@ navbar.innerHTML =
     
     <div id="hamburgercontent" class="hidden">
         <ul>
-            <li><a href="index.html" class="item_menu">hjem</a></li>
-            <li><a href="meny.html" class="item_menu">meny</a></li>
-            <li><a href="about.html" class="item_menu">om</a></li>
-            <li><a href="reservation.html" class="item_menu">reservasjon</a></li>
-            <li><a href="contact.html" class="item_menu">kontakt</a></li></ul>
+            <li><a href="index.html" class="item_menu">home</a></li>
+            <li><a href="meny.html" class="item_menu">menu</a></li>
+            <li><a href="about.html" class="item_menu">about</a></li>
+            <li><a href="reservation.html" class="item_menu">reservation</a></li>
+            <li><a href="contact.html" class="item_menu">contact</a></li></ul>
     </div>
 
     <a href="index.html"><img id="lychelogo" src="img/logo.png" alt="Logo for Lyche"></a>

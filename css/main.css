@@ -70,8 +70,15 @@ html{
     display: inherit; 
   }
 
+
   /*hiding english text*/
   #en{
     display: none;
   }
 
+  @media only screen and (max-height: 420px){
+    #hamburgercontentIndex, #hamburgercontent{
+      line-height: 10vh; 
+      font-size: 4vh; 
+    }
+  }
