@@ -8,6 +8,7 @@
 	margin: 2% 0 0 5%; 
 }
 
+
 /*
 body {
 	width: 78vw;
@@ -60,14 +61,25 @@ body {
 }
 
 
-/*Properties of the image*/
+/* Control the div containing the image */
 .salad {
+  width:22%;
+  height: auto;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+/*Properties of the image*/
+.salad img{
 	/*display: block: 100%;*/
-	position: fixed;
-	height: 870px;
-	width: 22vw;
-	margin-left: -8px;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	display: left;
 	margin-top: 0px;
+	object-fit: cover;
 }
 
 /* If the screen size is 771px wide or more, hide .newsaladpic image */
@@ -99,4 +111,5 @@ body {
 		position: fixed;
 		height: 32vw;
 	
+}
 }
