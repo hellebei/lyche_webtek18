@@ -5,19 +5,13 @@
     display: block;
     width: 40%;
     height: auto;
-    background-size: 100vh;
   }
   
   /*Picture on the page - 100% of the container above */
   .samfpic{
-    height: auto;
-    width: 100%;
-    /*transform: scaleX(1);
-    transform-box: */
+    height: 100%;
+    width: 100%; 
   }
-
-  /* Responsive picture*/ 
-  /*@media screen and min-width*/
   
   /*The title on the contact page*/
   .contacttitle {
