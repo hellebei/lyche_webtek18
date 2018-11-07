@@ -138,5 +138,10 @@ li a:hover{
   .hidden {
     display: none;
   }
-  
+
+  @media only screen and (max-width: 770px) {
+    #lychelogo{
+     position: relative;
+    }
+  }
   

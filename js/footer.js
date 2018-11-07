@@ -14,16 +14,16 @@ document.getElementById("footer").innerHTML = `
             <div id = "social">
                 <ul>
                     <li><a target="_blank" href="https://www.facebook.com/samfundet.lyche/">Facebook
-                        <img alt="Like us on Facebook" src="img/face.png"> </a> </li>
+                        <img alt="Like us on Facebook" src="img/footer/face.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://www.instagram.com/lychekjokkenogbar/">Instagram
-                        <img alt="See our images on Instagram" src="img/instabilde.png"> </a> </li>
+                        <img alt="See our images on Instagram" src="img/footer/instabilde.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://open.spotify.com/user/samfundet">Spotify
-                        <img alt="Check out our Spotify playlists" src="img/spotify.png"> </a> </li>
+                        <img alt="Check out our Spotify playlists" src="img/footer/spotify.png"> </a> </li>
 
                     <li> <a target="_blank" href="https://twitter.com/samfundet">Twitter
-                        <img alt="See our tweets on Twitter" src="img/twitter.png"></a></li>
+                        <img alt="See our tweets on Twitter" src="img/footer/twitter.png"></a></li>
                 </ul>
             </div>
     
