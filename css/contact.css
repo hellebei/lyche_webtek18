@@ -1,6 +1,6 @@
 /*Kode for contact*/
 
-.samfpiccontainer img{ 
+.samfpiccontainer { 
     position: fixed;
     display: block;
     width: 40%;
@@ -9,8 +9,10 @@
   
   /*Picture on the page - 100% of the container above */
   .samfpic{
-    height: 100%;
-    width: 100%; 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover; 
   }
   
   /*The title on the contact page*/
