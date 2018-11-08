@@ -1,4 +1,3 @@
-
 //kan bare velge datoer fra "imorgen"
 var tommorow = new Date();
 tommorow.setDate(tommorow.getDate() + 1);
@@ -17,37 +16,54 @@ function ValidateEmail(lang){
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (lang === 'en'){
+        console.log("lang === 'en'");
+
         if(mailInput[1].value.match(mailformat)){
+            console.log("en, return true");
+            
             mailInput[1].focus();
             return true;
         }
         else{
+            console.log("en, return false");
+            
             alert("You have entered an invalid email address!");
             mailInput[1].focus();
             return false;
         }
     }
     else if(lang === 'no'){
+        console.log("lang === 'no'");
+        
+        
         if(mailInput[0].value.match(mailformat)){
+            console.log("no, return true");
+            
             mailInput[0].focus();
             return true;
         }
         else{
+            
             alert("You have entered an invalid email address!");
             mailInput[0].focus();
             return false;
-        }
+        }        
     }
 }
 
-function confirm_order_no(){
-    if (ValidateEmail(lang)) {
-        let myWindow = window.open("confirmation.html");
+
+//hvorfor funker ikke getLang() :((((
+function confirm_order(e){
+    if (ValidateEmail('no')){
+        window.open("confirmation.html");
+    }
+    else {
+        e.preventDefault();
     }
 }
 
 function confirm_order_en(){
-    if (ValidateEmail(lang)) {
-        let myWindow = window.open("confirmation.html");
+    if (ValidateEmail('en')) {
+        window.open("confirmation.html");
    }
 }
