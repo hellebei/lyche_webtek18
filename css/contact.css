@@ -76,19 +76,22 @@ section{
 
     @media only screen and (max-width: 770px){
     .contacttitle {
-    
-    position: relative;
-    margin: -10% 0 0 5%;
+    /* position: absolute;
+    margin: -10% 0 0 5%; */
+    position: absolute;
+    margin: -10% 0 0 5%; 
+    z-index: 10;
     }}
 
-    @media only screen and (max-width: 770px)and (max-height: 570px){
+    @media only screen and (max-width: 770px){
     .wrapcontact {
       position: relative;
       margin: 10vh 0 0 0;
       line-height: 60%;
-      padding: 2% 0 10% 10%;
-      
+      padding: 2% 0 10% 10%; 
+      width: 100%; 
   }
+
 
 
   }
