@@ -60,7 +60,7 @@ section{
 
   @media only screen and (max-width: 770px){
     .samfpiccontainer{ 
-      height: 20vh;
+      height: 40vh;
       overflow: hidden;
       width: 100%;
       position: relative;
@@ -69,26 +69,28 @@ section{
 
   @media only screen and (max-width: 770px){
     .samfpiccontainer img {
-      height: 30vh;
+      height: 40vh;
       width: 100%;
       object-fit: cover;
     }}
 
     @media only screen and (max-width: 770px){
     .contacttitle {
-    position: relative; 
-    color: black; 
-    margin: 2% 0 0 10%;
-    left: 5%;
-    z-index: 10;
+    
+    position: relative;
+    margin: -10% 0 0 5%;
     }}
 
-    @media only screen and (max-width: 770px){
+    @media only screen and (max-width: 770px)and (max-height: 570px){
     .wrapcontact {
       position: relative;
+      margin: 10vh 0 0 0;
       line-height: 60%;
       padding: 2% 0 10% 10%;
+      
   }
+
+
   }
 
   
