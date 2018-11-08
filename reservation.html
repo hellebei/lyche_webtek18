@@ -43,13 +43,13 @@
             <form id="form1" class="forms" name ="form1" method="post">
 
                 <div class="br">
-                    <label for="navn">Name: <span style="color:red">*</span></label>
+                    <label for="navn">Navn: <span style="color:red">*</span></label>
                     <input type="text" name="name" id="navn" placeholder="navn.." autofocus required />
                 </div>
 
                 <div class="br">
                     <label for="mail">e-mail: <span style="color:red">*</span></label>
-                    <input type="text" name="email" id="mail" onchange="ValidateEmail()" placeholder="navn@eksempel.com" required />
+                    <input type="text" name="email" id="mail" onchange="ValidateEmail('no')" placeholder="navn@eksempel.com" required />
                 </div>
 
                 <div class="br">
@@ -142,7 +142,7 @@
 
                 <div class="br">
                     <label for="email">e-mail: <span style="color:red">*</span></label>
-                    <input type="text" name="email" id="email" onchange="ValidateEmail(document.form1.email)" placeholder="name@example.com" required />
+                    <input type="text" name="email" id="email" onchange="ValidateEmail('en')" placeholder="name@example.com" required />
                 </div>
 
                 <div class="br">
