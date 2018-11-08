@@ -137,4 +137,7 @@ input:focus, textarea:focus, select:focus {
     width: 80%;
     margin-right: 10%;
   }
+  h1{
+    line-height: 100%; 
+  }
 }
