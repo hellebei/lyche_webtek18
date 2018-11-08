@@ -8,12 +8,6 @@
 	margin: 2% 0 0 5%; 
 }
 
-
-/*
-body {
-	width: 78vw;
-}*/
-
 .layer{
   color: #ebe9e6;
   position: absolute;
@@ -48,7 +42,6 @@ body {
 	/*line-height: 2pt 2pt -1pt 2pt;*/
 	font-size: 18px;
 	font-weight: bold;
-
 }
 
 /*Special for paragraphs in menu*/
@@ -59,7 +52,6 @@ body {
 	text-align: justify; 
 	/*font-weight: 300; */
 }
-
 
 /* Control the div containing the image */
 .salad {
@@ -96,19 +88,19 @@ body {
 	}
 
 	.menutitle {
-		position: fixed;
+		position: relative;
 		margin: -21% 0 0 5%; 
 	}
 
 	.menuwrap{
 		column-count: 1; 
 		margin-left: 2vw;
-		margin-top: 30vW;
+		margin-top: 12vw;
 	}
 
 	.newsaladpic {
 		display: block;
-		position: fixed;
+		position: relative;
 		height: 32vw;
 	}
 }

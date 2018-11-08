@@ -57,20 +57,9 @@ header{
   border: 2px solid #000000;
   /*background-color: none;*/
   color: #000000;
-
-
-  /*
-  background-color: black;
-  opacity: 0.7;
-  border: groove 1px #ccc; */
   letter-spacing: 2px;
   margin: 0 auto;
 }
-
-/*
- background-color: white;
-    color: black;
-    border: 2px solid #4CAF50; */
 
 /*look of button link*/
 .cMoreBtn a:link{
@@ -88,7 +77,6 @@ header{
 .cMoreBtn a:visited{
   color: #000000;
   text-decoration: none;
-/*ebe9e6*/
 }
 
 /*frame around epostinfo*/
