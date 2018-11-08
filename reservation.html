@@ -1,53 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" type = "image/jpg" href="img/samf_logo_u.png">
-        <link rel="stylesheet" type="text/css" href = "css/main.css">
-        <link rel="stylesheet" type="text/css" href = "css/reservation.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/footer.css">
-        
-        <title>reservation</title>
-        
-    </head>
-    <body>
 
-        <div id= "navbarpush"></div>
-        <div id="navbar"></div>
+<head>
 
-        <section class = "tableres" id = "no">
+    <title> Reservation </title>
 
-            <header><h1>RESERVER BORD</h1></header>
+    <meta name="keywords" content="HTML,CSS, JS">
+    <meta charset="UTF-8">
 
-            <div class="text_body">
+    <!--  Setting the viewport so the website looks good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <div class="information">
+    <link rel="icon" type = "image/jpg" href="img/samf_logo_u.png">
 
-                    <p> Reservasjoner må registreres minst en dag i forveien, altså innen kl. 24.00 dagen før. Vi tar ikke i mot reservasjoner på den aktuelle dagen. </p>
-                    <p> Siden det kun er et visst antall bord som er tilgjengelige for reservasjon, kan man oppleve å få avslag når disse bordene er fulle. Hvis du får avslag kan du prøve å endre tidspunkt. Det er likevel mulig å komme innom for drop-in. </p>
-                    <p> For spørsmål eller andre henvendelser, send en mail til <a href="mailto:lyche@samfundet.no">lyche@samfundet.no</a>.</p>
-                
+    <link rel="stylesheet" type="text/css" href = "css/main.css">
+    <link rel="stylesheet" type="text/css" href = "css/reservation.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+
+    <div id= "navbarpush"></div>
+    <div id="navbar"></div>
+
+    <!--Norwegian section-->
+    <section class = "tableres" id = "no">
+
+        <header><h1>RESERVER BORD</h1></header>
+
+        <div class="text_body">
+
+            <div class="information">
+
+                <p> Reservasjoner må registreres minst en dag i forveien, altså innen kl. 24.00 dagen før. Vi tar ikke i mot reservasjoner på den aktuelle dagen. </p>
+                <p> Siden det kun er et visst antall bord som er tilgjengelige for reservasjon, kan man oppleve å få avslag når disse bordene er fulle. Hvis du får avslag kan du prøve å endre tidspunkt. Det er likevel mulig å komme innom for drop-in. </p>
+                <p> For spørsmål eller andre henvendelser, send en mail til <a href="mailto:lyche@samfundet.no">lyche@samfundet.no</a>.</p>
+            
+            </div>
+
+            <form id="form1" class="forms" name ="form1" method="post" onsubmit="confirm_order_no()">
+
+                <div class="br">
+                    <label for="navn">Name: <span style="color:red">*</span></label>
+                    <input type="text" name="name" id="navn" placeholder="navn.." autofocus required />
                 </div>
 
-                <form id="form1" class="forms" name ="form1" method="post" onsubmit="confirm_order_no()">
+                <div class="br">
+                    <label for="mail">e-mail: <span style="color:red">*</span></label>
+                    <input type="text" name="email" id="mail" onchange="ValidateEmail()" placeholder="navn@eksempel.com" required />
+                </div>
 
-                    <div class="br">
-                        <label for="navn">Name: <span style="color:red">*</span></label>
-                        <input type="text" name="name" id="navn" placeholder="navn.." autofocus required />
-                    </div>
+                <div class="br">
+                    <label for="personer">Antall personer: <span style="color:red">*</span></label>
+                    <select name="persons" id="personer">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
 
-                    <div class="br">
-                        <label for="mail">e-mail: <span style="color:red">*</span></label>
-                        <input type="text" name="email" id="mail" onchange="ValidateEmail()" placeholder="navn@eksempel.com" required />
-                    </div>
+                <div class="br">
+                    <label for="dato">Dato: <span style="color:red">*</span></label>
+                    <input type="date" id="dato" name="date" min="18.08.2018" placeholder="YYYY-MM-DD"required>
+                </div>
 
-                    <div class="br">
-                        <label for="personer">Antall personer: <span style="color:red">*</span></label>
-                        <select name="persons" id="personer">
+                <div class="br">
+                    <label for="tid">Tidspunkt: <span style="color:red">*</span></label>
+                    <select name="times" id="tid">
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                    </select>
+                </div>
+
+                <div class="br">
+                    <label for="inf">Melding:</label>
+                    <br>
+                    <textarea id ="inf" name= "message" rows="5" cols="30" placeholder="Melding.."></textarea>
+                </div>
+
+                <input type="submit" value="SEND INN" onclick="myFunction()">
+
+            </form>
+
+        </div>
+
+        <div class = "img-res" id = "img-reservation_no">
+                <img src="img/mussels_croped.png" alt="mussels">
+        </div>
+
+    </section>  <!--Ending norwegian section-->
+
+    <!--English section-->
+    <section class= "tableres" id = "en">
+
+        <header><h1>MAKE RESERVATION</h1></header>
+
+        <div class="text_body">
+
+            <div class="information">
+
+                <p>The reservation must be registered before midnight the day before.</p>
+                <p>As there is only a limited amount of tables available for reservation, you might experience that your reservation is declined as these tables are already filled. If you get declined, you might try changing the time of arrival. We still leave a portion of the restaurant open for drop-ins.</p>
+                <p>If you have other inquires or questions, please email us at <a href="mailto:lyche@samfundet.no">lyche@samfundet.no</a>.</p>
+                
+            </div>
+
+            <form name= "form1" class="forms" id="form2" method="post" onsubmit= "confirm_order_en()">
+
+                <div class="br">
+                    <label for="name">Name: <span style="color:red">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="name.." autofocus required />
+                </div>
+
+                <div class="br">
+                    <label for="email">e-mail: <span style="color:red">*</span></label>
+                    <input type="text" name="email" id="email" onchange="ValidateEmail(document.form1.email)" placeholder="name@example.com" required />
+                </div>
+
+                <div class="br">
+                    <label for="persons">Number of people: <span style="color:red">*</span></label>
+                    <select name="persons" id="persons">
+                            <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -67,17 +168,18 @@
                             <option value="18">18</option>
                             <option value="19">19</option>
                             <option value="20">20</option>
-                        </select>
-                    </div>
+                    </select>
+                </div>
 
-                    <div class="br">
-                        <label for="dato">Dato: <span style="color:red">*</span></label>
-                        <input type="date" id="dato" name="date" min="18.08.2018" placeholder="YYYY-MM-DD"required>
-                    </div>
+                <div class="br">
+                    <label for="date">Date: <span style="color:red">*</span></label>
+                    <br>
+                    <input type="date" name="date" id="date" placeholder="YYYY-MM-DD" min="" required>
+                </div>
 
-                    <div class="br">
-                        <label for="tid">Tidspunkt: <span style="color:red">*</span></label>
-                        <select name="times" id="tid">
+                <div class="br">
+                    <label for="times">Time: <span style="color:red">*</span></label>
+                    <select name="times" id="times">
                             <option value="16:00">16:00</option>
                             <option value="16:30">16:30</option>
                             <option value="17:00">17:00</option>
@@ -93,124 +195,30 @@
                         </select>
                     </div>
 
-                    <div class="br">
-                        <label for="inf">Melding:</label>
-                        <br>
-                        <textarea id ="inf" name= "message" rows="5" cols="30" placeholder="Melding.."></textarea>
-                    </div>
-
-                    <input type="submit" value="SEND INN" onclick="myFunction()">
-
-                </form>
-
-            </div>
-
-            <div class = "img-res" id = "img-reservation_no">
-                    <img src="img/mussels_croped.png" alt="mussels">
-            </div>
-
-        </section>
-
-        <section class= "tableres" id = "en">
-
-            <header><h1>MAKE RESERVATION</h1></header>
-
-            <div class="text_body">
-
-                <div class="information">
-
-                    <p>The reservation must be registered before midnight the day before.</p>
-                    <p>As there is only a limited amount of tables available for reservation, you might experience that your reservation is declined as these tables are already filled. If you get declined, you might try changing the time of arrival. We still leave a portion of the restaurant open for drop-ins.</p>
-                    <p>If you have other inquires or questions, please email us at <a href="mailto:lyche@samfundet.no">lyche@samfundet.no</a>.</p>
-                    
+                <div class="br">
+                    <label for="info">Extra information:</label>
+                    <br>
+                    <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
                 </div>
 
-                <form name= "form1" class="forms" id="form2" method="post" onsubmit= "confirm_order_en()">
+                <input type="submit" value="SUBMIT">
+            </form>
 
-                    <div class="br">
-                        <label for="name">Name: <span style="color:red">*</span></label>
-                        <input type="text" name="name" id="name" placeholder="name.." autofocus required />
-                    </div>
+        </div>
 
-                    <div class="br">
-                        <label for="email">e-mail: <span style="color:red">*</span></label>
-                        <input type="text" name="email" id="email" onchange="ValidateEmail(document.form1.email)" placeholder="name@example.com" required />
-                    </div>
+        <div class = "img-res" id = "img-reservation_en">
+                <img src="img/mussels_croped.png" alt="pai">
+        </div> 
 
-                    <div class="br">
-                        <label for="persons">Number of people: <span style="color:red">*</span></label>
-                        <select name="persons" id="persons">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                        </select>
-                    </div>
+    </section>
 
-                    <div class="br">
-                        <label for="date">Date: <span style="color:red">*</span></label>
-                        <br>
-                        <input type="date" name="date" id="date" placeholder="YYYY-MM-DD" min="" required>
-                    </div>
+    <div id="footer"></div> <!--Ending english section-->
+    
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
 
-                    <div class="br">
-                        <label for="times">Time: <span style="color:red">*</span></label>
-                        <select name="times" id="times">
-                                <option value="16:00">16:00</option>
-                                <option value="16:30">16:30</option>
-                                <option value="17:00">17:00</option>
-                                <option value="17:30">17:30</option>
-                                <option value="18:00">18:00</option>
-                                <option value="18:30">18:30</option>
-                                <option value="19:00">19:00</option>
-                                <option value="19:30">19:30</option>
-                                <option value="20:00">20:00</option>
-                                <option value="20:30">20:30</option>
-                                <option value="21:00">21:00</option>
-                                <option value="21:30">21:30</option>
-                            </select>
-                        </div>
-
-                    <div class="br">
-                        <label for="info">Extra information:</label>
-                        <br>
-                        <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
-                    </div>
-
-                    <input type="submit" value="SUBMIT">
-                </form>
-
-            </div>
-
-            <div class = "img-res" id = "img-reservation_en">
-                    <img src="img/mussels_croped.png" alt="pai">
-            </div> 
-
-        </section>
-
-        <div id="footer"></div>
-        
-        <script type="text/javascript" src="js/navbar.js"></script>
-        <script src="js/form.js"></script>
-        <script type="text/javascript" src="js/footer.js"></script>
-        <script type="text/javascript" src="js/lang.js"></script>
-
-    </body>
+</body>
 
 </html>
