@@ -14,7 +14,7 @@ html{
   body{ 
     margin: 0 0 0 0;
     padding: 0 0 0 0;  
-    font-size: 3vh;
+    font-size: 16px;
     line-height: 200%;
     font-style: normal;
     font-weight: 400;
@@ -24,6 +24,13 @@ html{
   @media only screen and (max-height: 550px) {
     body{
       font-size: 3vh; 
+      line-height: 150%; 
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    body{
+      font-size: 2vh; 
       line-height: 150%; 
     }
   }
