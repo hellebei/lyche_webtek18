@@ -66,6 +66,9 @@
   /*text in hamburgercontent*/
   #hamburgercontent{
     text-transform: uppercase;
+    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
     padding-top: 10%;
     width: 25%;
     min-width: 200px;
@@ -73,8 +76,6 @@
     padding-right: 8%;
     text-align: left !important;
     background-color: #ebe9e6;
-    font-size: 20px; 
-    font-weight: 1000; 
     line-height: 300%; 
     z-index: 100;
     opacity: 1;
