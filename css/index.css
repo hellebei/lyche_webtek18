@@ -58,6 +58,7 @@ header{
   opacity: 0.7;
   border: groove 1px #ccc; 
   letter-spacing: 2px;
+  margin: 0 auto;
 }
 
 /*look of button link*/
