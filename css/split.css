@@ -39,7 +39,8 @@
   /*wrapping the text to get desired positioning*/
   .textwrap{
     position: relative;
-    margin: 20% 15% 10% 15%; 
+    margin: 10% 15% 5% 15%; 
+    line-height: 170%; 
   }
   
   /* Control the right side */
@@ -107,8 +108,12 @@
       /*wrapping the text to get desired positioning*/
       .textwrap{
         position: relative;
-        margin: 20% 20% 10% 20%; 
+        margin: 5% 20% 5% 20%; 
         align-items: center; 
+      }
+      
+      h2{
+        line-height: 100%;
       }
 
 }
@@ -116,10 +121,10 @@
 @media only screen and (max-height: 570px) {
   .indextext p{
     font-size: 3vh; 
-    line-height: 170%; 
   }
 
   .textwrap{
     position: relative;
+    line-height: 200%; 
   }
 }
