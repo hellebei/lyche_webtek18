@@ -51,7 +51,6 @@ menu.addEventListener('click', function() {
 })
 
 document.addEventListener('scroll', function (){
-    console.log("in scroll eventlistener");
     if (menuContent.getAttribute("class")!="hidden"){
         console.log("in scroll if");
         toggleHide(menuContent);
