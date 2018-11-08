@@ -28,7 +28,7 @@ navbar.innerHTML =
         <a class="changelangEN" href="javascript:changeLangtoEn();">EN</a>
     </div>
 
-    <a href="https://www.samfundet.no/"> <img id="samflogo"src="img/samf_logo.png" alt="Logo samf"> </a>
+    <a href="https://www.samfundet.no/"> <img id="samflogo"src="img/samf_logo_hvit.png" alt="Logo samf"> </a>
 
 </nav>
 
