@@ -53,18 +53,29 @@ header{
   display: block;
   width: fit-content;
   height: 20%; 
-  padding: 1% 2% 1% 2%;  
+  padding: 0 4% 0 4%;  
+  border: 2px solid #000000;
+  /*background-color: none;*/
+  color: #000000;
+
+
+  /*
   background-color: black;
   opacity: 0.7;
-  border: groove 1px #ccc; 
+  border: groove 1px #ccc; */
   letter-spacing: 2px;
   margin: 0 auto;
 }
 
+/*
+ background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; */
+
 /*look of button link*/
 .cMoreBtn a:link{
   text-decoration: none;
-  color: #ebe9e6;
+  color: black;
 }
 
 /*look of buttonlink when hovering over*/
@@ -75,9 +86,9 @@ header{
 
 /*look of visited buttonlink*/
 .cMoreBtn a:visited{
-  color: #ebe9e6;
+  color: #000000;
   text-decoration: none;
-
+/*ebe9e6*/
 }
 
 /*frame around epostinfo*/
