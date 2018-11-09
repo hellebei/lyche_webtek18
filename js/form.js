@@ -1,3 +1,4 @@
+
 //kan bare velge datoer fra "imorgen"
 var tommorow = new Date();
 tommorow.setDate(tommorow.getDate() + 1);
@@ -6,7 +7,6 @@ const dates = document.getElementsByName("date");
 for (let i = 0; i < dates.length; i++) {
     dates[i].setAttribute('min', time);
 }
-
 
 //validates email adress on change. Not norwegian chars
 function ValidateEmail(lang){
@@ -62,8 +62,11 @@ function confirm_order(e){
     }
 }
 
-function confirm_order_en(){
+function confirm_order_en(e){
     if (ValidateEmail('en')) {
         window.open("confirmation.html");
    }
+   else {
+    e.preventDefault();
+    }
 }

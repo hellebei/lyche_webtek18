@@ -40,7 +40,7 @@
             
             </div>
 
-    <form id="form1" class="forms" name ="form1" method="post" onsubmit="confirm_order(event)">
+    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order(event)">
 
                 <div class="br">
                     <label for="navn">Navn: <span style="color:red">*</span></label>
@@ -49,7 +49,7 @@
 
                 <div class="br">
                     <label for="mail">e-mail: <span style="color:red">*</span></label>
-                    <input type="text" name="email" id="mail" onchange="ValidateEmail(lang)" placeholder="navn@eksempel.com" required />
+                    <input type="text" name="email" id="mail" onchange="ValidateEmail('no')" placeholder="navn@eksempel.com" required />
                 </div>
 
                 <div class="br">
@@ -133,7 +133,7 @@
                 
             </div>
 
-            <form name= "form1" class="forms" id="form2" method="post">
+            <form name= "form1" class="forms" id="form2" method="GET" onsubmit="confirm_order_en(event)">
 
                 <div class="br">
                     <label for="name">Name: <span style="color:red">*</span></label>
@@ -216,9 +216,10 @@
     <div id="footer"></div> <!--Ending english section-->
     
     <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
-    <script type="text/javascript" src="js/lang.js"></script>
+    
 
 </body>
 
