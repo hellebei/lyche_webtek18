@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Index </title>
+
+    <meta name="keywords" content="HTML,CSS, JS">
+    <meta charset="UTF-8">
+
+    <!--  Setting the viewport so the website looks good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type = "image/jpg" href="img/samf_logo_u.png">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href = "css/split.css">
+    <link rel="stylesheet" type="text/css" href = "css/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href = "css/index.css">
+    <link rel="stylesheet" type="text/css" href = "css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+
+    <header>
+
+            <div class="slideshow-container">
+                <div class="layer"></div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/slideshow/burger1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/slideshow/brød1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/slideshow/blåskjell1.jpg">
+                </div>
+                <!--Container for the lyche logo-->
+                </div class = "header-logo-container"> 
+                    <img  id="lyche-header-logo" src="img/Lyche_logo_header.png" alt="Lyches logo">   
+                </div>
+            </div>
+
+    </header>
+
+    <!-- Burgermenu appearing with the slideshow -->
+    <nav class = "menuindex">
+            <div id="hamburgermenuIndex">
+                    <div class="bar1index"></div>
+                    <div class="bar2index"></div>
+                    <div class="bar3index"></div>
+            </div>
+            
+            <!--Content when pressing menu-button. Begins as hidden.-->
+            <div id="hamburgercontentIndex" class="hidden">
+                <ul>
+                    <li><a href="index.html" class="item_menu">home</a></li>
+                    <li><a href="meny.html" class="item_menu">menu</a></li>
+                    <li><a href="about.html" class="item_menu">about</a></li>
+                    <li><a href="reservation.html" class="item_menu">reservation</a></li>
+                    <li><a href="contact.html" class="item_menu">contact</a></li>
+                </ul> 
+            </div>
+    </nav>
+    
+    <div id="navbar"></div>
+
+    <!-- div container for the navbar that appears under slideshow header. Code for navbar inserted by navbar.js -->
+    <div class="navbarappear"></div>
+
+    <!--Norwegian section-->
+    <section id = "no">
+
+        <!--Each bulk of code in index buit with split, left, right and img or text-->
+        <!--Defines the positioning of the elements on the page-->
+        <div class = "split">
+            <div class = "left indextext" id = "index-generelt">
+
+                <div class="textwrap">
+                    <h2>Lyche kjøkken og bar</h2>
+                            <p>
+                            Her tilbys det vin, mat, behagelig atmosfære, noe spennende og unikt. Her vil alle finne seg til rette, om man er en gruppe eller leter etter det perfekte stedet for en date. 
+                            Du vil kose deg gjennom hele uka, enten en er rolig tirsdag eller festfylt lørdag.
+                            Her finner du behagelig bakgrunnsmusikk, gode sofaer, myke stoler i et lokale preget av farger og kontraster.
+                            </p>
+                            <p>Har du spørsmål eller tilbake meldinger til oss? Kontakt oss gjerne!</p>
+                </div>
+                <!--Button to relevant html-->
+                <div class=cMoreBtn>
+                    <a href="contact.html">KONTAKT OSS</a>
+                </div>
+
+            </div>
+
+            <div class = "right indeximg" id = "img-generelt">
+                <img src="img/samfundet_utvendig_medsort.png" alt="Studentersamfundet ">
+            </div>
+
+        </div>
+
+        <div class = "split">
+            <div class = "right indextext" id = "index-meny">
+
+                <div class="textwrap">
+                    <h2>Meny</h2>
+                        <p>
+                            Lyche leverer gode norske råvarer for en bedre middagsopplevelse.
+                            Her er det noe for enhver smak. Om du ønsker vegansk, internasjonalt, eller trenger den
+                            en perfekt hangover-kur.
+                            Av drikkevarer kan vi tilby alt fra mineralvann til lokalbrygget øl og gode drinker.
+                        </p>
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="meny.html">SE MER</a>
+                </div>
+
+            </div>
+
+            <div class = "left indeximg" id = "img-meny">
+               <img src="img/hd.png" alt="Hot Dog">
+            </div>
+
+        </div>
+
+        
+
+        <div class = "split">
+            <div class = "left indextext" id = "index-reservasjon">
+
+                <div class="textwrap">
+                    <h2>Reservasjon</h2>
+                        <p>
+                            På Lyche er du velkommen til å reservere bord! Vi har en maksbegrensning på 16 personer; ved flere anbefales det å leie et lokale.
+                            Ved selskap på flere enn 12 personer vil vi ikke ha mulighet til å plassere alle ved samme bord.
+                        </p>
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="reservation.html">SE MER</a>
+                </div>    
+                
+            </div>
+
+            <div class = "right indeximg" id = "img-reservasjon">
+                    <img src="img/b_mussels2.jpg" alt="mussels">
+            </div>
+        </div>
+
+        <div class = "split">
+            <div class = "right indextext" id = "index-om">
+                
+                <div class="textwrap">
+                    <h2>Om</h2>
+                        <p>
+                            Lyche resturant er drevet av frivillige studenter ved Studentersamfundet. Absolutt et sted som må oppleves. 
+                            Dette er det perfekte stedet for avslapping etter en lang studiehverdag, spise deilig mat eller nyte en god drink. 
+                            Maten er svært budsjettvenlig, selv på et trangt studentbudsjett. 
+                        </p>
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="about.html">SE MER</a>
+                </div>
+
+            </div>
+
+            <div class = "left indeximg" id = "img-om">
+                    <img src="img/sc.png" alt="ansatt på lyche">
+            </div>
+        </div>
+
+    </section>  <!--Ending norwegian section-->
+
+    <!--English section-->
+    <section id = "en">
+
+        <div class = "split">
+            <div class = "left indextext" id = "index-general"> 
+
+                <div class="textwrap">
+                    <h2>Lyche kitchen and bar</h2>
+                        <p>
+                            Here you can find wine, food, pleasant atmosphere, excitement and uniqueness.
+                            At Lyche everyone can find their favorite spot whether you´re a gropu or looking for the perfect place for a date.
+                            You will enjoy yourself througout the whole week, if it´s a quiet Tuesday or party filled Saturday.
+
+                            The whole week through we offer pleasant background music, comfortable couches, soft chairs in a room dominated by colors and contrasts.
+                        </p>
+                        <p>Do you have any questions or feedback? Please let us know.</p>
+                </div>
+
+                <div class=cMoreBtn>
+                        <a href="contact.html">CONTACT INFORMATION</a>
+                </div>
+
+            </div>
+
+            <div class = "right indeximg" id = "img-general">
+                <img src="img/samfundet_utvendig_medsort.png" alt="Studentersamfundet ">
+
+            </div>
+
+        </div>
+
+        <div class = "split">
+            <div class = "right indextext" id = "index-menu"> 
+
+                <div class="textwrap">
+                    <h2>Menu</h2>
+                        <p>
+                            Lyche delivers good Norwegian ingredients for a better dining experience.
+                            Here you can find something for everyone. If you want vegetarian, international, or the hangover-cure. 
+                            For drinks, we can offer everything from mineral water to local brewed beer and good drinks.
+                        </p>
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="meny.html">SEE MORE</a>
+                </div>
+                
+            </div>
+
+            <div class = "left indeximg" id = "img-menu">
+                <img src="img/hd.png" alt="Hotdog">
+            </div>
+            
+        </div>
+
+        <div class = "split">
+            <div class = "left indextext" id = "index-reservation"> 
+
+                <div class="textwrap">
+                    <h2>Reservations</h2>
+                    
+                        <p>
+                            At Lyche you are welcome to reserve a table! We have a maximum limit of 16 people;
+                            for more people we recommend you to hire one of the venues.
+                            At the company of more than 12 persons your group will be splitt to two tables. </p>          
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="reservation.html">SEE MORE</a>
+                </div>
+                
+            </div>
+
+            <div class = "right indeximg" id = "img-reservation">
+                <img src="img/b_mussels2.jpg" alt="mussels">
+            </div>
+
+        </div>
+
+        <div class = "split">
+            <div class = "right indextext" id = "index-about"> 
+                <div class="textwrap">
+                    <h2>About</h2>
+                        <p>
+                            Lyche resturant is run exclusively on volunteer work by students. Aboslutly a place that needs to be experienced.
+                            This is the place to to relax after a long day of studying, eat delicious food or enjoy drinks.
+                            The food is affordable, even on a small budget. 
+                                                
+                        </p> 
+                </div>
+
+                <div class=cMoreBtn>
+                    <a href="about.html">SEE MORE</a>
+                </div>
+                
+            </div>
+
+            <div class = "left indeximg" id = "img-about">
+                <img src="img/sc.png" alt="ansatt på lyche">
+
+            </div>
+
+        </div>
+
+    </section>  <!--Ending english section-->
+
+    <div id ="footer"> </div>
+
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+</body>
+</html>

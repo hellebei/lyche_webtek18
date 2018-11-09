@@ -1,0 +1,152 @@
+/* navbar */
+.navmain{
+    position: relative;
+    background-color: black;
+    height: 50px;
+  }
+
+/* div id = navbar, in all html files */
+#navbar{
+    z-index: 80;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  }
+  
+  .div{
+    display: block;
+  }
+  
+  /*The hamburger menu*/
+  #hamburgermenu{
+    position: absolute;
+    display: block;
+    float: left;
+    left: 2%;
+    width: 33%;
+    cursor: pointer;
+    color: #ebe9e6;
+    padding-top: 0.3%;
+    padding-bottom: 0.7%;
+    z-index: 17;
+  }
+  
+  /*The bars, color and width*/
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ebe9e6;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /*changing bars*/
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #000000;
+    z-index: 10;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #000000;
+    z-index: 10;
+  }
+  
+  /* hamburgercontent , menu*/
+  ul{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  /*text in hamburgercontent*/
+  #hamburgercontent{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10% 8% 0 0; 
+    width: 25%;
+    min-width: 260px;
+    height: 100vh;
+    background-color: #ebe9e6;
+    line-height: 300%; 
+    z-index: 100;
+  }
+  
+  /* lyche-logo - picture */
+  #lychelogo{
+    display: block;
+    width: auto;
+    height: 80%;
+    z-index: 30;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 10%; 
+  }
+
+  /* picture link to samfundet.no */
+  #samflogo{
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 9px);
+    display: block;
+    width: 18px;
+    z-index: 67;
+  }
+  
+  /* no | en session position*/
+  #session-status {
+    position: absolute;
+    float: right;
+    top: calc(50% - 16px);
+    right: 50px;
+  }
+  
+  /* links in session */
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    font-weight: bolder; 
+  }
+
+  
+li a:link{
+    color: black;
+    font-weight: bold;
+}
+
+li a:visited{
+  color: #000000;
+  font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+}
+
+li a:hover{
+    color:white;
+}
+  
+  /* class for hidden content */
+  .hidden {
+    display: none;
+  }
+
+  @media only screen and (max-width: 770px) {
+    #lychelogo{
+     position: relative;
+    }
+  }
+
+  /* Font size fitting screen size in hamburger menu */
+  @media only screen and (max-height: 500px){
+    #hamburgercontent{
+      line-height: 10vh; 
+      font-size: 4vh; 
+    }
+  }
+  

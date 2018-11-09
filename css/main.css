@@ -1,0 +1,80 @@
+/*Main stylesheet for all htmls on the website*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*Sets font*/
+html{
+    font-family: futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
+  }
+  
+  /*making body fill entire screen and setting font properties and bacgroundcolor*/
+  body{ 
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;  
+    font-size: 16px;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #ebe9e6;
+  }
+  
+  /* Font size fitting screen size */
+  @media only screen and (max-height: 550px) {
+    body{
+      font-size: 3vh; 
+      line-height: 150%; 
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    body{
+      font-size: 2vh; 
+      line-height: 150%; 
+    }
+  }
+
+
+  /*Making header fill width of page*/
+  header{
+    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  /*Setting color on background for all sections*/
+  section{
+    background-color: #ebe9e6;
+  }
+
+  /*Default h2-styling for all pages*/
+  h2{
+    font-weight: 600; 
+    padding-top: 2%; 
+  }
+  
+/*Default list-styling for all pages*/
+  ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*Pushing page content down to under navigationbar*/
+  #navbarpush{
+    height: 50px;
+  }
+
+  /*displaying norwegian text*/
+  #no{
+    display: inherit; 
+  }
+
+
+  /*hiding english text*/
+  #en{
+    display: none;
+  }
+
+  

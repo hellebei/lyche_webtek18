@@ -1,0 +1,100 @@
+/*Kode for contact*/
+section{
+  min-height: 100vh; 
+}
+
+.samfpiccontainer { 
+    position: fixed;
+    display: block;
+    width: 40%;
+    height: auto;
+}
+  /*Picture on the page - 100% of the container above */
+  .samfpic{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover; 
+  }
+  
+  /*The title on the contact page*/
+  .contacttitle {
+    position: absolute;
+    color: white;
+    margin: 5% 0 0 0; 
+    left: 5%;
+    z-index: 10;
+  }
+
+  header{
+  font-size: 30px; 
+
+  }
+
+  /*Textwrap*/
+  .wrapcontact{
+    position: relative;
+    right: 0; 
+    width: 50%; 
+    margin: 0 50%;
+    line-height: 60%; 
+    padding-bottom: 10%;
+  }
+  
+  /*Styling for the middle titles*/
+  .wrapcontact h2{
+    padding-top: 2%; 
+  }
+  
+  /*Adding some space before text*/
+  .br {
+    padding-top: 1%;
+  }
+  
+  /*Positioning and sizing of the map on the page*/
+  #kartNo, #kartEn {
+    position: relative;
+    width: 50%
+  
+  }
+
+  @media only screen and (max-width: 770px){
+    .samfpiccontainer{ 
+      height: 40vh;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+  } 
+
+  @media only screen and (max-width: 770px){
+    .samfpiccontainer img {
+      height: 40vh;
+      width: 100%;
+      object-fit: cover;
+    }}
+
+    @media only screen and (max-width: 770px){
+    .contacttitle {
+    /* position: absolute;
+    margin: -10% 0 0 5%; */
+    position: absolute;
+    margin: -10% 0 0 5%; 
+    z-index: 10;
+    }}
+
+    @media only screen and (max-width: 770px){
+    .wrapcontact {
+      position: relative;
+      margin: 10vh 0 0 0;
+      line-height: 60%;
+      padding: 2% 0 10% 10%; 
+      width: 100%; 
+  }
+
+
+
+  }
+
+  
+  
