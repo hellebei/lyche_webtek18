@@ -6,6 +6,10 @@ const getLang = () => {
     return sessionStorage.getItem('lang')
 }
 
+if (! (getLang()==="en" || getLang()==="no")){
+    setLang("no")
+}
+
 const lang = getLang()
 if (lang === "en"){
     changeLangtoEn()
