@@ -45,14 +45,12 @@ const menu = document.getElementById("hamburgermenu");
 const menuContent= document.getElementById("hamburgercontent");
 
 menu.addEventListener('click', function() {
-    console.log("click");
     toggleHide(menuContent);
     changemenu(menu);
 })
 
 document.addEventListener('scroll', function (){
     if (menuContent.getAttribute("class")!="hidden"){
-        console.log("in scroll if");
         toggleHide(menuContent);
         changemenu(menu);
     }

@@ -13,17 +13,14 @@ if(menuindex !=  null) {
     const hamburgermenuIndex = document.getElementById("hamburgermenuIndex");
     const hamburgercontentIndex= document.getElementById("hamburgercontentIndex");
     hamburgermenuIndex.addEventListener("click", function() {
-        console.log("click");
         toggleHide(hamburgercontentIndex)
         changemenu(hamburgermenuIndex)
     })
     
    
    document.addEventListener('scroll', function (){
-        console.log("in scroll eventlistener");
         const content = document.getElementById("hamburgercontentIndex");
         if (content.getAttribute("class")!="hidden"){
-            console.log("in scroll if")
             toggleHide(hamburgercontentIndex)
             changemenu(hamburgermenuIndex)
         }
@@ -41,7 +38,6 @@ function stick(){
     let distance = layer.offsetHeight - nav.offsetHeight;
     console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
-        console.log("fest deg")
         nav.style.position = "fixed";
         nav.style.display = "block";
     }else {
