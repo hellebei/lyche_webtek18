@@ -1,9 +1,10 @@
-/* Splitting the screen in half */
+/*Class for splitting the screen in half */
+/* This part of website has used inspiration from https://www.w3schools.com/howto/howto_css_split_screen.asp */
+/* And from https://css-tricks.com/left-and-right/ */
 
 /*Defining main split style*/
 .split {
     display: block;
-  /*height: 100vh !important;*/
     height: 100vh; 
     width: 100%;
     position: relative;
@@ -17,7 +18,6 @@
   left: 0;
   width: 50%; 
   text-align: center; 
-
  }
 
  /*text on the left*/
@@ -67,6 +67,7 @@
     object-fit: cover;
   }
 
+  /* Changing entire css if width of screen is less than 770px */
   @media only screen and (max-width: 770px) {
     .split {
       display: inline;
@@ -118,6 +119,7 @@
 
 }
 
+/* Making sure all text shows if height of screen is low compared to width */
 @media only screen and (max-height: 570px) {
   .indextext p{
     font-size: 3vh; 

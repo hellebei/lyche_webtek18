@@ -66,19 +66,15 @@
   /*text in hamburgercontent*/
   #hamburgercontent{
     text-transform: uppercase;
-    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
     font-size: 26px;
     font-weight: bold;
-    padding-top: 10%;
+    padding: 10% 8% 0 0; 
     width: 25%;
     min-width: 260px;
     height: 100vh;
-    padding-right: 8%;
-    text-align: left !important;
     background-color: #ebe9e6;
     line-height: 300%; 
     z-index: 100;
-    opacity: 1;
   }
   
   /* lyche-logo - picture */
@@ -143,6 +139,14 @@ li a:hover{
   @media only screen and (max-width: 770px) {
     #lychelogo{
      position: relative;
+    }
+  }
+
+  /* Font size fitting screen size in hamburger menu */
+  @media only screen and (max-height: 500px){
+    #hamburgercontent{
+      line-height: 10vh; 
+      font-size: 4vh; 
     }
   }
   
