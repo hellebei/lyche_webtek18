@@ -5,7 +5,6 @@
 }
 
 /*Sets font*/
-
 html{
     font-family: futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
   }
@@ -21,13 +20,13 @@ html{
     background-color: #ebe9e6;
   }
   
+  /* Font size fitting screen size */
   @media only screen and (max-height: 550px) {
     body{
       font-size: 3vh; 
       line-height: 150%; 
     }
   }
-
   @media only screen and (max-width: 770px) {
     body{
       font-size: 2vh; 
@@ -78,9 +77,4 @@ html{
     display: none;
   }
 
-  @media only screen and (max-height: 420px){
-    #hamburgercontentIndex, #hamburgercontent{
-      line-height: 10vh; 
-      font-size: 4vh; 
-    }
-  }
+  
