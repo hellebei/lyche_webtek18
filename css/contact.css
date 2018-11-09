@@ -52,7 +52,7 @@ section{
   }
   
   /*Positioning and sizing of the map on the page*/
-  #kart {
+  #kartNo, #kartEn {
     position: relative;
     width: 50%
   
