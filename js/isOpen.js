@@ -1,10 +1,11 @@
 
+//declaring variables
 let d = new Date();
 let day = d.getDay(); 
-time = d.getHours();
+let time = d.getHours();
 
 
-
+//print different strings to HTML depending on time of the day and weekday
 function openingNo () {
     if (time >= 16 && time <23 && day <= 4) {
     document.getElementById("openNo").innerHTML = "Åpent! Stenger kl. 23";
