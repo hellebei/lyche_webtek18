@@ -1,3 +1,6 @@
+/* For this functions we had help from the learing assistants to set up the use of session storage*/
+
+
 const setLang = (lang) => {
     sessionStorage.setItem('lang', lang)
 }

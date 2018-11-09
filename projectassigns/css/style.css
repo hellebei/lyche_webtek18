@@ -7,7 +7,6 @@ body{
     margin-right: 25%;
     width: 50%;
     font-size: 16px; 
-    line-height: 200%;
     background-color: #fefefe;
     font-style: normal;
     font-weight: 400;
@@ -34,6 +33,7 @@ p, ul, ol{
     color: #505050; 
     text-align: justify;
     hyphens: auto;
+    line-height: 200%;
 }
 
 table {
@@ -114,4 +114,7 @@ tr:nth-child(even) {
     color: black;
 }
 
+.br{
+    margin-bottom: 5%; 
+}
 
