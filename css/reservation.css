@@ -60,6 +60,8 @@ input[type=submit] {
 /*styling input[date]. Makes datepicker-icon appear and spin-button disappear.
 This will not work in safari, IE */
 
+
+/*found this url on stackOverflow.com*/
 [type=date] {
   background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  100% 50% no-repeat ;
 }
