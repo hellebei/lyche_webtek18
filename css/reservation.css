@@ -128,7 +128,6 @@ input:focus, textarea:focus, select:focus {
 }
 
 /*responsive design*/
-
 @media only screen and (max-width: 770px) {
   .img-res  {
     display:none;

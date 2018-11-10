@@ -1,14 +1,13 @@
 .about{
 	min-height: 100vh; 
 }
-/*Styling for tittelen på about.html*/
+/*Styling the title for about.html*/
 .headerabout {
 	padding-left: 10%;
 	margin-top: 60px;
-	/*width: 20%;*/
 }
 
-/*Kode for sections (no/en)*/
+/*Code for styling the textwrap*/
 .about-textwrap {
     text-align: justify; 
 	line-height: 170%; 
@@ -22,16 +21,13 @@
 	width: 45%;
 	right: 0;
 	overflow: hidden;
-	/*margin-left: 50%;*/
 }
 
 #souschef_about img{
 	width: 100%;
 	height: 100%; 
 	object-fit: cover; 
-	/*margin-left: 50%;*/
 }
-
 
 /* If the screen size is 771px wide or more, hide #souschef_small image */
 @media only screen and (min-width: 771px) {
@@ -58,5 +54,3 @@
 		width: 100vW;
 	}
 }
-
-
