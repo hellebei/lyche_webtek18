@@ -36,7 +36,6 @@ document.addEventListener("scroll", stick);
 
 function stick(){
     let distance = layer.offsetHeight - nav.offsetHeight;
-    console.log(distance+ " ' " + window.scrollY)
     if(distance <= window.scrollY) {
         nav.style.position = "fixed";
         nav.style.display = "block";
