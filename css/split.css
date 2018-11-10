@@ -116,15 +116,10 @@
       h2{
         line-height: 100%;
       }
-
 }
 
 /* Making sure all text shows if height of screen is low compared to width */
 @media only screen and (max-height: 570px) {
-  .indextext p{
-    font-size: 3vh; 
-  }
-
   .textwrap{
     position: relative;
     line-height: 200%; 

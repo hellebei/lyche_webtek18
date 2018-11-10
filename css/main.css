@@ -21,16 +21,19 @@ html{
   }
   
   /* Font size fitting screen size */
-  @media only screen and (max-height: 550px) {
+  @media only screen and (max-height: 590px) {
     body{
-      font-size: 3vh; 
+      font-size: 2.5vh; 
       line-height: 150%; 
+    }
+    h2{
+      line-height: 100%; 
     }
   }
   @media only screen and (max-width: 770px) {
     body{
-      font-size: 2vh; 
-      line-height: 150%; 
+      font-size: 2.5vh; 
+      line-height: 170%; 
     }
   }
 
@@ -47,10 +50,12 @@ html{
   /*Setting color on background for all sections*/
   section{
     background-color: #ebe9e6;
+    width: 100%; 
   }
 
   /*Default h2-styling for all pages*/
   h2{
+    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
     font-weight: 600; 
     padding-top: 2%; 
   }
