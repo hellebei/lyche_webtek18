@@ -48,13 +48,16 @@ input[type=date] {
 }
 
 input[type=submit] {
-  background-color: #f1b82f;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  display: block;
+  width: fit-content;
+  height: 20%; 
+  padding: 2% 4% 2% 4%;  
+  border: 2px solid #000000;
+  color: #000000;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-bottom: 30px; 
   cursor: pointer;
-  margin-bottom: 20%;
 }
 
 /*styling input[date]. Makes datepicker-icon appear and spin-button disappear.
@@ -82,7 +85,8 @@ This will not work in safari, IE */
 
 /*the submit button is lighter when hovered*/
 input[type=submit]:hover {
-    background-color: #e2bc62;
+    text-decoration: none;
+    color: rgb(99, 98, 98);
 }
 
 /*pointer when hovered over input fields*/

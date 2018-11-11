@@ -53,7 +53,7 @@ function ValidateEmail(lang){
 
 
 //hvorfor funker ikke getLang() :((((
-function confirm_order(e){
+function confirm_order_no(e){
     if (ValidateEmail('no')){
         window.open("confirmation.html");
     }
