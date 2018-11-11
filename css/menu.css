@@ -54,6 +54,7 @@
   left: 0;
   top: 0;
   position: fixed;
+  overflow: hidden;
 }
 
 /*Properties of the image*/
@@ -68,8 +69,8 @@
 
 /* If the screen size is 771px wide or more, hide .newsaladpic image */
 @media only screen and (min-width: 771px) {
-	.newsaladpic {
-		display: none;
+	.newsalad{
+		display: none; 
 	}
 }
 
@@ -79,20 +80,31 @@
 		display: none;
 	}
 
+
 	.menutitle {
-		position: relative;
-		margin: -21% 0 0 5%; 
+		position: absolute;
+		top: 25vh; 
+		margin: 0 0 0 0; 
+		padding: 0 0 0 10vw; 
 	}
+
 
 	.menuwrap{
 		column-count: 1; 
-		margin-left: 2vw;
-		margin-top: 12vw;
+		padding-left: 2vw;
+		padding-top: 3vw;
+		margin: 0 0 0 0; 
 	}
 
-	.newsaladpic {
-		display: block;
+	.newsalad{
+		display: block; 
 		position: relative;
-		height: 32vw;
+		width: 100%; 
+		height: 32vh;
+	}
+	.newsalad img {
+		width: 100%; 
+		height: 32vh; 
+		object-fit: cover;
 	}
 }
