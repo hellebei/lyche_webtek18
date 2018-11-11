@@ -10,7 +10,7 @@ section{
     height: auto;
 }
   /*Picture on the page - 100% of the container above */
-  .samfpic{
+  .samfpic {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -21,18 +21,18 @@ section{
   .contacttitle {
     position: absolute;
     color: white;
-    margin: 5% 0 0 0; 
-    left: 5%;
+    top: 15%; 
+    left: 10%;
     z-index: 10;
+    width: 90%;
   }
 
-  header{
+  header {
   font-size: 30px; 
-
   }
 
   /*Textwrap*/
-  .wrapcontact{
+  .wrapcontact {
     position: relative;
     right: 0; 
     width: 50%; 
@@ -42,7 +42,7 @@ section{
   }
   
   /*Styling for the middle titles*/
-  .wrapcontact h2{
+  .wrapcontact h2 {
     padding-top: 2%; 
   }
   
@@ -59,7 +59,7 @@ section{
   }
 
   @media only screen and (max-width: 770px){
-    .samfpiccontainer{ 
+    .samfpiccontainer { 
       height: 40vh;
       overflow: hidden;
       width: 100%;
@@ -72,28 +72,25 @@ section{
       height: 40vh;
       width: 100%;
       object-fit: cover;
-    }}
+    }
+  }  
 
     @media only screen and (max-width: 770px){
     .contacttitle {
-    /* position: absolute;
-    margin: -10% 0 0 5%; */
     position: absolute;
-    margin: -10% 0 0 5%; 
+    top: 30%; 
     z-index: 10;
-    }}
+    }
+  }
 
     @media only screen and (max-width: 770px){
     .wrapcontact {
       position: relative;
-      margin: 10vh 0 0 0;
+      margin: 2% 0 0 0;
       line-height: 60%;
       padding: 2% 0 10% 10%; 
       width: 100%; 
-  }
-
-
-
+    }
   }
 
   

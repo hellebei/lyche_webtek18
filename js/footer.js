@@ -1,4 +1,8 @@
-document.getElementById("footer").innerHTML = `
+
+const footer = document.getElementById("footer");
+
+footer.innerHTML = 
+`
 
 <div id="sticky-footer">
     <div id="sticky-footer-wrapper"></div>

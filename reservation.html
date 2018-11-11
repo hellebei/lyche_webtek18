@@ -40,7 +40,7 @@
             
             </div>
 
-    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order(event)">
+    <form id="form1" class="forms" name ="form1" method="POST" onsubmit="confirm_order(event)">
 
                 <div class="br">
                     <label for="navn">Navn: <span style="color:red">*</span></label>
@@ -55,6 +55,7 @@
                 <div class="br">
                     <label for="personer">Antall personer: <span style="color:red">*</span></label>
                     <select name="persons" id="personer">
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -79,7 +80,7 @@
 
                 <div class="br">
                     <label for="dato">Dato: <span style="color:red">*</span></label>
-                    <input type="date" id="dato" name="date" min="18.08.2018" placeholder="YYYY-MM-DD" required>
+                    <input type="date" id="dato" name="date" required>
                 </div>
 
                 <div class="br">
@@ -113,7 +114,7 @@
         </div>
 
         <div class = "img-res" id = "img-reservation_no">
-                <img src="img/mussels_croped.png" alt="mussels">
+                <img src="img/mussels_croped.png" alt="Mussels">
         </div>
 
     </section>  <!--Ending norwegian section-->
@@ -133,11 +134,11 @@
                 
             </div>
 
-            <form name= "form1" class="forms" id="form2" method="GET" onsubmit="confirm_order_en(event)">
+            <form name= "form1" class="forms" id="form2" method="POST" onsubmit="confirm_order(event)">
 
                 <div class="br">
                     <label for="name">Name: <span style="color:red">*</span></label>
-                    <input type="text" name="name" id="name" placeholder="name.." autofocus required />
+                    <input type="text" name="name" id="name" placeholder="name.." required />
                 </div>
 
                 <div class="br">
@@ -174,7 +175,7 @@
                 <div class="br">
                     <label for="date">Date: <span style="color:red">*</span></label>
                     <br>
-                    <input type="date" name="date" id="date" placeholder="YYYY-MM-DD" min="" required>
+                    <input type="date" name="date" id="date" required>
                 </div>
 
                 <div class="br">
@@ -201,24 +202,25 @@
                     <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
                 </div>
 
-                <input type="submit" value="SUBMIT" onclick="confirm_order_en()">
+                <input type="submit" value="SUBMIT">
 
             </form>
 
         </div>
 
         <div class = "img-res" id = "img-reservation_en">
-                <img src="img/mussels_croped.png" alt="pai">
+                <img src="img/mussels_croped.png" alt="Mussels">
         </div> 
 
     </section>
 
     <div id="footer"></div> <!--Ending english section-->
     
-    <script type="text/javascript" src="js/navbar.js"></script>
-    <script type="text/javascript" src="js/lang.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/footer.js"></script>
     
 
 </body>

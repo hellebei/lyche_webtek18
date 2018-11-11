@@ -1,12 +1,12 @@
 
-header{
+header {
   position: relative;
   width: 100%; 
   height: auto;
 }
 
 /*adding a shade over the slideshow*/
-.layer{
+.layer {
   background-color: #000000;
   opacity: 0.6;
   position: absolute;
@@ -15,31 +15,31 @@ header{
   z-index: 7;
 }
 
-h2{
-  font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+h2 {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
 }
 
-.header-logo-container{
+.header-logo-container {
   position: absolute;
   width: 100%; 
   height: auto; 
+  top: 0; 
 }
 
 /*The logo picture over the slideshow*/
-#lyche-header-logo{
+#lyche-header-logo {
   z-index: 20;
   opacity: 0.9;
   display: inline;
   max-width: 50%;
   margin: 15% 25% 10.3% 25%;
-  position: relative;  
+  position: absolute;  
 }
 
 /*styling of see more button*/
-.cMoreBtn{
+.cMoreBtn {
   position: relative;
   display: block;
   width: fit-content;
@@ -53,21 +53,21 @@ h2{
 }
 
 /*look of button link*/
-.cMoreBtn a:link{
+.cMoreBtn a:link {
   text-decoration: none;
   color: black;
 }
 
 /*look of visited buttonlink*/
-.cMoreBtn a:visited{
+.cMoreBtn a:visited {
   color: #000000;
   text-decoration: none;
 }
  
   /* navbutton index.html */
   
-  /*styling for the hamburgemenu*/
-  .menuindex{
+  /*styling for the hakmburgemenu*/
+  .menuindex {
     position: absolute;
     width: 100%; 
     top:0; 
@@ -76,7 +76,7 @@ h2{
   }
 
   /*Styling of the bars in hamburgermenu*/
-  #hamburgermenuIndex{
+  #hamburgermenuIndex {
     position: absolute;
     display: block;
     float: left;
@@ -116,7 +116,7 @@ h2{
 }
 
 /*Styling content of menu when it is opened*/
-#hamburgercontentIndex{
+#hamburgercontentIndex {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: bold;
@@ -135,26 +135,153 @@ h2{
 }
 
 /*Styling of links*/
-li a:link{
+li a:link {
     color: black;
     font-weight: bold;
 }
 
-li a:visited{
+li a:visited {
   color: #000000;
   font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
 }
 
-li a:hover{
+li a:hover {
     color:white;
 }
 /*End styling of links*/
 
 /* Font size fitting screen size in hamburger menu */
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 500px) {
   #hamburgercontentIndex{
     line-height: 10vh; 
     font-size: 4vh; 
+  }
+}
+
+/*Class for splitting the screen in half */
+/* This part of website has used inspiration from https://www.w3schools.com/howto/howto_css_split_screen.asp */
+/* And from https://css-tricks.com/left-and-right/ */
+
+/*Defining main split style*/
+.split {
+  display: block;
+  height: 100vh; 
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+/*Left content in splitside*/
+.left {
+display: inline-block;
+left: 0;
+width: 50%; 
+text-align: center; 
+}
+
+/*text on the left*/
+.left .indextext {
+  position: absolute;
+  width: 60%;
+  padding-right: 20%; 
+  padding-left: 20%; 
+}
+
+/*img on the left*/
+.left img {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*wrapping the text to get desired positioning*/
+.textwrap {
+  position: relative;
+  margin: 10% 15% 5% 15%; 
+  line-height: 170%; 
+}
+
+/* Control the right side */
+.right {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  width: 50%;
+  text-align: center; 
+}
+
+/*Text on the right side*/
+.right .indextext {
+  position: relative;
+  width: 60%;
+  padding-right: 20%; 
+  padding-left: 20%; 
+}
+/*Img on the right side*/
+.right img {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Changing entire css if width of screen is less than 770px */
+@media only screen and (max-width: 770px) {
+  .split {
+    display: inline;
+    position: relative;
+    z-index: 0;
+  }
+    /*Left content in splitside*/
+  .left, .right {
+    display: inherit;
+    text-align: center; 
+    width: 100%;
+    height: auto; 
+  }
+
+  /*text on the left*/
+    .indextext {
+      position: relative;
+      width: 100%;
+      height: auto; 
+    }
+
+    .indeximg {
+      position: relative;
+      height: inherit;
+      width: 100%;
+      height: 20vh !important; 
+      overflow: hidden; /*hide bounds of image */
+      margin: 0;
+    }
+
+    /*img on the left*/
+    .indeximg img {
+      display: block;
+      width: 100%; 
+      max-height: 30vh; 
+      object-fit: cover; 
+    }
+
+    /*wrapping the text to get desired positioning*/
+    .textwrap {
+      position: relative;
+      margin: 5% 20% 5% 20%; 
+      align-items: center; 
+    }
+    
+    h2 {
+      line-height: 100%;
+    }
+}
+
+/* Making sure all text shows if height of screen is low compared to width */
+@media only screen and (max-height: 570px) {
+  .textwrap {
+    position: relative;
+    line-height: 200%; 
   }
 }
 
