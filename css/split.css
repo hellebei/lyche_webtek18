@@ -12,7 +12,7 @@
   }
 
   /*Left content in splitside*/
- .left{
+ .left {
   display: inline-block;
   left: 0;
   width: 50%; 
@@ -20,7 +20,7 @@
  }
 
  /*text on the left*/
-  .left .indextext{
+  .left .indextext {
     position: absolute;
     width: 60%;
     padding-right: 20%; 
@@ -28,7 +28,7 @@
   }
 
   /*img on the left*/
-  .left img{
+  .left img {
     position: relative;
     width: 100%; 
     height: 100vh;
@@ -36,7 +36,7 @@
   }
 
   /*wrapping the text to get desired positioning*/
-  .textwrap{
+  .textwrap {
     position: relative;
     margin: 10% 15% 5% 15%; 
     line-height: 170%; 
@@ -52,14 +52,14 @@
   }
 
   /*Text on the right side*/
-  .right .indextext{
+  .right .indextext {
     position: relative;
     width: 60%;
     padding-right: 20%; 
     padding-left: 20%; 
   }
   /*Img on the right side*/
-  .right img{
+  .right img {
     position: relative;
     width: 100%; 
     height: 100vh;
@@ -74,7 +74,7 @@
       z-index: 0;
     }
       /*Left content in splitside*/
-    .left, .right{
+    .left, .right {
       display: inherit;
       text-align: center; 
       width: 100%;
@@ -82,13 +82,13 @@
     }
 
     /*text on the left*/
-      .indextext{
+      .indextext {
         position: relative;
         width: 100%;
         height: auto; 
       }
 
-      .indeximg{
+      .indeximg {
         position: relative;
         height: inherit;
         width: 100%;
@@ -98,7 +98,7 @@
       }
 
       /*img on the left*/
-      .indeximg img{
+      .indeximg img {
         display: block;
         width: 100%; 
         max-height: 30vh; 
@@ -106,21 +106,21 @@
       }
 
       /*wrapping the text to get desired positioning*/
-      .textwrap{
+      .textwrap {
         position: relative;
         margin: 5% 20% 5% 20%; 
         align-items: center; 
       }
       
-      h2{
+      h2 {
         line-height: 100%;
       }
 }
 
-/* Making sure all text shows if height of screen is low compared to width */
-@media only screen and (max-height: 570px) {
-  .textwrap{
-    position: relative;
-    line-height: 200%; 
+  /* Making sure all text shows if height of screen is low compared to width */
+  @media only screen and (max-height: 570px) {
+    .textwrap {
+      position: relative;
+      line-height: 200%; 
+    }
   }
-}

@@ -1,6 +1,7 @@
-.about{
+.about {
 	min-height: 100vh; 
 }
+
 /*Styling the title for about.html*/
 .headerabout {
 	padding-left: 10%;
@@ -23,7 +24,7 @@
 	overflow: hidden;
 }
 
-#souschef_about img{
+#souschef_about img {
 	width: 100%;
 	height: 100%; 
 	object-fit: cover; 
@@ -42,7 +43,7 @@
 		display: none;
 	}
 
-	.about-textwrap{
+	.about-textwrap {
 		margin-left: 20%;
 		margin-right: 20%;
 	}

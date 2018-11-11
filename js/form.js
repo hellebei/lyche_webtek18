@@ -1,9 +1,10 @@
 
-//kan bare velge datoer fra "imorgen"
-var tommorow = new Date();
+//Only chose the day after this day
+const tommorow = new Date();
 tommorow.setDate(tommorow.getDate() + 1);
 const time = tommorow.toISOString().split('T')[0];
 const dates = document.getElementsByName("date");
+
 for (let i = 0; i < dates.length; i++) {
     dates[i].setAttribute('min', time);
 }
@@ -51,8 +52,6 @@ function ValidateEmail(lang){
     }
 }
 
-
-//hvorfor funker ikke getLang() :((((
 function confirm_order(e){
     if (ValidateEmail('no')){
         window.open("confirmation.html");

@@ -3,13 +3,13 @@ function changemenu(x) {
     x.classList.toggle("change");
 }
 
-function toggleHide(element){
+function toggleHide(element) {
     element.classList.toggle("hidden");
 }
 
 const menuindex = document.querySelector(".menuindex");
 
-if(menuindex !=  null) {
+if (menuindex !=  null) {
     const hamburgermenuIndex = document.getElementById("hamburgermenuIndex");
     const hamburgercontentIndex= document.getElementById("hamburgercontentIndex");
     hamburgermenuIndex.addEventListener("click", function() {
@@ -18,9 +18,9 @@ if(menuindex !=  null) {
     })
     
    
-   document.addEventListener('scroll', function (){
+   document.addEventListener('scroll', function () {
         const content = document.getElementById("hamburgercontentIndex");
-        if (content.getAttribute("class")!="hidden"){
+        if (content.getAttribute("class")!="hidden") {
             toggleHide(hamburgercontentIndex)
             changemenu(hamburgermenuIndex)
         }
@@ -39,7 +39,7 @@ function stick(){
     if(distance <= window.scrollY) {
         nav.style.position = "fixed";
         nav.style.display = "block";
-    }else {
+    } else {
         nav.style.display = "none";
     }
 }

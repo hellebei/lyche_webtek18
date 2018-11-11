@@ -26,7 +26,7 @@ input[type=text], select, textarea, input[type=date] {
     background-color: inherit;
 }
 
-label{
+label {
     margin-top: 10px;
 }
 
@@ -83,7 +83,7 @@ input:focus, textarea:focus, select:focus {
 
 
 /* Style the image inside the centered container, if needed */
-.img-res img{
+.img-res img {
     position: relative;
     width: 100%;    
 }

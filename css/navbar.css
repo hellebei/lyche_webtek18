@@ -1,24 +1,24 @@
 /* navbar */
-.navmain{
+.navmain {
     position: relative;
     background-color: black;
     height: 50px;
   }
 
 /* div id = navbar, in all html files */
-#navbar{
+#navbar {
     z-index: 80;
     width: 100vw;
     position: fixed;
     top: 0;
   }
   
-  .div{
+  .div {
     display: block;
   }
   
   /*The hamburger menu*/
-  #hamburgermenu{
+  #hamburgermenu {
     position: absolute;
     display: block;
     float: left;
@@ -58,13 +58,13 @@
   }
   
   /* hamburgercontent , menu*/
-  ul{
+  ul {
     list-style-type: none;
     display: inline-block;
   }
 
   /*text in hamburgercontent*/
-  #hamburgercontent{
+  #hamburgercontent {
     text-transform: uppercase;
     font-size: 26px;
     font-weight: bold;
@@ -78,7 +78,7 @@
   }
   
   /* lyche-logo - picture */
-  #lychelogo{
+  #lychelogo {
     display: block;
     width: auto;
     height: 80%;
@@ -89,7 +89,7 @@
   }
 
   /* picture link to samfundet.no */
-  #samflogo{
+  #samflogo {
     position: absolute;
     right: 15px;
     top: calc(50% - 9px);
@@ -112,41 +112,41 @@
     color: white;
   }
 
-  a:hover{
+  a:hover {
     font-weight: bolder; 
   }
 
   
-li a:link{
+li a:link {
     color: black;
     font-weight: bold;
 }
 
-li a:visited{
+li a:visited {
   color: #000000;
   font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
 }
 
-li a:hover{
+li a:hover {
     color:white;
 }
   
-  /* class for hidden content */
-  .hidden {
-    display: none;
-  }
+/* class for hidden content */
+.hidden {
+  display: none;
+}
 
-  @media only screen and (max-width: 770px) {
-    #lychelogo{
-     position: relative;
-    }
+@media only screen and (max-width: 770px) {
+  #lychelogo {
+    position: relative;
   }
+}
 
-  /* Font size fitting screen size in hamburger menu */
-  @media only screen and (max-height: 500px){
-    #hamburgercontent{
-      line-height: 10vh; 
-      font-size: 4vh; 
-    }
+/* Font size fitting screen size in hamburger menu */
+@media only screen and (max-height: 500px){
+  #hamburgercontent {
+    line-height: 10vh; 
+    font-size: 4vh; 
+  }
   }
   

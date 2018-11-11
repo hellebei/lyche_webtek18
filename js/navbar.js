@@ -37,7 +37,7 @@ function changemenu(x) {
     x.classList.toggle("change");
 }
 
-function toggleHide(element){
+function toggleHide(element) {
     element.classList.toggle("hidden");
 }
 
@@ -49,7 +49,7 @@ menu.addEventListener('click', function() {
     changemenu(menu);
 })
 
-document.addEventListener('scroll', function (){
+document.addEventListener('scroll', function () {
     if (menuContent.getAttribute("class")!="hidden"){
         toggleHide(menuContent);
         changemenu(menu);

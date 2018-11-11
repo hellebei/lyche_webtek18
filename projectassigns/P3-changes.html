@@ -6,92 +6,55 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-    <section class="organizationalScheme">
-        <h1>Updated Organizational Scheme</h1>
-        <p>List of files and folders: 
-            <ul>
-                <li>index.html</li>
-                <li>meny.html</li>
-                <li>about.html</li>
-                <li>reservation.html</li>
-                <li>confirmation.html</li>
-                <li>contact.html</li>
-                <li>img/
-                    <ul>
-                        <li>b_mussels.jpg</li>
-                        <li>mussels_croped.png</li>
-                        <li>salat_side_bilde.png</li>
-                        <li>lyche.png</li>
-                        <li>newsaladpic.png</li>
-                        <li>hd.png</li>
-                        <li>hotdog.png</li>
-                        <li>logo.png</li>
-                        <li>Lyche_logo_header.png</li>
-                        <li>map_samf.png</li>
-                        <li>samf_logo_hvit.png</li>
-                        <li>samf_logo_u.png</li>
-                        <li>samfundet_utvendig_medsort.png</li>
-                        <li>sc_smallesr.png</li>
-                        <li>sc.png</li>
-                        <li>footer/
-                            <ul>
-                                <li>face.png</li>
-                                <li>instabilde.png</li>
-                                <li>spotify.png</li>
-                                <li>twitter.png</li>
-                            </ul>
-                        </li>
-                        <li>slideshow/
-                            <ul>
-                                <li>blåskjell1.jpg</li>
-                                <li>brød1.jpg</li>
-                                <li>burger1.jpg</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>js/
-                    <ul>
-                        <li>footer.js</li>
-                        <li>form.js</li>
-                        <li>index.js</li>
-                        <li>isOpen.js</li>
-                        <li>lang.js</li>
-                        <li>navbar.js</li>
-                        <li>slideshow.js</li>
-                    </ul>
-                </li>
-                <li>css/
-                    <ul>
-                        <li>about.css</li>
-                        <li>contact.css</li>
-                        <li>footer.css</li>
-                        <li>form.css</li>
-                        <li>index.css</li>
-                        <li>main.css</li>
-                        <li>menu.css</li>
-                        <li>navbar.css</li>
-                        <li>reservation.css</li>
-                        <li>slideshow.css</li>
-                        <li>split.css</li>
-                        <li>stylecontact.css</li>
-                    </ul>
-                </li>
-            </ul>
+
+    <header>
+        <div class = "navigationbar">
+            <a href="#doc">Document Details</a>
+            <a href="#adm">Administrative details</a>
+            <a href="#changes">Changes</a>
+            <a href="#changesnavstruc">Changes in navigation structure</a>
+            <a href="#updateorgscheme">Updated Organizational Scheme</a>
+            <a href="#req">Fulfillment of minimum requirements</a>
+            <a href="#modular">Modularity</a>
+        </div>    
+    </header>
+
+    <h1>P3 Changes</h1>
+    <div class= "topnavpush"  id = "doc"></div>
+    <h2> Document Details</h2>
+        <a href="http://org.ntnu.no/lyche/">Lyche project assignments</a>
+        <p id="authors">Merete Lunde Bertheau, Helle Børset Eidissen, Iben Andrea Bøyum Huus, Helene Lavre and Johanna Norum.</p>
+        <p id= "date">11. November 2018</p>
+    
+    <div class= "topnavpush"  id = "adm"></div>
+    <h2>Administrative details</h2>
+
+        <p>
+            This webpage is made for the resturant Lyche.
         </p>
-    </section>
+        <p>
+            The vision is to make the final location the site can be visited from at: <i>lyche.samfundet.no</i>.
+        </p>
+        <p>
+            The contact persons for this project is Merete Lunde Bertheau, the PR an Profile responsible for the restaurant together with Alexander Wang.
+        </p>
+        <p>
+            You can find our webpage via this link: <a href="http://org.ntnu.no/lyche/P3/lyche_webtek18/index.html">Lyche webpage</a>
+            
+        </p>
 
     <section class="changes">
+        <div class= "topnavpush"  id = "changes"></div>
         <h1>Changes</h1>
 
         <div class="br">
             <h2>Changes in apperance</h2>
             <p>
                 There has been a couple of changes in the coding of the basic apperance of the web site. 
-                Some of these changes are because we found it nicer looking than what the plan said, and some of them are due to the reactiveness requirement. 
-                For example we have changed the font size to be a bit smaller, and in addition it scales witht the page. 
+                Some of these changes are made because we found it better looking than what the plan said, and some of them are due to the reactiveness requirement. 
+                For example we have changed the font size to be a bit smaller, and in addition it scales with the page. 
             </p>
-            <p>Listing some of the changes: </p>
+            <p>Listing of the changes: </p>
             <ul> 
             <li> Font type and text styling: 
                 <ul>
@@ -106,7 +69,7 @@
                 </ul></li>
             <li>Links: not necessarily color that changes on hover. For exaple for links that appeares as buttons on index.html it changes on hover but not color.</li>
             <li>Navigation and burger menu does not change on hover. Links in burger menu content changes color on hover. </li>
-            <li>Footer has mostly the same apperance as samfundet.no, with small changes. More of that in footer.js</li>
+            <li>Footer has mostly the same apperance as samfundet.no, with small changes. We explain it more detailed under footer.js.</li>
             </ul>
         </div>
 
@@ -153,13 +116,13 @@
         </div>
 
         <div class="br">
-            <h3>changes in isOpen.js</h3>
+            <h3>Changes in isOpen.js</h3>
             <p>Changed location. Included the opening hours and isOpen-script in contact.html, accessed from index.html or the burger menu.</p>
         </div>
 
         <div class="br">
             <h3>Changes in footer.js</h3>
-            <p>The footer was written entirely in Java Scrips and implemented on every html page with styling from footer.css.
+            <p>The footer was written entirely in Java Scrips and implemented on every html page, with styling from footer.css.
                 The footer is the same as the one from samfundet.no such that the pages is connected design wise.
                 We wanted our web page to have a universal design and be facilitated people with impaired vision. With this in mind, the text has been made a bit larger, and the colour a bit brighter.</p>
         </div>
@@ -174,6 +137,7 @@
         </div>
 
         <div class="br">
+                <div class= "topnavpush"  id = "changesnavstruc"></div>
             <h2>Changes in navigation structure</h2>
             <p>
                 The final navigation structure is close to the one originally planned, except that information.html was changed to contact.html.
@@ -185,13 +149,90 @@
 
     </section>
 
+    <section class="organizationalScheme">
+            <div class= "topnavpush"  id = "updateorgscheme"></div>
+            <h2>Updated Organizational Scheme</h2>
+            <p>List of files and folders: 
+                <ul>
+                    <li>index.html</li>
+                    <li>meny.html</li>
+                    <li>about.html</li>
+                    <li>reservation.html</li>
+                    <li>confirmation.html</li>
+                    <li>contact.html</li>
+                    <li>img/
+                        <ul>
+                            <li>b_mussels.jpg</li>
+                            <li>mussels_croped.png</li>
+                            <li>salat_side_bilde.png</li>
+                            <li>lyche.png</li>
+                            <li>newsaladpic.png</li>
+                            <li>hd.png</li>
+                            <li>hotdog.png</li>
+                            <li>logo.png</li>
+                            <li>Lyche_logo_header.png</li>
+                            <li>map_samf.png</li>
+                            <li>samf_logo_hvit.png</li>
+                            <li>samf_logo_u.png</li>
+                            <li>samfundet_utvendig_medsort.png</li>
+                            <li>sc_smallesr.png</li>
+                            <li>sc.png</li>
+                            <li>footer/
+                                <ul>
+                                    <li>face.png</li>
+                                    <li>instabilde.png</li>
+                                    <li>spotify.png</li>
+                                    <li>twitter.png</li>
+                                </ul>
+                            </li>
+                            <li>slideshow/
+                                <ul>
+                                    <li>blåskjell1.jpg</li>
+                                    <li>brød1.jpg</li>
+                                    <li>burger1.jpg</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>js/
+                        <ul>
+                            <li>footer.js</li>
+                            <li>form.js</li>
+                            <li>index.js</li>
+                            <li>isOpen.js</li>
+                            <li>lang.js</li>
+                            <li>navbar.js</li>
+                            <li>slideshow.js</li>
+                        </ul>
+                    </li>
+                    <li>css/
+                        <ul>
+                            <li>about.css</li>
+                            <li>contact.css</li>
+                            <li>footer.css</li>
+                            <li>form.css</li>
+                            <li>index.css</li>
+                            <li>main.css</li>
+                            <li>menu.css</li>
+                            <li>navbar.css</li>
+                            <li>reservation.css</li>
+                            <li>slideshow.css</li>
+                            <li>split.css</li>
+                            <li>stylecontact.css</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
     <section class = "minreq">
+        <div class= "topnavpush"  id = "req"></div>
         <h1>Fulfillment of minimum requirements</h1>
         <div class="br">
             <p>In this project we have all worked together to create the final web page. This makes it difficult to state exactly who did what, but here's a short summary of how each person fulfilled their minimum requirements.</p>
             <p>Johanna made the contact.html page, and the others implemented the footer and top bar and helped her make it responsive.</p>
             <p>Helle and Helene worked on index.html and the responsiveness of this.</p>
-            <p>Helene worked the most on the navigation bar and footer, and found out how we could import it with JavaScript.</p>
+            <p>Helene worked the most on the navigation bar and footer, and found out how we could implement it with use of JavaScript.</p>
             <p>Helle and Helene worked on the design of the navigation bar and hamburger menu. Helene implemented the animation and the JavaScript.</p>
             <p>We all made the CSS to our associated html-pages and collaborated to make the main style sheet.</p>
             <p>Helle made the lang.js and found out how to use session storage to make this work across all the htmls.
@@ -205,6 +246,7 @@
     </section>
 
     <section class = "modularity">
+        <div class= "topnavpush"  id = "modular"></div>
         <h1>Modularity</h1>
         <div class = "br">
             <p>
