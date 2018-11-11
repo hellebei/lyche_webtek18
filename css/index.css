@@ -66,7 +66,7 @@ h2 {
  
   /* navbutton index.html */
   
-  /*styling for the hamburgemenu*/
+  /*styling for the hakmburgemenu*/
   .menuindex {
     position: absolute;
     width: 100%; 
@@ -155,6 +155,133 @@ li a:hover {
   #hamburgercontentIndex{
     line-height: 10vh; 
     font-size: 4vh; 
+  }
+}
+
+/*Class for splitting the screen in half */
+/* This part of website has used inspiration from https://www.w3schools.com/howto/howto_css_split_screen.asp */
+/* And from https://css-tricks.com/left-and-right/ */
+
+/*Defining main split style*/
+.split {
+  display: block;
+  height: 100vh; 
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+/*Left content in splitside*/
+.left {
+display: inline-block;
+left: 0;
+width: 50%; 
+text-align: center; 
+}
+
+/*text on the left*/
+.left .indextext {
+  position: absolute;
+  width: 60%;
+  padding-right: 20%; 
+  padding-left: 20%; 
+}
+
+/*img on the left*/
+.left img {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*wrapping the text to get desired positioning*/
+.textwrap {
+  position: relative;
+  margin: 10% 15% 5% 15%; 
+  line-height: 170%; 
+}
+
+/* Control the right side */
+.right {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  width: 50%;
+  text-align: center; 
+}
+
+/*Text on the right side*/
+.right .indextext {
+  position: relative;
+  width: 60%;
+  padding-right: 20%; 
+  padding-left: 20%; 
+}
+/*Img on the right side*/
+.right img {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Changing entire css if width of screen is less than 770px */
+@media only screen and (max-width: 770px) {
+  .split {
+    display: inline;
+    position: relative;
+    z-index: 0;
+  }
+    /*Left content in splitside*/
+  .left, .right {
+    display: inherit;
+    text-align: center; 
+    width: 100%;
+    height: auto; 
+  }
+
+  /*text on the left*/
+    .indextext {
+      position: relative;
+      width: 100%;
+      height: auto; 
+    }
+
+    .indeximg {
+      position: relative;
+      height: inherit;
+      width: 100%;
+      height: 20vh !important; 
+      overflow: hidden; /*hide bounds of image */
+      margin: 0;
+    }
+
+    /*img on the left*/
+    .indeximg img {
+      display: block;
+      width: 100%; 
+      max-height: 30vh; 
+      object-fit: cover; 
+    }
+
+    /*wrapping the text to get desired positioning*/
+    .textwrap {
+      position: relative;
+      margin: 5% 20% 5% 20%; 
+      align-items: center; 
+    }
+    
+    h2 {
+      line-height: 100%;
+    }
+}
+
+/* Making sure all text shows if height of screen is low compared to width */
+@media only screen and (max-height: 570px) {
+  .textwrap {
+    position: relative;
+    line-height: 200%; 
   }
 }
 

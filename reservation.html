@@ -40,7 +40,7 @@
             
             </div>
 
-    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order_no(event)">
+    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order(event)">
 
                 <div class="br">
                     <label for="navn">Navn: <span style="color:red">*</span></label>
@@ -55,6 +55,7 @@
                 <div class="br">
                     <label for="personer">Antall personer: <span style="color:red">*</span></label>
                     <select name="persons" id="personer">
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -133,7 +134,7 @@
                 
             </div>
 
-            <form name= "form1" class="forms" id="form2" method="GET" onsubmit="confirm_order_en(event)">
+            <form name= "form1" class="forms" id="form2" method="GET" onsubmit="confirm_order(event)">
 
                 <div class="br">
                     <label for="name">Name: <span style="color:red">*</span></label>
@@ -201,7 +202,7 @@
                     <textarea id= "info" name= "message" rows="5" cols="30" placeholder="Message.."></textarea>
                 </div>
 
-                <input type="submit" value="SUBMIT" onclick="confirm_order_en()">
+                <input type="submit" value="SUBMIT">
 
             </form>
 
