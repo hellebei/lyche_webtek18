@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>P3 Changes</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+    <header>
+        <div class = "navigationbar">
+            <a href="#doc">Document Details</a>
+            <a href="#adm">Administrative details</a>
+            <a href="#changes">Changes</a>
+            <a href="#changesnavstruc">Changes in navigation structure</a>
+            <a href="#updateorgscheme">Updated Organizational Scheme</a>
+            <a href="#req">Fulfillment of minimum requirements</a>
+            <a href="#modular">Modularity</a>
+        </div>    
+    </header>
+
+    <h1>P3 Changes</h1>
+    <div class= "topnavpush"  id = "doc"></div>
+    <h2> Document Details</h2>
+        <a href="http://org.ntnu.no/lyche/">Lyche project assignments</a>
+        <p id="authors">Merete Lunde Bertheau, Helle Børset Eidissen, Iben Andrea Bøyum Huus, Helene Lavre and Johanna Norum.</p>
+        <p id= "date">11. November 2018</p>
+    
+    <div class= "topnavpush"  id = "adm"></div>
+    <h2>Administrative details</h2>
+
+        <p>
+            This webpage is made for the resturant Lyche.
+        </p>
+        <p>
+            The vision is to make the final location the site can be visited from at: <i>lyche.samfundet.no</i>.
+        </p>
+        <p>
+            The contact persons for this project is Merete Lunde Bertheau, the PR an Profile responsible for the restaurant together with Alexander Wang.
+        </p>
+        <p>
+            You can find our webpage via this link: <a href="http://org.ntnu.no/lyche/P3/lyche_webtek18/index.html">Lyche webpage</a>
+            
+        </p>
+
+    <section class="changes">
+        <div class= "topnavpush"  id = "changes"></div>
+        <h1>Changes</h1>
+
+        <div class="br">
+            <h2>Changes in apperance</h2>
+            <p>
+                There has been a couple of changes in the coding of the basic apperance of the web site. 
+                Some of these changes are made because we found it better looking than what the plan said, and some of them are due to the reactiveness requirement. 
+                For example we have changed the font size to be a bit smaller, and in addition it scales with the page. 
+            </p>
+            <p>Listing of the changes: </p>
+            <ul> 
+            <li> Font type and text styling: 
+                <ul>
+                    <li>Font type default: futura-pt</li>
+                    <li>Font type headers and h2: futura</li>
+                    <li>Text size in body and links: 16px normally. 2.5vh on scaling</li>
+                </ul></li>
+            <li>Color Scheme: 
+                <ul>
+                    <li>Main color theme as was palnned in p2.</li>
+                    <li>Links same color as text, but changes on hover</li>
+                </ul></li>
+            <li>Links: not necessarily color that changes on hover. For exaple for links that appeares as buttons on index.html it changes on hover but not color.</li>
+            <li>Navigation and burger menu does not change on hover. Links in burger menu content changes color on hover. </li>
+            <li>Footer has mostly the same apperance as samfundet.no, with small changes. We explain it more detailed under footer.js.</li>
+            </ul>
+        </div>
+
+        <div class="br">
+            <h3>Changes in index.html</h3>
+            <p>When visiting the web page, the user will see a slideshow with photos of food, as intended. We decided to remove the “make a reservation” button from the bottom right corner so that the page would have a “cleaner” design.</p>
+            <p>We decided to remove “contact” from index, so “contact” can be excessed either from the burger menu, or from a button in the information section at the top of the index page. No contact information in index, only in a separate html.</p>    
+            <p>Changed the picture in index_reservation from one of the resturant, to one displaying a dish, mussels.</p>
+            <p>Also there was added a button at the bottom of each part for navigation to the full htmls for that topic.</p>
+        </div>
+
+        <div class="br">
+            <h3>Changes in contact.html</h3>
+            <p>"Book here" button removed was removed from the page because we found it unnecessary,
+                and instead of linking to samfundes social media in the html, we implemented it in the footer.
+            </p>
+        </div>
+
+        <div class="br">
+            <h3>Changes in reservation.html</h3>
+            <p>The reservation form contains the input fields name, number of people, date and time, email and extra information. Some explaining text about restrictions, and lyches email address was added above the form.</p>
+            <p>The date picker is changed from always showing the calendar to a horizontal line, same appearance as the other input fields, with a calendar symbol to the right. The user can either choose a date from the date picker, or else write the date in the input field. This change was made because of the restrictions of using plug-ins.</p>
+            <p>The input fields were made wider, and the margin left of the form was decreased so that the header, text and form have the same start position. The photo was changed from pai_liten.png to mussels_croped.png for visual purposes. A submit button was added beneath the form, and a red “star” in each required form was also added.</p>
+        </div>
+
+        <div class="br">
+            <h3>Confirmation.html</h3>
+            <p>A new html was added, confirmation.html.
+                This is the page the user is sent to when the form is submitted.
+                It has the same styling and image as reservation.html and displays a text that states that the form was successfully submitted. </p>
+        </div>
+
+        <div class="br">
+            <h3>Changes in about.html</h3>
+            <p>In about.html, we changed the margin-left to 10% so that it would be visually more similar to the other pages, and the header is in line with the text.
+                We choose not to include text about lyches history, as we intended, because we did not find it 
+                necessary.
+            </p>
+        </div>
+        
+        <div class="br">
+            <h3>Changes in isOpen.js</h3>
+            <p>Changed location. Included the opening hours and isOpen-script in contact.html, accessed from index.html or the burger menu.</p>
+        </div>
+
+        <div class="br">
+            <h3>Changes in footer.js</h3>
+            <p>The footer was written entirely in Java Scrips and implemented on every html page, with styling from footer.css.
+                The footer is the same as the one from samfundet.no such that the pages is connected design wise.
+                We wanted our web page to have a universal design and be facilitated people with impaired vision. With this in mind, the text has been made a bit larger, and the colour a bit brighter.</p>
+        </div>
+
+        <div class="br">
+            <h3>Changes in .part files</h3>
+            <p>
+                For p2 we wrote that we would have .part for navbar and footer, and thought of this as a html that was a part that we could import into the other htmls. 
+                As we tried to execute this, we found that the easiest way to do it was to put the html code for these objects into the associated javascripts, and use this to import the html on the page. 
+                Hence we hva no files called .part or .html for the navbar and the footer. 
+            </p>
+        </div>
+
+        <div class="br">
+                <div class= "topnavpush"  id = "changesnavstruc"></div>
+            <h2>Changes in navigation structure</h2>
+            <p>
+                The final navigation structure is close to the one originally planned, except that information.html was changed to contact.html.
+                Additionally we added an arrow from samfundet and social media to index.html because it should be possible to access Lyches home page from these external pages. 
+            </p>
+            <img src="img/new_navstruc.png" alt="New navigation structure">
+        </div>
+
+
+    </section>
+
+    <section class="organizationalScheme">
+            <div class= "topnavpush"  id = "updateorgscheme"></div>
+            <h2>Updated Organizational Scheme</h2>
+            <p>List of files and folders: 
+                <ul>
+                    <li>index.html</li>
+                    <li>meny.html</li>
+                    <li>about.html</li>
+                    <li>reservation.html</li>
+                    <li>confirmation.html</li>
+                    <li>contact.html</li>
+                    <li>img/
+                        <ul>
+                            <li>b_mussels.jpg</li>
+                            <li>mussels_croped.png</li>
+                            <li>salat_side_bilde.png</li>
+                            <li>lyche.png</li>
+                            <li>newsaladpic.png</li>
+                            <li>hd.png</li>
+                            <li>hotdog.png</li>
+                            <li>logo.png</li>
+                            <li>Lyche_logo_header.png</li>
+                            <li>map_samf.png</li>
+                            <li>samf_logo_hvit.png</li>
+                            <li>samf_logo_u.png</li>
+                            <li>samfundet_utvendig_medsort.png</li>
+                            <li>sc_smallesr.png</li>
+                            <li>sc.png</li>
+                            <li>footer/
+                                <ul>
+                                    <li>face.png</li>
+                                    <li>instabilde.png</li>
+                                    <li>spotify.png</li>
+                                    <li>twitter.png</li>
+                                </ul>
+                            </li>
+                            <li>slideshow/
+                                <ul>
+                                    <li>blåskjell1.jpg</li>
+                                    <li>brød1.jpg</li>
+                                    <li>burger1.jpg</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>js/
+                        <ul>
+                            <li>footer.js</li>
+                            <li>form.js</li>
+                            <li>index.js</li>
+                            <li>isOpen.js</li>
+                            <li>lang.js</li>
+                            <li>navbar.js</li>
+                            <li>slideshow.js</li>
+                        </ul>
+                    </li>
+                    <li>css/
+                        <ul>
+                            <li>about.css</li>
+                            <li>contact.css</li>
+                            <li>footer.css</li>
+                            <li>form.css</li>
+                            <li>index.css</li>
+                            <li>main.css</li>
+                            <li>menu.css</li>
+                            <li>navbar.css</li>
+                            <li>reservation.css</li>
+                            <li>slideshow.css</li>
+                            <li>split.css</li>
+                            <li>stylecontact.css</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+    <section class = "minreq">
+        <div class= "topnavpush"  id = "req"></div>
+        <h1>Fulfillment of minimum requirements</h1>
+        <div class="br">
+            <p>In this project we have all worked together to create the final web page. This makes it difficult to state exactly who did what, but here's a short summary of how each person fulfilled their minimum requirements.</p>
+            <p>Johanna made the contact.html page, and the others implemented the footer and top bar and helped her make it responsive.</p>
+            <p>Helle and Helene worked on index.html and the responsiveness of this.</p>
+            <p>Helene worked the most on the navigation bar and footer, and found out how we could implement it with use of JavaScript.</p>
+            <p>Helle and Helene worked on the design of the navigation bar and hamburger menu. Helene implemented the animation and the JavaScript.</p>
+            <p>Andrea worked on the reservation.html and confirmation.html documents. The pages are connected through a JavaScript function, also made by Andrea. The form is validated before it is submitted through a JavaScript that checks the mail address.</p>
+            <p>Andrea worked on implementing the footer correctly in every html. </p>
+            <p>We all made the CSS to our associated html-pages and collaborated to make the main style sheet.</p>
+            <p>Helle made the lang.js and found out how to use session storage to make this work across all the htmls.
+            Because of the session storage used, this does not work when just opening the html-files in the browser, but works when the page is loded from a server. </p>
+            <p>Johanna created the isOpen-script and implemented it in contact.html.</p>
+            <p>
+                We have all contributed to the writing of the P3-changes document, and made the neccessary changes in the code after the page was about done, so that it would fulfill the requirements given in the project description.
+            </p>
+            <p>Merete and Johanna made the testing documents, did the live testing and collected and interpreted the test results from the Google Form.</p>
+        </div>
+    </section>
+
+    <section class = "modularity">
+        <div class= "topnavpush"  id = "modular"></div>
+        <h1>Modularity</h1>
+        <div class = "br">
+            <p>
+                The issue of modularity was met both when it came to the footer and the navigationbar.
+                We solved this by putting the html-code for the items into the appropriate javaScript files, and then inserting in in the appropriate places in all of the htmls by using js. 
+                By doing it this way we avoided writing the same html several times, and thus we avoided using unnecessary memory capacity.
+                It was mostly Helene Lavre who worked on this implementation, with assistance from the others in the group. 
+            </p>    
+        </div> 
+    </section>
+
+</body>
+</html>
