@@ -5,7 +5,7 @@ tommorow.setDate(tommorow.getDate() + 1);
 const time = tommorow.toISOString().split('T')[0];
 const dates = document.getElementsByName("date");
 
-for (let i = 0; i < dates.length; i++) {
+for (let i = 0; i <dates.length; i++) {
     dates[i].setAttribute('min', time);
 }
 
