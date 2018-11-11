@@ -40,7 +40,7 @@
             
             </div>
 
-    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order(event)">
+    <form id="form1" class="forms" name ="form1" method="GET" onsubmit="confirm_order_no(event)">
 
                 <div class="br">
                     <label for="navn">Navn: <span style="color:red">*</span></label>
@@ -79,7 +79,7 @@
 
                 <div class="br">
                     <label for="dato">Dato: <span style="color:red">*</span></label>
-                    <input type="date" id="dato" name="date" min="18.08.2018" placeholder="YYYY-MM-DD" required>
+                    <input type="date" id="dato" name="date" required>
                 </div>
 
                 <div class="br">
@@ -137,7 +137,7 @@
 
                 <div class="br">
                     <label for="name">Name: <span style="color:red">*</span></label>
-                    <input type="text" name="name" id="name" placeholder="name.." autofocus required />
+                    <input type="text" name="name" id="name" placeholder="name.." required />
                 </div>
 
                 <div class="br">
@@ -174,7 +174,7 @@
                 <div class="br">
                     <label for="date">Date: <span style="color:red">*</span></label>
                     <br>
-                    <input type="date" name="date" id="date" placeholder="YYYY-MM-DD" min="" required>
+                    <input type="date" name="date" id="date" required>
                 </div>
 
                 <div class="br">
@@ -215,6 +215,7 @@
 
     <div id="footer"></div> <!--Ending english section-->
     
+
     <script src="js/navbar.js"></script>
     <script src="js/lang.js"></script>
     <script src="js/form.js"></script>
