@@ -1,4 +1,6 @@
 
+/* For this functions we had help from the learing assistants and w3schools*/
+
 //Only chose the day after this day
 const tommorow = new Date();
 tommorow.setDate(tommorow.getDate() + 1);
@@ -9,7 +11,7 @@ for (let i = 0; i <dates.length; i++) {
     dates[i].setAttribute('min', time);
 }
 
-
+//https://codepen.io/zafree/pen/pLEEWB. Found the code for the regex-expression in this code pen.
 //validates email adress on change. Not norwegian chars
 function ValidateEmail(lang){
     const mailInput = document.getElementsByName("email");
