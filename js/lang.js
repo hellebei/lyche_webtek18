@@ -1,3 +1,7 @@
+/* For this functions we had help from the learing assistants to set up the use of session storage*/
+// Because it uses session storage, the language transfer between pages does not work if one just opens it in browsers as files and not as a web-page on a server.
+
+
 const setLang = (lang) => {
     sessionStorage.setItem('lang', lang)
 }

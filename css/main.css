@@ -5,82 +5,82 @@
 }
 
 /*Sets font*/
-
-html{
+html {
     font-family: futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
   }
   
-  /*making body fill entire screen and setting font properties and bacgroundcolor*/
-  body{ 
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;  
-    font-size: 16px;
-    line-height: 200%;
-    font-style: normal;
-    font-weight: 400;
-    background-color: #ebe9e6;
-  }
-  
-  @media only screen and (max-height: 550px) {
-    body{
-      font-size: 3vh; 
-      line-height: 150%; 
-    }
+/*making body fill entire screen and setting font properties and bacgroundcolor*/
+body { 
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;  
+  font-size: 16px;
+  line-height: 200%;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ebe9e6;
+}
+
+/* Font size fitting screen size */
+@media only screen and (max-height: 590px) {
+  body {
+    font-size: 2.5vh; 
+    line-height: 150%; 
   }
 
-  @media only screen and (max-width: 770px) {
-    body{
-      font-size: 2vh; 
-      line-height: 150%; 
-    }
+  h2 {
+    line-height: 100%; 
   }
+}
+
+@media only screen and (max-width: 770px) {
+  body {
+    font-size: 2.5vh; 
+    line-height: 170%; 
+  }
+}
 
 
-  /*Making header fill width of page*/
-  header{
-    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 26px;
-    font-weight: bold;
-    width: 100%;
-  }
-  
-  /*Setting color on background for all sections*/
-  section{
-    background-color: #ebe9e6;
-  }
+/*Making header fill width of page*/
+header {
+  font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+  width: 100%;
+}
 
-  /*Default h2-styling for all pages*/
-  h2{
-    font-weight: 600; 
-    padding-top: 2%; 
-  }
-  
+/*Setting color on background for all sections*/
+section {
+  background-color: #ebe9e6;
+  width: 100%; 
+}
+
+/*Default h2-styling for all pages*/
+h2 {
+  font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+  font-weight: 600; 
+  padding-top: 2%; 
+}
+
 /*Default list-styling for all pages*/
-  ul{
-    list-style-type: none;
-    display: inline-block;
+ul {
+  list-style-type: none;
+  display: inline-block;
 }
 
 /*Pushing page content down to under navigationbar*/
-  #navbarpush{
-    height: 50px;
-  }
+#navbarpush {
+  height: 50px;
+}
 
-  /*displaying norwegian text*/
-  #no{
-    display: inherit; 
-  }
+/*displaying norwegian text*/
+#no {
+  display: inherit; 
+}
 
 
-  /*hiding english text*/
-  #en{
-    display: none;
-  }
+/*hiding english text*/
+#en {
+  display: none;
+}
 
-  @media only screen and (max-height: 420px){
-    #hamburgercontentIndex, #hamburgercontent{
-      line-height: 10vh; 
-      font-size: 4vh; 
-    }
-  }

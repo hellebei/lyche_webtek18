@@ -38,14 +38,6 @@ function autoslide() {
   setTimeout(autoslide, time);
 }
 
-/*
-let timer;
-function plusindex(n){
-  showSlides(slideIndex +=n);
-  clearTimeout(timer);
-  timer = setTimeout(autoslide,time);
-}
-*/
 
 
 

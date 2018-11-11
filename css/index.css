@@ -1,12 +1,12 @@
 
-header{
+header {
   position: relative;
   width: 100%; 
   height: auto;
 }
 
 /*adding a shade over the slideshow*/
-.layer{
+.layer {
   background-color: #000000;
   opacity: 0.6;
   position: absolute;
@@ -14,92 +14,60 @@ header{
   height: 99%;
   z-index: 7;
 }
-h2{
-  font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
+
+h2 {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
-  /*width: 100%;*/
-
-
 }
 
-.header-logo-container{
+.header-logo-container {
   position: absolute;
   width: 100%; 
   height: auto; 
+  top: 0; 
 }
 
 /*The logo picture over the slideshow*/
-#lyche-header-logo{
+#lyche-header-logo {
   z-index: 20;
   opacity: 0.9;
   display: inline;
   max-width: 50%;
   margin: 15% 25% 10.3% 25%;
-  position: relative;  
-}
-
-/*button to scroll one page down at a time*/
-/*not implemented on page at the moment*/
-.downbtn{
-  position: fixed;
-  z-index: 40; 
-  display: none; 
-  top: 85%; 
-  right: 45%; 
-  left: 45%;
-  width: 10%; 
-  height: 5%;
-  opacity: 0.7;
-  font-size: 14px; 
-  font-family: inherit; 
+  position: absolute;  
 }
 
 /*styling of see more button*/
-.cMoreBtn{
+.cMoreBtn {
   position: relative;
   display: block;
   width: fit-content;
   height: 20%; 
   padding: 0 4% 0 4%;  
   border: 2px solid #000000;
-  /*background-color: none;*/
   color: #000000;
   letter-spacing: 2px;
-  margin: 0 auto;
+  margin: 0 auto ;
   margin-bottom: 30px; 
 }
 
 /*look of button link*/
-.cMoreBtn a:link{
+.cMoreBtn a:link {
   text-decoration: none;
   color: black;
 }
 
-/*look of buttonlink when hovering over*/
-.cMoreBtn a:hover{
-  text-decoration: none;
-  color: rgb(99, 98, 98);
-}
-
 /*look of visited buttonlink*/
-.cMoreBtn a:visited{
+.cMoreBtn a:visited {
   color: #000000;
   text-decoration: none;
 }
-
-/*frame around epostinfo*/
-  #epostinfo{
-    border: solid 1px black; 
-    margin: 10% 0 10% 0;  
-  }
  
-
-  /* navbar index.html */
+  /* navbutton index.html */
   
   /*styling for the hamburgemenu*/
-  .menuindex{
+  .menuindex {
     position: absolute;
     width: 100%; 
     top:0; 
@@ -108,7 +76,7 @@ h2{
   }
 
   /*Styling of the bars in hamburgermenu*/
-  #hamburgermenuIndex{
+  #hamburgermenuIndex {
     position: absolute;
     display: block;
     float: left;
@@ -148,23 +116,18 @@ h2{
 }
 
 /*Styling content of menu when it is opened*/
-#hamburgercontentIndex{
-    text-transform: uppercase;
-    font-family: futura, Lato, Trebuchet MS, Arial, sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 10%;
-    width: 25%;
-    min-width: 260px;
-    height: 100vh;
-    padding-right: 8%;
-    text-align: left !important;
-    background-color: #ebe9e6;
-    line-height: 300%; 
-    z-index: 17;
-    opacity: 1;
+#hamburgercontentIndex {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 10% 8% 0 0; 
+  width: 25%;
+  min-width: 260px;
+  height: 100vh;
+  background-color: #ebe9e6;
+  line-height: 300%; 
+  z-index: 100;
 }
-
 
  /*Hiding hidden content*/
 .hidden {
@@ -172,20 +135,28 @@ h2{
 }
 
 /*Styling of links*/
-li a:link{
+li a:link {
     color: black;
     font-weight: bold;
 }
 
-li a:visited{
+li a:visited {
   color: #000000;
   font-family: Futura-pt, Lato, Trebuchet MS, Arial, sans-serif;
 }
 
-li a:hover{
+li a:hover {
     color:white;
 }
 /*End styling of links*/
+
+/* Font size fitting screen size in hamburger menu */
+@media only screen and (max-height: 500px) {
+  #hamburgercontentIndex{
+    line-height: 10vh; 
+    font-size: 4vh; 
+  }
+}
 
 
 

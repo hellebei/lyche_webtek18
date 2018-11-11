@@ -1,100 +1,75 @@
-
-html{
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    background-color: #ebe9e6;
-  
-  }
-  
-  body{ 
-    font-size: 16px; 
-    line-height: 200%;
-    font-style: normal;
-    font-weight: 400;
-    background-color: #ebe9e6;
-  
-  }
-  
-  section{
+.split-res {
+    display: block;
+    height: 100%;
     width: 100%;
-  }
+}
 
-  .split-res {
-      display: block;
-      height: 100%;
-      width: 100%;
-    }
-    
-    /* Control the left side */
-    form {
-      display: inline-block;
-      position: absolute;
-      width: 40%;
-      padding-left: 20%; 
-      z-index: 1;
-      background-color: #ebe9e6;
-      height: 100%;
-    }
+/* Control the left side */
+form {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    padding-left: 20%; 
+    z-index: 1;
+    background-color: #ebe9e6;
+    height: 100%;
+}
 
-    input[type=text], select, textarea, input[type=date] {
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        resize: vertical;
-        border: 1px solid black;
-        border-width: 0 0 1px 0;
-        background-color: inherit;
-    }
+input[type=text], select, textarea, input[type=date] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    resize: vertical;
+    border: 1px solid black;
+    border-width: 0 0 1px 0;
+    background-color: inherit;
+}
 
-    label{
-        margin-top: 10px;
-    }
+label {
+    margin-top: 10px;
+}
 
-    .tableres h1 {
-        right: 25%;
-    }
+.tableres h1 {
+    right: 25%;
+}
 
-    [type=date] {
-        background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-    }
+[type=date] {
+    background:rgb(167, 158, 158) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
 
-    [type=date]::-webkit-calendar-picker-indicator {
-        opacity: 0;
-    }
-    [type=date]::-webkit-inner-spin-button {
-        display: none;
-    }
+[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+[type=date]::-webkit-inner-spin-button {
+    display: none;
+}
 
-    input[type=date] {
-        padding: 3px 5px;
-    }
+input[type=date] {
+    padding: 3px 5px;
+}
 
-    input[type=submit]:hover {
-        background-color: #dacd5c;
-    }
+input[type=submit]:hover {
+    background-color: #dacd5c;
+}
 
-    
-    input[type=submit] {
-        background-color: rgb(177, 164, 47);
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
 
-    input:focus, textarea:focus, select:focus {
-        outline: none;
-    }
+input[type=submit] {
+    background-color: rgb(177, 164, 47);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    img{
-        position: relative;
-        width: 100%; 
-    }    
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
 
-    /* Control the right side */
+/* Control the right side */
 
-    .img-res {
+.img-res {
     display: block;
     right: 0;
     width: 35%;
@@ -104,18 +79,14 @@ html{
     top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
-  
-    }
- 
-    
-    /* Style the image inside the centered container, if needed */
-    .img-res img{
-      position: relative;
-      width: 100%; 
-    }
+}
 
-    .en{
-        display: none;
-      }
-      
+
+/* Style the image inside the centered container, if needed */
+.img-res img {
+    position: relative;
+    width: 100%;    
+}
+
+
         
