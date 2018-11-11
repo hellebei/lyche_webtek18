@@ -9,7 +9,7 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
 }
 
 /*positioning and display of slides*/
@@ -22,6 +22,7 @@
 .fade {
   -webkit-animation: fade 5s linear forwards;
   animation: fade 5s linear forwards;
+  height: inherit;
 }
 
 .fade img{

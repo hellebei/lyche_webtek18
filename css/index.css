@@ -25,6 +25,7 @@ h2{
   position: absolute;
   width: 100%; 
   height: auto; 
+  top: 0; 
 }
 
 /*The logo picture over the slideshow*/
@@ -34,7 +35,7 @@ h2{
   display: inline;
   max-width: 50%;
   margin: 15% 25% 10.3% 25%;
-  position: relative;  
+  position: absolute;  
 }
 
 /*styling of see more button*/
